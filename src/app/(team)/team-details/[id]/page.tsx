@@ -7,7 +7,18 @@ export const metadata: Metadata = {
   title: "Liko - Team Details page",
 };
 
-export default function TeamDetailsPage({params}: {params: { id: string }}) {
+export function generateStaticParams() {
+  // Return an array of objects, where each object represents a product ID.
+  return team_data.map((team) => ({
+    id: team.id.toString(),
+  }));
+}
+
+export default function TeamDetailsPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const team = [...team_data].find((t) => t.id === Number(params.id));
   return team ? (
     <TeamDetailsMain item={team} />
