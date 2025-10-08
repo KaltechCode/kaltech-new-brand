@@ -135,12 +135,13 @@
   &-login-with-hamburger {
     display: none;
     align-items: center;
+    justify-content: flex-end;
     gap: 20px;
     display: flex;
     a {
-      @media #{$md} {
-        display: none;
-      }
+      // @media #{$md} {
+      //   display: none;
+      // }
       padding: 8px 24px;
       background-color: #111;
       text-align: center;

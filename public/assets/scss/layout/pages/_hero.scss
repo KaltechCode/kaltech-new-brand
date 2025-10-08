@@ -278,11 +278,11 @@
   }
   &-title {
     font-size: 140px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1;
     letter-spacing: -5.6px;
     color: var(--tp-common-black);
-    font-family: var(--tp-ff-marcellus);
+    font-family: var(--tp-ff-heading);
     margin-bottom: 35px;
     @media #{$lg} {
       font-size: 115px;
