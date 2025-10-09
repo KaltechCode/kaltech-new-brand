@@ -43,9 +43,9 @@ const ServiceOne = () => {
         <div className="row">
           <div className="col-xl-6 col-lg-6">
             <div className="tp-service-title-box p-relative">
-              <span className="tp-section-subtitle subtitle-position tp_fade_bottom">
+              {/* <span className="tp-section-subtitle subtitle-position tp_fade_bottom">
                 I Think a lot
-              </span>
+              </span> */}
               <h4 className="tp-section-title tp_fade_bottom">
                 Thoughtful
                 <br />

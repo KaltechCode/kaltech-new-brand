@@ -27,7 +27,7 @@ const HeaderOne = () => {
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-2 col-6">
                 <div className="tp-header-logo">
-                  <Link className="" href="/">
+                  <Link className="logo-1" href="/">
                     <Image
                       src="/assets/img/logo/kaltech-logo.png"
                       alt="kaltech logo"
@@ -37,7 +37,7 @@ const HeaderOne = () => {
                   </Link>
                   <Link className="logo-2" href="/">
                     <Image
-                      src="/assets/img/custom/kaltech_logo.svg"
+                      src="/assets/img/custom/light logo.svg"
                       alt="logo"
                       width={170}
                       height={40}

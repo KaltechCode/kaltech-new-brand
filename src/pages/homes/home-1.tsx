@@ -42,7 +42,6 @@ import {
   heroBgAnimation,
   heroTitleAnim,
 } from "@/utils/title-animation";
-import HeroBannerTwo from "@/components/hero-banner/hero-banner-two";
 import HeroBannerFour from "@/components/hero-banner/hero-banner-four";
 import AboutOne from "@/components/about/about-one";
 import ServiceTwo from "@/components/service/service-two";
@@ -145,7 +144,7 @@ const HomeMain = () => {
             {/* brand area */}
 
             {/* service area */}
-            <ServiceOne />
+            {/* <ServiceOne /> */}
             {/* service area */}
 
             {/* project area */}

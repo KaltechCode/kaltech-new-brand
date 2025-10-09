@@ -1,14 +1,24 @@
 import React from "react";
 import Image from "next/image";
-import { Behance, CloseTwo, Dribble, InstagramTwo, Youtube } from "../svg";
+import {
+  Behance,
+  CloseTwo,
+  Dribble,
+  Facebook,
+  InstagramTwo,
+  Linkdin,
+  Twitter,
+  Youtube,
+} from "../svg";
 
 // images
-import logo from "@/assets/img/logo/logo.png";
+import logo from "@/assets/img/custom/kaltech_logo.svg";
 import gallery_1 from "@/assets/img/menu/offcanvas/offcanvas-1.jpg";
 import gallery_2 from "@/assets/img/menu/offcanvas/offcanvas-2.jpg";
 import gallery_3 from "@/assets/img/menu/offcanvas/offcanvas-3.jpg";
 import gallery_4 from "@/assets/img/menu/offcanvas/offcanvas-4.jpg";
 import MobileMenus from "./mobile-menus";
+import Link from "next/link";
 
 const gallery_images = [gallery_1, gallery_2, gallery_3, gallery_4];
 
@@ -18,16 +28,32 @@ type IProps = {
   setOpenOffcanvas: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps) {
+export default function MobileOffcanvas({
+  openOffcanvas,
+  setOpenOffcanvas,
+}: IProps) {
   return (
     <>
       <div className={`tp-offcanvas-area ${openOffcanvas ? "opened" : ""}`}>
         <div className="tp-offcanvas-wrapper">
           <div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="tp-offcanvas-logo">
-              <a href="#">
-                <Image src={logo} alt="logo" />
-              </a>
+              <Link className="logo-1" href="/">
+                <Image
+                  src="/assets/img/logo/kaltech-logo.png"
+                  alt="kaltech logo"
+                  width={170}
+                  height={40}
+                />
+              </Link>
+              <Link className="logo-2" href="/">
+                <Image
+                  src="/assets/img/custom/light logo.svg"
+                  alt="logo"
+                  width={170}
+                  height={40}
+                />
+              </Link>
             </div>
             <div className="tp-offcanvas-close">
               <button
@@ -39,14 +65,15 @@ export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps
             </div>
           </div>
           <div className="tp-offcanvas-main">
-            <div className="tp-offcanvas-content">
+            {/* <div className="tp-offcanvas-content">
               <h3 className="tp-offcanvas-title">Hello There!</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+            </div> */}
+            {/* <div className="tp-main-menu-mobile d-xl-none"> */}
+            <div className="tp-main-menu-mobile">
+              <MobileMenus />
             </div>
-            <div className="tp-main-menu-mobile d-xl-none">
-              <MobileMenus/>
-            </div>
-            <div className="tp-offcanvas-gallery">
+            {/* <div className="tp-offcanvas-gallery">
               <div className="row gx-2">
                 {gallery_images.map((item, i) => (
                   <div className="col-md-3 col-3" key={i}>
@@ -58,19 +85,23 @@ export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
             <div className="tp-offcanvas-contact">
               <h3 className="tp-offcanvas-title sm">Information</h3>
 
               <ul>
                 <li>
-                  <a href="tel:1245654">+ 4 20 7700 1007</a>
+                  <a href="tel:1245654">+1 (931)-266-6101</a>
                 </li>
                 <li>
-                  <a href="mailto:hello@diego.com">hello@diego.com</a>
+                  <a href="mailto:hello@diego.com">
+                    hello@kaltechconsultancy.tech
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Avenue de Roma 158b, Lisboa</a>
+                  <a href="#">
+                    Brookestone Dr, Elizabethtown, KY 42701, Kentucky, USA
+                  </a>
                 </li>
               </ul>
             </div>
@@ -78,16 +109,25 @@ export default function MobileOffcanvas({openOffcanvas,setOpenOffcanvas}: IProps
               <h3 className="tp-offcanvas-title sm">Follow Us</h3>
               <ul>
                 <li>
-                  <a href="#"><InstagramTwo /></a>
+                  <a href="https://www.facebook.com/profile.php?id=100089610044002">
+                    <Facebook />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><Dribble /></a>
+                  <a href="https://x.com/KaltechServices">
+                    <Twitter />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"> <Behance /></a>
+                  <a href="https://www.linkedin.com/company/kaltech-designs/">
+                    {" "}
+                    <Linkdin />
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><Youtube /></a>
+                  <a href="https://www.instagram.com/kaltechconsultancy/">
+                    <InstagramTwo />
+                  </a>
                 </li>
               </ul>
             </div>

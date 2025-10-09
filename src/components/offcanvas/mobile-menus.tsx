@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import menu_data from "@/data/menu-data";
-import shop_banner from '@/assets/img/menu/shop-menu/banner-1.jpg';
-import port_img from '@/assets/img/menu/portfolio-menu/portfolio.png';
+import shop_banner from "@/assets/img/menu/shop-menu/banner-1.jpg";
+import port_img from "@/assets/img/menu/portfolio-menu/portfolio.png";
 
 export default function MobileMenus() {
   const [navTitle, setNavTitle] = React.useState<string>("");
@@ -32,10 +32,10 @@ export default function MobileMenus() {
               <a className="pointer" onClick={() => openMobileMenu(menu.title)}>
                 {menu.title}
                 <button className="dropdown-toggle-btn">
-                  <i className="fa-light fa-plus"></i>
+                  <i className="fa-light fa-long-arrow-right"></i>
                 </button>
               </a>
-              {menu.home_menus ? (
+              {/* {menu.home_menus ? (
                 <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none"}}>
                   <div className="tp-menu-fullwidth">
                     <div className="tp-homemenu-wrapper">
@@ -217,9 +217,17 @@ export default function MobileMenus() {
                     </li>
                   ))}
                 </ul>
-              ) : null}
+              ) : null} */}
             </li>
           ))}
+          <li className="has-dropdown">
+            <a className="pointer" href="/Login">
+              Login
+              <button className="dropdown-toggle-btn">
+                <i className="fa-light fa-long-arrow-right"></i>
+              </button>
+            </a>
+          </li>
         </ul>
       </nav>
     </>
