@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/img/custom/Light Logo.svg";
+import logo from "@/assets/img/custom/kaltech_light_logo.svg";
 import logo_2 from "@/assets/img/custom/kaltech_logo.svg";
 import { RightArrow } from "@/components/svg";
 

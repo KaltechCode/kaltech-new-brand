@@ -29,7 +29,7 @@ const HeaderOne = () => {
                 <div className="tp-header-logo">
                   <Link className="logo-1" href="/">
                     <Image
-                      src="/assets/img/logo/kaltech-logo.png"
+                      src="/assets/img/custom/kaltech_logo.svg"
                       alt="kaltech logo"
                       width={170}
                       height={40}
@@ -37,7 +37,7 @@ const HeaderOne = () => {
                   </Link>
                   <Link className="logo-2" href="/">
                     <Image
-                      src="/assets/img/custom/light logo.svg"
+                      src="/assets/img/custom/kaltech_light_logo.svg"
                       alt="logo"
                       width={170}
                       height={40}

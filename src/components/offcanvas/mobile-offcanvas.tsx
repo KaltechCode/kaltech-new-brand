@@ -40,7 +40,7 @@ export default function MobileOffcanvas({
             <div className="tp-offcanvas-logo">
               <Link className="logo-1" href="/">
                 <Image
-                  src="/assets/img/logo/kaltech-logo.png"
+                  src="/assets/img/custom/kaltech_logo.svg"
                   alt="kaltech logo"
                   width={170}
                   height={40}
@@ -48,7 +48,7 @@ export default function MobileOffcanvas({
               </Link>
               <Link className="logo-2" href="/">
                 <Image
-                  src="/assets/img/custom/light logo.svg"
+                  src="/assets/img/custom/kaltech_light_logo.svg"
                   alt="logo"
                   width={170}
                   height={40}
