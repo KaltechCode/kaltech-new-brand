@@ -45,7 +45,9 @@ export default function FooterTwo({
                 )}
                 <div className="tp-footer-2-widget-text">
                   <p>
-                    Drop us a line sed id semper <br /> risus in hend rerit.
+                    Our dedication to client success is reflected in our track
+                    record of helping businesses achieve increased brand
+                    visibility, higher conversion rates, and sustained growth.{" "}
                   </p>
                 </div>
               </div>
@@ -84,18 +86,20 @@ export default function FooterTwo({
                       href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
                       target="_blank"
                     >
-                      740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK
+                      Brookestone Dr, Elizabethtown, KY 42701, Kentucky, USA
                     </a>
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    <a href="tel:+725214456">P: + 725 214 456</a>
+                    <a href="tel:+725214456">+1(931)-266-6101 </a>
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    <a href="mailto:contact@liko.com">E: contact@liko.com</a>
+                    <a href="mailto:hello@kaltechconsultancy.tech">
+                      hello@kaltechconsultancy.tech
+                    </a>
                   </span>
                 </div>
               </div>
@@ -133,19 +137,32 @@ export default function FooterTwo({
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
                 <p>
-                  All rights reserved — {new Date().getFullYear()} © Kaltech
+                  © {new Date().getFullYear()} | All rights reserved.
+                  <br /> Designed by Kaltech
                 </p>
               </div>
             </div>
             <div className="col-xl-8 col-lg-7">
               <div className="tp-copyright-2-social text-center text-lg-end">
-                <a className="mb-10" href="#">
-                  Linkedin
+                <a
+                  className="mb-10"
+                  href="https://www.facebook.com/profile.php?id=100089610044002"
+                >
+                  Facebook
                 </a>
-                <a className="mb-10" href="#">
+                <a className="mb-10" href="https://x.com/KaltechServices">
                   Twitter
                 </a>
-                <a className="mb-10" href="#">
+                <a
+                  className="mb-10"
+                  href="https://www.linkedin.com/company/kaltech-designs/"
+                >
+                  Linkedin
+                </a>
+                <a
+                  className="mb-10"
+                  href="https://www.instagram.com/kaltechconsultancy/"
+                >
                   Instagram
                 </a>
               </div>
