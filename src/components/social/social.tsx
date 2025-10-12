@@ -1,26 +1,28 @@
 import React from "react";
-import { Facebook, Instagram, Linkdin, Twitter } from "../svg";
+import { Facebook, Instagram, Linkdin } from "../svg";
+import { FaXTwitter } from "react-icons/fa6";
 
 const social_data = [
   {
-    id: 1,
-    icon: <Linkdin />,
-    link: "https://www.facebook.com/",
+    id: 4,
+    icon: <Facebook />,
+    link: "https://www.facebook.com/profile.php?id=100089610044002",
   },
   {
     id: 2,
-    icon: <Twitter />,
-    link: "https://twitter.com/",
+    icon: <FaXTwitter size={14} />,
+    link: "https://x.com/KaltechServices",
   },
+  {
+    id: 1,
+    icon: <Linkdin />,
+    link: "https://www.linkedin.com/company/kaltech-designs/",
+  },
+
   {
     id: 3,
     icon: <Instagram />,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: 4,
-    icon: <Facebook />,
-    link: "https://www.facebook.com/",
+    link: "https://www.instagram.com/kaltechconsultancy/",
   },
 ];
 

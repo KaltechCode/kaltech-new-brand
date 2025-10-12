@@ -55,23 +55,23 @@ export default function FooterTwo({
             <div className="col-xl-2 col-lg-3 col-md-6 mb-50">
               <div className="tp-footer-2-widget footer-col-2-2">
                 <div className="tp-footer-2-widget-menu">
-                  <h4 className="tp-footer-2-widget-title">Sitemap</h4>
+                  <h4 className="tp-footer-2-widget-title">Quick Link</h4>
                   <ul>
                     <li>
-                      <a href="/home">Home</a>
+                      <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="/about">About Us</a>
+                      <a href="/about-us">About Us</a>
                     </li>
                     <li>
                       <a href="/services">Services</a>
                     </li>
                     <li>
                       {" "}
-                      <a href="/Blog">Blog</a>
+                      <a href="/blog-modern">Blog</a>
                     </li>
                     <li>
-                      <a href="/Contact">Contact</a>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -147,21 +147,28 @@ export default function FooterTwo({
                 <a
                   className="mb-10"
                   href="https://www.facebook.com/profile.php?id=100089610044002"
+                  target="_blank"
                 >
                   Facebook
                 </a>
-                <a className="mb-10" href="https://x.com/KaltechServices">
-                  Twitter
+                <a
+                  className="mb-10"
+                  href="https://x.com/KaltechServices"
+                  target="_blank"
+                >
+                  X
                 </a>
                 <a
                   className="mb-10"
                   href="https://www.linkedin.com/company/kaltech-designs/"
+                  target="_blank"
                 >
                   Linkedin
                 </a>
                 <a
                   className="mb-10"
                   href="https://www.instagram.com/kaltechconsultancy/"
+                  target="_blank"
                 >
                   Instagram
                 </a>

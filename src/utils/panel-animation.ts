@@ -63,9 +63,8 @@ function panelOneAnimation() {
 function panelTwoAnimation() {
   let pr = gsap.matchMedia();
   pr.add("(min-width: 768px)", () => {
-
     let tl = gsap.timeline();
-    let projectPanels = document.querySelectorAll('.project-panel')
+    let projectPanels = document.querySelectorAll(".project-panel");
     // if (projectPanels.length > 0) {
     projectPanels.forEach((section) => {
       tl.to(section, {
@@ -73,30 +72,31 @@ function panelTwoAnimation() {
           trigger: section,
           pin: section,
           scrub: 1,
-          start: 'top top',
+          start: "top top",
           end: "bottom 100%",
-          endTrigger: '.project-panel-area',
+          endTrigger: ".project-panel-area",
           pinSpacing: false,
           markers: false,
         },
-      })
-    })
+      });
+    });
     // }
-
   });
-};
-
+}
 
 function studioPanel() {
   let pp_2 = gsap.matchMedia();
   pp_2.add("(min-width: 1200px)", () => {
-
     const panelsSectionss = gsap.utils.toArray(".panels-2");
     for (let i = 0; i < panelsSectionss.length; i++) {
-
       const thePanelsSection: any = panelsSectionss[i];
-      const panels = gsap.utils.toArray(".panels-container-2 .panel-2", thePanelsSection);
-      const panelsContainer = thePanelsSection.querySelector(".panels-container-2");
+      const panels = gsap.utils.toArray(
+        ".panels-container-2 .panel-2",
+        thePanelsSection
+      );
+      const panelsContainer = thePanelsSection.querySelector(
+        ".panels-container-2"
+      );
 
       gsap.set(panelsContainer, { height: window.innerHeight });
       gsap.set(panels, { height: window.innerHeight });
@@ -106,10 +106,9 @@ function studioPanel() {
         totalPanelsWidth += $(panel).width();
       });
 
-
       gsap.set(panelsContainer, { width: totalPanelsWidth });
       let scrollTween = gsap.to(panels, {
-        x: - totalPanelsWidth + innerWidth,
+        x: -totalPanelsWidth + innerWidth,
         ease: "none",
         scrollTrigger: {
           trigger: panelsContainer,
@@ -118,53 +117,47 @@ function studioPanel() {
           start: "top 0",
           scrub: 1,
           end: (st) => "+=" + totalPanelsWidth,
-        }
+        },
       });
 
       const services_items: any = gsap.utils.toArray(".tp-studio-service-item");
 
       services_items.forEach(function (item: any) {
         gsap.to(item, {
-          marginLeft: '0',
+          marginLeft: "0",
           scrollTrigger: {
-            trigger: '.tp-studio-service-area',
+            trigger: ".tp-studio-service-area",
             containerAnimation: scrollTween,
             start: "left center",
             end: "400px 200px",
-            scrub: .5,
-          }
-        })
+            scrub: 0.5,
+          },
+        });
       });
     }
-
   });
-};
-
+}
 
 function servicePanel() {
   const sv = gsap.matchMedia();
   const tl = gsap.timeline();
   sv.add("(min-width: 991px)", () => {
-    const projectpanelss = document.querySelectorAll('.project-panel-2')
+    const projectpanelss = document.querySelectorAll(".project-panel-2");
     projectpanelss.forEach((section) => {
       tl.to(section, {
         scrollTrigger: {
           trigger: section,
           pin: section,
           scrub: 1,
-          start: 'top top',
+          start: "top top",
           end: "bottom 100%",
-          endTrigger: '.project-panel-area-2',
+          endTrigger: ".project-panel-area-2",
           pinSpacing: false,
           markers: false,
         },
-      })
-    })
-
+      });
+    });
   });
-};
+}
 
-
-
-
-export { panelOneAnimation, panelTwoAnimation, studioPanel,servicePanel };
+export { panelOneAnimation, panelTwoAnimation, studioPanel, servicePanel };

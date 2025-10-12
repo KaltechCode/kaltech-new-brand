@@ -19,6 +19,7 @@ import gallery_3 from "@/assets/img/menu/offcanvas/offcanvas-3.jpg";
 import gallery_4 from "@/assets/img/menu/offcanvas/offcanvas-4.jpg";
 import MobileMenus from "./mobile-menus";
 import Link from "next/link";
+import { FaXTwitter } from "react-icons/fa6";
 
 const gallery_images = [gallery_1, gallery_2, gallery_3, gallery_4];
 
@@ -115,7 +116,7 @@ export default function MobileOffcanvas({
                 </li>
                 <li>
                   <a href="https://x.com/KaltechServices">
-                    <Twitter />
+                    <FaXTwitter size={14} />
                   </a>
                 </li>
                 <li>

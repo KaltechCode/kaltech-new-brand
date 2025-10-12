@@ -71,7 +71,7 @@ export const menu_data_1: IMenuDT[] = [
   {
     id: 2,
     title: "About Us",
-    link: "#",
+    link: "/about-us",
     pages_mega_menu: {
       first: {
         title: "LIST TYPES",
@@ -107,7 +107,7 @@ export const menu_data_1: IMenuDT[] = [
   {
     id: 3,
     title: "Services",
-    link: "/portfolio-standard",
+    link: "/services",
     portfolio_mega_menus: {
       first: {
         title: "PORTFOLIO LIST",

@@ -14,6 +14,7 @@ import ContactLocation from "@/components/contact/contact-location";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation } from "@/utils/title-animation";
+import HeaderOne from "@/layouts/headers/header-one";
 
 const ContactMain = () => {
   useScrollSmooth();
@@ -28,7 +29,7 @@ const ContactMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderOne />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -47,7 +48,7 @@ const ContactMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Kaltech</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
                           Get in touch
                         </h4>
@@ -59,11 +60,11 @@ const ContactMain = () => {
               {/* hero area end */}
 
               {/* contact area */}
-              <ContactTwo/>
+              <ContactTwo />
               {/* contact area */}
 
               {/* contact location */}
-              <ContactLocation/>
+              {/* <ContactLocation/> */}
               {/* contact location */}
             </main>
 

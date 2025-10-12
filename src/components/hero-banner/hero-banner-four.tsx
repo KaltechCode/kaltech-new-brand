@@ -21,8 +21,8 @@ export default function HeroBannerFour() {
                 ux/ui design / Web Development / Digital Marketing / branding /
                 development
               </span>
-              <Link className="tp-btn-black-2" href="/contact">
-                Say Hello{" "}
+              <Link className="tp-btn-custom-circle" href="/contact">
+                Get In Touch{" "}
                 <span className="p-relative">
                   <RightArrowTwo />
                   <ArrowBg />
