@@ -2,9 +2,9 @@ import React from "react";
 import { Leaf } from "../svg";
 import Image from "next/image";
 // service icon
-import ser_1 from "@/assets/img/home-02/service/sv-icon-1.png";
-import ser_2 from "@/assets/img/home-02/service/sv-icon-2.png";
-import ser_3 from "@/assets/img/home-02/service/sv-icon-3.png";
+import ser_1 from "@/assets/img/home-02/service/WebDevIcon.png";
+import ser_2 from "@/assets/img/home-02/service/MarketingIcon2.png";
+import ser_3 from "@/assets/img/home-02/service/BusinessIcon.png";
 import ser_4 from "@/assets/img/home-02/service/sv-icon-4.png";
 // shape
 import shape from "@/assets/img/home-02/service/sv-shape-1.png";
@@ -31,7 +31,7 @@ const service_accordion = [
   {
     id: 4,
     icon: ser_4,
-    title: "Marketing",
+    title: "Motion Graphics",
     desc: "Creating a strong brand identity is essential for fashion brands to establish themselves in the market. Our services are dedicated to helping fashion brands define their unique identity through strategic branding initiatives.",
   },
 ];
@@ -70,7 +70,7 @@ export default function ServiceTwo() {
                     <h2 className="accordion-header">
                       <button
                         className={`accordion-buttons ${
-                          s.id !== 1 ? "collapsed" : ""
+                          s.id !== 0 ? "collapsed" : ""
                         }`}
                         type="button"
                         data-bs-toggle="collapse"
@@ -88,7 +88,7 @@ export default function ServiceTwo() {
                     <div
                       id={`collapse-${s.id}`}
                       className={`accordion-collapse collapse ${
-                        s.id === 1 ? "show" : ""
+                        s.id === 0 ? "show" : ""
                       }`}
                       data-bs-parent="#accordionExample"
                     >
