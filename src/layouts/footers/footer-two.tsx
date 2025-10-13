@@ -55,7 +55,7 @@ export default function FooterTwo({
             <div className="col-xl-2 col-lg-3 col-md-6 mb-50">
               <div className="tp-footer-2-widget footer-col-2-2">
                 <div className="tp-footer-2-widget-menu">
-                  <h4 className="tp-footer-2-widget-title">Quick Link</h4>
+                  <h4 className="tp-footer-2-widget-title">Quick Links</h4>
                   <ul>
                     <li>
                       <a href="/">Home</a>
