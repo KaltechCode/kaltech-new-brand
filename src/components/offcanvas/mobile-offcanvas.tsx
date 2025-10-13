@@ -110,23 +110,32 @@ export default function MobileOffcanvas({
               <h3 className="tp-offcanvas-title sm">Follow Us</h3>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/profile.php?id=100089610044002">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100089610044002"
+                    target="_blank"
+                  >
                     <Facebook />
                   </a>
                 </li>
                 <li>
-                  <a href="https://x.com/KaltechServices">
+                  <a href="https://x.com/KaltechServices" target="_blank">
                     <FaXTwitter size={14} />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/kaltech-designs/">
+                  <a
+                    href="https://www.linkedin.com/company/kaltech-designs/"
+                    target="_blank"
+                  >
                     {" "}
                     <Linkdin />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/kaltechconsultancy/">
+                  <a
+                    href="https://www.instagram.com/kaltechconsultancy/"
+                    target="_blank"
+                  >
                     <InstagramTwo />
                   </a>
                 </li>

@@ -3,7 +3,7 @@ import { Leaf } from "../svg";
 import Image from "next/image";
 // service icon
 import ser_1 from "@/assets/img/home-02/service/WebDevIcon.png";
-import ser_2 from "@/assets/img/home-02/service/MarketingIcon2.png";
+import ser_2 from "@/assets/img/home-02/service/MarketingIconother.png";
 import ser_3 from "@/assets/img/home-02/service/BusinessIcon.png";
 import ser_4 from "@/assets/img/home-02/service/sv-icon-4.png";
 // shape
@@ -79,7 +79,12 @@ export default function ServiceTwo() {
                         aria-controls={`collapse-${s.id}`}
                       >
                         <span>
-                          <Image src={s.icon} alt="icon" />
+                          <Image
+                            src={s.icon}
+                            alt="icon"
+                            height={30}
+                            width={30}
+                          />
                         </span>
                         {s.title}
                         <span className="accordion-icon"></span>

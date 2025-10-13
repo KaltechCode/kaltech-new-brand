@@ -115,9 +115,9 @@ const HomeMain = () => {
   return (
     <Wrapper showBackToTop={false}>
       {/* magic cursor start */}
-      <div id="magic-cursor">
+      {/* <div id="magic-cursor">
         <div id="ball"></div>
-      </div>
+      </div> */}
       {/* magic cursor end */}
 
       {/* header area start */}

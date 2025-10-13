@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ArrowBg, RightArrowTwo } from "../svg";
+import { ArrowBg, RightArrowTwo, UpArrow } from "../svg";
 import Link from "next/link";
 
 export default function HeroBannerFour() {
@@ -21,13 +21,25 @@ export default function HeroBannerFour() {
                 ux/ui design / Web Development / Digital Marketing / branding /
                 development
               </span>
-              <Link className="tp-btn-custom-circle" href="/contact">
+              {/* <Link className="tp-btn-custom-circle" href="/contact">
                 Get In Touch{" "}
                 <span className="p-relative">
                   <RightArrowTwo />
                   <ArrowBg />
                 </span>
-              </Link>
+              </Link> */}
+              <div className="tp-hover-btn-wrapper mx-auto">
+                <Link
+                  className="tp-btn-custom-circle tp-hover-btn-item tp-hover-2"
+                  href="/contact"
+                >
+                  Get In Touch{" "}
+                  <span className="p-relative">
+                    <RightArrowTwo />
+                    <ArrowBg />
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
