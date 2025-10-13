@@ -16,7 +16,7 @@ export default function FooterTwo({
   topCls = "footer-top",
 }: IProps) {
   return (
-    <footer className={`${topCls}`}>
+    <footer className={``} style={{ marginTop: 40 }}>
       <div
         className={`tp-footer-2-area pt-100 pb-20 ${
           whiteFooter ? "tp-footer-white" : "black-bg"

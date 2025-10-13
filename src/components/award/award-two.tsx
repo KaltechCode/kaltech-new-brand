@@ -38,7 +38,7 @@ export default function AwardTwo() {
                     href="/portfolio-details-1"
                   >
                     <span className="tp-btn-circle-text">
-                      See Our <br /> Awards
+                      See Our <br /> Projects
                     </span>
                     <span className="tp-btn-circle-icon">
                       <UpArrow />

@@ -622,6 +622,10 @@
     justify-content: center;
     &.style-2 {
       border-color: rgba(25, 25, 26, 0.14);
+      color: var(--tp-common-white);
+      background-color: var(--tp-common-black);
+    }
+    &.custom-text {
       color: var(--tp-common-black);
     }
     &-icon {
@@ -646,6 +650,7 @@
         width: 420px;
         height: 420px;
       }
+
       & span {
         color: var(--tp-common-black);
       }

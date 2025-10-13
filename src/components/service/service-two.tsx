@@ -37,7 +37,7 @@ const service_accordion = [
 ];
 export default function ServiceTwo() {
   return (
-    <div className="tp-service-2-area tp-service-2-pt  pb-150 z-index-5">
+    <div className="tp-service-2-area tp-service-2-pt  pb-50 z-index-5">
       <div className="container container-1480">
         <div className="row">
           <div className="col-xl-8">

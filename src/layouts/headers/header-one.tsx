@@ -60,7 +60,9 @@ const HeaderOne = () => {
               >
                 <div className="tp-header-bar text-end tp-header-login-with-hamburger">
                   <div className="links">
-                    <Link href={"/login"}>Login</Link>
+                    <Link href={"https://portal.kaltechconsultancy.tech/"}>
+                      Login
+                    </Link>
                   </div>
                   <button
                     className="tp-offcanvas-open-btn"
