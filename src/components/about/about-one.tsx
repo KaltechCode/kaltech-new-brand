@@ -2,7 +2,7 @@
 import React, { CSSProperties } from "react";
 import Image from "next/image";
 // images
-import ab_1 from "@/assets/img/home-02/about/ab-1.jpg";
+import ab_1 from "@/assets/img/home-02/about/kaltech-logo-transparent.png";
 import ab_2 from "@/assets/img/home-02/about/ab-2.jpg";
 import ab_3 from "@/assets/img/home-02/about/ab-s.jpg";
 
@@ -12,20 +12,21 @@ const AboutOne = () => {
   return (
     <div className="tp-about-2-area pt-50 pb-50">
       <div className="container container-1480">
-        <div className="row justify-content-center">
-          <div className="col-xxl-8 col-xl-10">
-            <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-70 text-start text-xl-center">
+        <div className="row justify-content-center align-items-center">
+          <div className="two-column-layout">
+            <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-30 text-start">
               <h2 className="tp-about-2-section-title">Who we are</h2>
             </div>
           </div>
         </div>
-        <div className="row align-items-center">
-          <div className="col-xl-5 col-lg-6 col-md-6 order-1 order-xl-0">
+
+        <div className="two-column-layout about-us-content-container">
+          <div className="col-span-1">
             <div className="tp-about-2-thumb-box p-relative">
               <div className="tp-about-2-thumb-main">
-                <Image src={ab_1} alt="ab-img" style={imgStyle} />
+                <Image src={ab_1} alt="kaltech Logo" height={350} width={400} />
               </div>
-              <div className="tp-about-2-thumb-inner">
+              <div className="tp-about-2-thumb-inner d-none">
                 <Image src={ab_2} alt="ab-img" style={imgStyle} />
                 <span className="tp-about-2-thumb-text">
                   I’M A SUNGLASSES INFLUENCER
@@ -33,8 +34,10 @@ const AboutOne = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-5 col-lg-12 order-0 order-xl-1">
-            <div className="tp-about-2-content">
+
+          {/* second column */}
+          <div className="col-span-2">
+            <div className="tp-about-2-content about-content">
               <span>FOLLOW FOR THE BEST EYEWEAR INSPIRATION</span>
               <p className="mb-30">
                 Kaltech Consultancy is a powerhouse of digital creativity,
@@ -47,16 +50,18 @@ const AboutOne = () => {
                 life.
               </p>
             </div>
-          </div>
-          <div className="col-xl-2 col-lg-6 col-md-6 order-1">
-            <div className="tp-about-2-right-thumb text-end">
-              <Image
-                data-speed="auto"
-                src={ab_3}
-                alt="ab-img"
-                data-lag="0"
-                style={imgStyle}
-              />
+
+            <div className="img-container">
+              <div className="tp-about-2-right-thumb text-end">
+                <Image
+                  data-speed="auto"
+                  src={ab_3}
+                  alt="ab-img"
+                  data-lag="0"
+                  height={250}
+                  width={200}
+                />
+              </div>
             </div>
           </div>
         </div>

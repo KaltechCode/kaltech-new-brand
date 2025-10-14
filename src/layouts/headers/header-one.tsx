@@ -23,7 +23,7 @@ const HeaderOne = () => {
             sticky ? "header-sticky" : ""
           }`}
         >
-          <div className="container">
+          <div className="container container-1480">
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-2 col-6">
                 <div className="tp-header-logo">
@@ -65,7 +65,7 @@ const HeaderOne = () => {
                     </Link>
                   </div>
                   <button
-                    className="tp-offcanvas-open-btn"
+                    className="tp-offcanvas-open-btn d-xl-none"
                     onClick={() => setOpenOffCanvas(true)}
                   >
                     <span></span>

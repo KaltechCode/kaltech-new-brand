@@ -1,4 +1,46 @@
 @import "~bootstrap/scss/bootstrap";
-@import 'node_modules/react-modal-video/scss/modal-video.scss';
-@import "swiper/css/bundle"; 
-@import '../../public/assets/scss/main.scss';
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+@import "swiper/css/bundle";
+@import "../../public/assets/scss/main.scss";
+
+// @media (max-width: 1200px) {
+// }
+
+// (reverted) removed About section grid helpers
+
+.rounded-btn {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  color: #111111;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease, border-color 0.2s ease;
+  text-decoration: none;
+}
+
+.rounded-btn:hover {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.rounded-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+// alternate hover style for dark background/contrast use
+.rounded-btn.rounded-btn--alt:hover {
+  background: transparent;
+  color: #111111;
+  border-color: #111111;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}

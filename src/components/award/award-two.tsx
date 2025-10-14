@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import award_img from "@/assets/img/home-02/award/award-1.png";
+import award_img from "@/assets/img/home-02/award/KALTECH-3D-LOGO-2.png";
 import Link from "next/link";
 import { UpArrow } from "../svg";
 
@@ -11,10 +11,15 @@ export default function AwardTwo() {
       <div className="tp-award-2-shape">
         <span className="tp-award-2-circle"></span>
         <span className="tp-award-2-img">
-          <Image src={award_img} alt="award-img" />
+          <Image
+            src={award_img}
+            alt="kaltech 3D Image"
+            height={600}
+            width={500}
+          />
         </span>
       </div>
-      <div className="container container-1650">
+      <div className="container container-1480">
         <div className="row">
           <div className="col-xl-12">
             <div className="tp-award-2-title-box p-relative">
@@ -25,9 +30,7 @@ export default function AwardTwo() {
               </h2>
               <p>
                 Quality is the common thread in everything we do. It’s not
-                something we say, it’s something we’ve been recognized for. And
-                we proudly hold these awards as a reminder of how the way you do
-                things matters.
+                something we say, it’s something we’ve been recognized for.
               </p>
             </div>
             <div className="tp-award-2-btn-box">

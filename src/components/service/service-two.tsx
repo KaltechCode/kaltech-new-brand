@@ -1,38 +1,56 @@
 import React from "react";
-import { Leaf } from "../svg";
+import { Leaf, UpArrow } from "../svg";
 import Image from "next/image";
 // service icon
 import ser_1 from "@/assets/img/home-02/service/WebDevIcon.png";
-import ser_2 from "@/assets/img/home-02/service/MarketingIconother.png";
+import ser_2 from "@/assets/img/home-02/service/MarketingIcon.png";
 import ser_3 from "@/assets/img/home-02/service/BusinessIcon.png";
 import ser_4 from "@/assets/img/home-02/service/sv-icon-4.png";
 // shape
 import shape from "@/assets/img/home-02/service/sv-shape-1.png";
+import Link from "next/link";
+import { MdArrowOutward } from "react-icons/md";
 
 const service_accordion = [
   {
     id: 1,
     icon: ser_1,
     title: "Development",
-    desc: "Creating a strong brand identity is essential for fashion brands to establish themselves in the market. Our services are dedicated to helping fashion brands define their unique identity through strategic branding initiatives.",
+    desc: [
+      "Web design and Development",
+      "Content Management System",
+      "Mobile Application Development",
+    ],
+    link: "development",
   },
   {
     id: 2,
     icon: ser_2,
     title: "Marketing",
-    desc: "Creating a strong brand identity is essential for fashion brands to establish themselves in the market. Our services are dedicated to helping fashion brands define their unique identity through strategic branding initiatives.",
+    desc: [
+      "Social Media Marketing",
+      "Search Engine Optimazation",
+      "Email Marketing",
+    ],
+    link: "marketing",
   },
   {
     id: 3,
     icon: ser_3,
     title: "Branding",
-    desc: "Creating a strong brand identity is essential for fashion brands to establish themselves in the market. Our services are dedicated to helping fashion brands define their unique identity through strategic branding initiatives.",
+    desc: ["Logo Design", "Bussiness Branding", "Brand Ambasadors"],
+    link: "branding",
   },
   {
     id: 4,
     icon: ser_4,
     title: "Motion Graphics",
-    desc: "Creating a strong brand identity is essential for fashion brands to establish themselves in the market. Our services are dedicated to helping fashion brands define their unique identity through strategic branding initiatives.",
+    desc: [
+      "Explainer videos",
+      "Social media",
+      "animations Logo and title animations",
+    ],
+    link: "motion-graphics",
   },
 ];
 export default function ServiceTwo() {
@@ -40,7 +58,7 @@ export default function ServiceTwo() {
     <div className="tp-service-2-area tp-service-2-pt  pb-50 z-index-5">
       <div className="container container-1480">
         <div className="row">
-          <div className="col-xl-8">
+          <div className="two-column-layout">
             <div className="tp-service-2-title-box mb-70">
               <span className="tp-section-subtitle-3">
                 <span>
@@ -56,13 +74,13 @@ export default function ServiceTwo() {
             </div>
           </div>
         </div>
-        <div className="row align-items-center">
+        <div className="row align-items-center two-column-layout">
           <div className="col-xxl-6 col-xl-4 col-lg-4">
             <div className="tp-service-2-shape-img text-center text-lg-start">
               <Image src={shape} alt="" />
             </div>
           </div>
-          <div className="col-xxl-6 col-xl-8 col-lg-8">
+          <div className="col-xl-12 col-lg-8">
             <div className="tp-service-2-accordion-box">
               <div className="accordion" id="accordionExample">
                 {service_accordion.map((s) => (
@@ -98,7 +116,31 @@ export default function ServiceTwo() {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        <p>{s.desc}</p>
+                        {s.desc.map((d, i) => (
+                          <ul key={i}>
+                            <li>
+                              <p style={{ marginBottom: 10 }}>{d}</p>
+                            </li>
+                          </ul>
+                        ))}
+                      </div>
+                      <div className="text-end mb-10">
+                        <Link
+                          className="rounded-btn rounded-btn--alt"
+                          href={`/${s.link}`}
+                          aria-label={` ${s.title}`}
+                        >
+                          <span
+                            className=""
+                            style={{
+                              display: "inline-flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            <MdArrowOutward size={12} />
+                          </span>
+                        </Link>
                       </div>
                     </div>
                   </div>
