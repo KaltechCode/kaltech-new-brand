@@ -220,7 +220,7 @@ export default function MobileMenus() {
               ) : null} */}
             </li>
           ))}
-          <li className="has-dropdown">
+          {/* <li className="has-dropdown">
             <a
               className="pointer"
               href="https://portal.kaltechconsultancy.tech/"
@@ -230,7 +230,7 @@ export default function MobileMenus() {
                 <i className="fa-light fa-long-arrow-right"></i>
               </button>
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>

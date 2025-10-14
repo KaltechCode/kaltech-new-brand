@@ -178,6 +178,18 @@ export const menu_data_1: IMenuDT[] = [
   },
   {
     id: 4,
+    title: "Portfolio",
+    link: "/portfolio",
+    dropdown_menus: [
+      { title: "Modern", link: "/blog-modern" },
+      { title: "Classic Sidebar", link: "/blog-classic" },
+      { title: "Minimal List", link: "/blog-list" },
+      { title: "Post Single", link: "/blog-details/1" },
+      { title: "Post With Sidebar", link: "/blog-details-2" },
+    ],
+  },
+  {
+    id: 4,
     title: "Blog",
     link: "/blog-modern",
     dropdown_menus: [
@@ -190,7 +202,7 @@ export const menu_data_1: IMenuDT[] = [
   },
   {
     id: 5,
-    title: "Contact",
+    title: "Contact Us",
     link: "/contact",
     dropdown_menus: [
       { title: "Contact", link: "/contact" },
@@ -216,12 +228,17 @@ const menu_data: IMenuDT[] = [
   },
   {
     id: 4,
+    title: "Portfolio",
+    link: "/portfolio",
+  },
+  {
+    id: 4,
     title: "Blog",
     link: "/blog-modern",
   },
   {
     id: 5,
-    title: "Contact",
+    title: "Contact Us",
     link: "/contact",
   },
 ];

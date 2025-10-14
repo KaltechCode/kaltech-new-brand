@@ -116,31 +116,31 @@ export default function ServiceTwo() {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        {s.desc.map((d, i) => (
-                          <ul key={i}>
-                            <li>
+                        <ul>
+                          {s.desc.map((d, i) => (
+                            <li key={i}>
                               <p style={{ marginBottom: 10 }}>{d}</p>
                             </li>
-                          </ul>
-                        ))}
-                      </div>
-                      <div className="text-end mb-10">
-                        <Link
-                          className="rounded-btn rounded-btn--alt"
-                          href={`/${s.link}`}
-                          aria-label={` ${s.title}`}
-                        >
-                          <span
-                            className=""
-                            style={{
-                              display: "inline-flex",
-                              alignItems: "center",
-                              justifyContent: "center",
-                            }}
+                          ))}
+                        </ul>
+                        <div className="text-end mb-10">
+                          <Link
+                            className="rounded-btn rounded-btn--alt"
+                            href={`/${s.link}`}
+                            aria-label={` ${s.title}`}
                           >
-                            <MdArrowOutward size={12} />
-                          </span>
-                        </Link>
+                            <span
+                              className=""
+                              style={{
+                                display: "inline-flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                              }}
+                            >
+                              <MdArrowOutward size={12} />
+                            </span>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

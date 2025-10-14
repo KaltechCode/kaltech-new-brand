@@ -10,16 +10,15 @@ export default function HeroBannerFour() {
         <div className="row">
           <div className="col-xl-12">
             <div className="tp-hero-3-content-box text-center p-relative">
-              <div className="tp-hero-3-circle-shape">
+              {/* <div className="tp-hero-3-circle-shape">
                 <span></span>
-              </div>
+              </div> */}
               <h4 className="tp-hero-3-title tp_reveal_anim">
                 <span className="tp-reveal-line">Your </span>
                 <span className="tp-reveal-line">Creative Agency</span>
               </h4>
               <span className="tp-hero-3-category tp_reveal_anim">
-                ux/ui design / Web Development / Digital Marketing / branding /
-                development
+                Development / Marketing / Branding / Motion Graphics
               </span>
               {/* <Link className="tp-btn-custom-circle" href="/contact">
                 Get In Touch{" "}
