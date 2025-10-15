@@ -42,7 +42,7 @@ const AboutOne = () => {
                   data-lag="0.2"
                 />
                 <span className="tp-about-2-thumb-text">
-                  I'M A SUNGLASSES INFLUENCER
+                  I&apos;M A SUNGLASSES INFLUENCER
                 </span>
               </div>
             </div>
