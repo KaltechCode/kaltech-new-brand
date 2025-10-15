@@ -97,12 +97,12 @@
         & > li {
           display: inline-block;
           list-style-type: none;
-          margin: 0px 25px;
+          margin: 0px 15px;
           & > a {
             padding: 40px 0;
             display: inline-block;
             font-weight: 500;
-            font-size: 16px;
+            font-size: clamp(14px, 1em, 16px);
             line-height: 1;
             text-transform: uppercase;
             color: var(--tp-common-black);

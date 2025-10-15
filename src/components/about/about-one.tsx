@@ -24,12 +24,25 @@ const AboutOne = () => {
           <div className="col-span-1">
             <div className="tp-about-2-thumb-box p-relative">
               <div className="tp-about-2-thumb-main">
-                <Image src={ab_1} alt="kaltech Logo" height={350} width={400} />
+                <Image
+                  src={ab_1}
+                  alt="kaltech Logo"
+                  height={350}
+                  width={400}
+                  data-speed="0.8"
+                  data-lag="0.1"
+                />
               </div>
               <div className="tp-about-2-thumb-inner d-none">
-                <Image src={ab_2} alt="ab-img" style={imgStyle} />
+                <Image
+                  src={ab_2}
+                  alt="ab-img"
+                  style={imgStyle}
+                  data-speed="0.6"
+                  data-lag="0.2"
+                />
                 <span className="tp-about-2-thumb-text">
-                  I’M A SUNGLASSES INFLUENCER
+                  I'M A SUNGLASSES INFLUENCER
                 </span>
               </div>
             </div>
@@ -51,18 +64,19 @@ const AboutOne = () => {
               </p>
             </div>
 
-            <div className="img-container">
+            {/* <div className="img-container">
               <div className="tp-about-2-right-thumb text-end">
                 <Image
-                  data-speed="auto"
+                  // data-speed="auto"
                   src={ab_3}
                   alt="ab-img"
-                  data-lag="0"
-                  height={250}
-                  width={200}
+                  // data-lag="0.15"
+                  data-speed="0.6"
+                  data-lag="0.2"
+                  style={imgStyle}
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
