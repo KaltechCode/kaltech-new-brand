@@ -21,9 +21,9 @@
         color: var(--tp-common-black);
         width: 100%;
         text-align: left;
-        // &:not(.collapsed) .accordion-icon::before {
-        //     transform: translate(-50%, -50%) rotate(90deg);
-        // }
+        &:not(.collapsed) .accordion-icon::before {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
         & .accordion-icon {
           position: absolute;
           top: 40px;

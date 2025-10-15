@@ -23,7 +23,7 @@ export default function AwardTwo() {
         <div className="row">
           <div className="col-xl-12">
             <div className="tp-award-2-title-box p-relative">
-              <span className="tp-award-2-subtitle">Accolades</span>
+              <span className="tp-award-2-subtitle">Your</span>
               <h2 className="tp-award-2-title tp-award-title-1">award</h2>
               <h2 className="tp-award-2-title tp-award-title-2">
                 <span>winning agency</span>

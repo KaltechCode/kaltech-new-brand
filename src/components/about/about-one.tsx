@@ -51,7 +51,10 @@ const AboutOne = () => {
           {/* second column */}
           <div className="col-span-2">
             <div className="tp-about-2-content about-content">
-              <span>FOLLOW FOR THE BEST EYEWEAR INSPIRATION</span>
+              <span>
+                We are your one stop hub for all your digital needs. Find out
+                how we can bring all your digital designs to life .
+              </span>
               <p className="mb-30">
                 Kaltech Consultancy is a powerhouse of digital creativity,
                 equipped with a talented team of designers, developers,
