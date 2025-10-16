@@ -720,6 +720,106 @@
   }
 }
 
+.custom-circle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  color: var(--tp-common-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.style-2 {
+    border-color: rgba(25, 25, 26, 0.14);
+    background-color: var(--tp-common-black);
+  }
+  // &.custom-text {
+  //   color: var(--tp-common-black);
+  // }
+  &-icon {
+    // transform: translateY(10px);
+    // margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  & .tp-btn-circle-dot {
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    width: 20px;
+    height: 20px;
+    @include transition(all, 0.6s);
+    @include rounded-btn(20px, 20px, 20px);
+    background-color: var(--tp-common-white);
+    @include transform(translate(-50%, -50%));
+    z-index: -1;
+  }
+  &:hover {
+    border: 1px solid transparent;
+    & .tp-btn-circle-dot {
+      width: 420px;
+      height: 420px;
+    }
+
+    & span {
+      color: var(--tp-common-black);
+    }
+    & .custom-circle-icon {
+      transform: rotate(45deg);
+      color: var(--tp-common-black);
+    }
+  }
+  &-2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+    color: var(--tp-common-white);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    & span {
+      text-align: center;
+    }
+    & .tp-btn-circle-dot {
+      position: absolute;
+      bottom: 0;
+      left: 32px;
+      width: 20px;
+      height: 20px;
+      @include transition(all, 0.6s);
+      @include rounded-btn(20px, 20px, 20px);
+      background-color: var(--tp-common-white);
+      @include transform(translate(-50%, -50%));
+      z-index: -1;
+    }
+    &:hover {
+      border: 1px solid transparent;
+      & .tp-btn-circle-dot {
+        width: 420px;
+        height: 420px;
+      }
+      & span {
+        color: var(--tp-common-black);
+      }
+    }
+  }
+}
+
 // border-btn
 .tp-btn {
   &-border {

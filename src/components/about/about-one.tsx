@@ -5,6 +5,8 @@ import Image from "next/image";
 import ab_1 from "@/assets/img/home-02/about/kaltech-logo-transparent.png";
 import ab_2 from "@/assets/img/home-02/about/ab-2.jpg";
 import ab_3 from "@/assets/img/home-02/about/ab-s.jpg";
+import { UpArrow } from "../svg";
+import Link from "next/link";
 
 // img style
 const imgStyle: CSSProperties = { height: "auto" };
@@ -51,10 +53,7 @@ const AboutOne = () => {
           {/* second column */}
           <div className="col-span-2">
             <div className="tp-about-2-content about-content">
-              <span>
-                We are your one stop hub for all your digital needs. Find out
-                how we can bring all your digital designs to life .
-              </span>
+              <span>We are your one stop hub for all your digital needs.</span>
               <p className="mb-30">
                 Kaltech Consultancy is a powerhouse of digital creativity,
                 equipped with a talented team of designers, developers,
@@ -65,6 +64,26 @@ const AboutOne = () => {
                 talented creatives are dedicated to bringing your vision to
                 life.
               </p>
+
+              {/* Custom Button */}
+              {/* <div className="tp-award-2-btn-box"> */}
+              <div className="tp-projct-5-2-btn-box d-flex justify-content-end mt-20">
+                <div className="tp-hover-btn-wrapper">
+                  <Link
+                    className="custom-circle tp-hover-btn-item tp-hover-btn style-2"
+                    href="/about-us"
+                  >
+                    {/* <span className="tp-btn-circle-text">
+                        About <br /> Us
+                      </span> */}
+                    <i className="custom-circle-icon">
+                      <UpArrow />
+                    </i>
+                    <i className="tp-btn-circle-dot"></i>
+                  </Link>
+                  {/* </div> */}
+                </div>
+              </div>
             </div>
 
             {/* <div className="img-container">

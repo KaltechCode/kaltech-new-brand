@@ -75,7 +75,7 @@ export default function ServiceTwo() {
           </div>
         </div>
         <div className="row align-items-center two-column-layout">
-          <div className="col-xxl-6 col-xl-4 col-lg-4">
+          <div className="col-xxl-6">
             <div className="tp-service-2-shape-img text-center text-lg-start">
               <Image src={shape} alt="" />
             </div>
@@ -123,23 +123,24 @@ export default function ServiceTwo() {
                             </li>
                           ))}
                         </ul>
-                        <div className="text-end mb-10">
-                          <Link
-                            className="rounded-btn rounded-btn--alt"
-                            href={`/${s.link}`}
-                            aria-label={` ${s.title}`}
-                          >
-                            <span
-                              className=""
-                              style={{
-                                display: "inline-flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                              }}
+
+                        {/* button  */}
+                        <div className="tp-projct-5-2-btn-box d-flex justify-content-end">
+                          <div className="tp-hover-btn-wrapper">
+                            <Link
+                              className="custom-circle tp-hover-btn-item tp-hover-btn style-2"
+                              href={s.link}
                             >
-                              <MdArrowOutward size={12} />
-                            </span>
-                          </Link>
+                              {/* <span className="tp-btn-circle-text">
+                        About <br /> Us
+                      </span> */}
+                              <i className="custom-circle-icon">
+                                <UpArrow />
+                              </i>
+                              <i className="tp-btn-circle-dot"></i>
+                            </Link>
+                            {/* </div> */}
+                          </div>
                         </div>
                       </div>
                     </div>

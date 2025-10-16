@@ -27,25 +27,21 @@ export default function HeroBannerFour() {
                   <ArrowBg />
                 </span>
               </Link> */}
-              <div
-                className="tp-award-2-btn-box"
-                style={{ marginRight: "0px !important" }}
-              >
-                <div className="tp-projct-5-2-btn-box d-flex justify-content-center">
-                  <div className="tp-hover-btn-wrapper">
-                    <Link
-                      className="tp-btn-circle tp-hover-btn-item tp-hover-btn style-2"
-                      href="/contact"
-                    >
-                      <span className="tp-btn-circle-text custom-text ">
-                        Get In <br /> Touch
-                      </span>
-                      <span className="tp-btn-circle-icon custom-arrow">
-                        <UpArrow />
-                      </span>
-                      <i className="tp-btn-circle-dot custom-dot"></i>
-                    </Link>
-                  </div>
+
+              <div className="tp-projct-5-2-btn-box d-flex justify-content-center">
+                <div className="tp-hover-btn-wrapper">
+                  <Link
+                    className="tp-btn-circle tp-hover-btn-item tp-hover-btn style-2"
+                    href="/contact"
+                  >
+                    <span className="tp-btn-circle-text custom-text ">
+                      Get In <br /> Touch
+                    </span>
+                    <span className="tp-btn-circle-icon custom-arrow">
+                      <UpArrow />
+                    </span>
+                    <i className="tp-btn-circle-dot custom-dot"></i>
+                  </Link>
                 </div>
               </div>
             </div>

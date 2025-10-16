@@ -58,20 +58,20 @@ export default function FooterTwo({
                   <h4 className="tp-footer-2-widget-title">Quick Links</h4>
                   <ul>
                     <li>
-                      <a href="/">Home</a>
+                      <a href="/development">Development</a>
                     </li>
                     <li>
-                      <a href="/about-us">About Us</a>
+                      <a href="/marketing">Marketing</a>
                     </li>
                     <li>
-                      <a href="/services">Services</a>
+                      <a href="/branding">Branding</a>
                     </li>
                     <li>
                       {" "}
-                      <a href="/blog-modern">Blog</a>
+                      <a href="/motion-graphics">Motion Graphics</a>
                     </li>
                     <li>
-                      <a href="/contact">Contact</a>
+                      <a href="/porfolio">Portfolio</a>
                     </li>
                   </ul>
                 </div>

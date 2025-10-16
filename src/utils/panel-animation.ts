@@ -15,8 +15,8 @@ function panelOneAnimation() {
       const panelsContainer =
         thePanelsSection.querySelector(".panels-container");
 
-      gsap.set(panelsContainer, { height: window.innerHeight });
-      gsap.set(panels, { height: window.innerHeight });
+      gsap.set(panelsContainer, { height: 920 });
+      gsap.set(panels, { height: 890 });
 
       let totalPanelsWidth = 0;
       panels.forEach(function (panel: any) {
