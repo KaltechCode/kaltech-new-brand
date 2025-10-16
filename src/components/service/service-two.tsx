@@ -59,26 +59,34 @@ export default function ServiceTwo() {
       <div className="container container-1480">
         <div className="row">
           <div className="two-column-layout">
-            <div className="tp-service-2-title-box mb-70">
+            {/* <div className="tp-service-2-title-box mb-70">
               <span className="tp-section-subtitle-3">
                 <span>
                   <Leaf />
                 </span>
-                <h3 className="tp-about-2-section-title">What we offer?</h3>
+                <h3 className="tp-about-2-section-title">Our Services</h3>
               </span>
               <p className="">
                 We believe in pushing the boundaries of what is possible. We are
                 a team of experts committed in delivering outstanding results by
                 providing the following services:
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="row align-items-center two-column-layout">
-          <div className="col-xxl-6">
-            <div className="tp-service-2-shape-img text-center text-lg-start">
-              <Image src={shape} alt="" />
-            </div>
+        <div className="row align-items-start two-column-layout">
+          <div className="tp-service-2-title-box">
+            <span className="tp-section-subtitle-3">
+              <span>
+                <Leaf />
+              </span>
+              <h3 className="tp-about-2-section-title">Our Services</h3>
+            </span>
+            <p className="">
+              We believe in pushing the boundaries of what is possible. We are a
+              team of experts committed in delivering outstanding results by
+              providing the following services:
+            </p>
           </div>
           <div className="col-xl-12 col-lg-8">
             <div className="tp-service-2-accordion-box">

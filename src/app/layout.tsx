@@ -33,6 +33,15 @@ const gellery = localFont({
   variable: "--tp-ff-gallery",
 });
 
+const syne_heading = localFont({
+  src: [
+    {
+      path: "../../public/assets/fonts/Azonix.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
 // const kanit = localFont({
 //   src: [
 
@@ -48,11 +57,12 @@ const syne_body = Oxanium({
   subsets: ["latin"],
   variable: "--tp-ff-body",
 });
-const syne_heading = Oxanium({
-  weight: ["400", "500", "600", "700", "800"],
-  subsets: ["latin"],
-  variable: "--tp-ff-heading",
-});
+// const syne_heading = Azonix({
+//   // weight: ["400", "500", "600", "700", "800"],
+//   weight: ["800"],
+//   subsets: ["latin"],
+//   variable: "--tp-ff-heading",
+// });
 const syne_p = Oxanium({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
