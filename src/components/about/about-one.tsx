@@ -2,7 +2,7 @@
 import React, { CSSProperties } from "react";
 import Image from "next/image";
 // images
-import ab_1 from "@/assets/img/home-02/about/kaltech-logo-transparent.png";
+import shape from "@/assets/img/home-02/service/sv-shape-1.png";
 import ab_2 from "@/assets/img/home-02/about/ab-2.jpg";
 import ab_3 from "@/assets/img/home-02/about/ab-s.jpg";
 import { UpArrow } from "../svg";
@@ -17,7 +17,7 @@ const AboutOne = () => {
         <div className="row justify-content-center align-items-center">
           <div className="two-column-layout">
             <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-30 text-start">
-              <h2 className="tp-about-2-section-title">Who we are</h2>
+              <h2 className="tp-about-2-section-title">About Us</h2>
             </div>
           </div>
         </div>
@@ -25,16 +25,21 @@ const AboutOne = () => {
         <div className="two-column-layout about-us-content-container">
           <div className="col-span-1">
             <div className="tp-about-2-thumb-box p-relative">
-              <div className="tp-about-2-thumb-main">
-                <Image
-                  src={ab_1}
+              {/* <div className="tp-about-2-thumb-main"> */}
+              {/* <Image
+                  src={shape}
                   alt="kaltech Logo"
                   height={350}
                   width={400}
                   data-speed="0.8"
                   data-lag="0.1"
-                />
+                /> */}
+              <div className="col-xxl-6">
+                <div className="tp-service-2-shape-img text-center text-lg-start">
+                  <Image src={shape} alt="" />
+                </div>
               </div>
+              {/* </div> */}
               <div className="tp-about-2-thumb-inner d-none">
                 <Image
                   src={ab_2}
@@ -53,7 +58,7 @@ const AboutOne = () => {
           {/* second column */}
           <div className="col-span-2">
             <div className="tp-about-2-content about-content">
-              <span>We are your one stop hub for all your digital needs.</span>
+              <h3>We are your one stop hub for all your digital needs.</h3>
               <p className="mb-30">
                 Kaltech Consultancy is a powerhouse of digital creativity,
                 equipped with a talented team of designers, developers,
@@ -67,21 +72,20 @@ const AboutOne = () => {
 
               {/* Custom Button */}
               {/* <div className="tp-award-2-btn-box"> */}
-              <div className="tp-projct-5-2-btn-box d-flex justify-content-end mt-20">
+              <div className="tp-projct-5-2-btn-box d-flex justify-content-end">
                 <div className="tp-hover-btn-wrapper">
                   <Link
-                    className="custom-circle tp-hover-btn-item tp-hover-btn style-2"
+                    className="tp-btn-circle tp-hover-btn-item tp-hover-btn style-2"
                     href="/about-us"
                   >
-                    {/* <span className="tp-btn-circle-text">
-                        About <br /> Us
-                      </span> */}
-                    <i className="custom-circle-icon">
+                    <span className="tp-btn-circle-text">
+                      More <br /> Info
+                    </span>
+                    <span className="tp-btn-circle-icon custom-arrow">
                       <UpArrow />
-                    </i>
-                    <i className="tp-btn-circle-dot"></i>
+                    </span>
+                    <i className="tp-btn-circle-dot custom-dot"></i>
                   </Link>
-                  {/* </div> */}
                 </div>
               </div>
             </div>
