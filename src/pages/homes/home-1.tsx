@@ -54,12 +54,6 @@ import FooterTwo from "@/layouts/footers/footer-two";
 
 const HomeMain = () => {
   useScrollSmooth();
-  useEffect(() => {
-    document.body.classList.add("tp-magic-cursor");
-    return () => {
-      document.body.classList.remove("tp-magic-cursor");
-    };
-  }, []);
 
   useEffect(() => {
     if (

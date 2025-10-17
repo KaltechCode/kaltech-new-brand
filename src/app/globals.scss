@@ -3,6 +3,28 @@
 @import "swiper/css/bundle";
 @import "../../public/assets/scss/main.scss";
 
+/* Active link underline animation */
+.home-link-menu {
+  position: relative;
+  display: inline-block;
+}
+.home-link-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background-color: currentColor;
+  transition: width 300ms ease;
+}
+.home-link-menu:hover::after {
+  width: 100%;
+}
+.home-link-menu.is-active::after {
+  width: 100%;
+}
+
 // @media (max-width: 1200px) {
 // }
 
