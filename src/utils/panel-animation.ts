@@ -15,8 +15,8 @@ function panelOneAnimation() {
       const panelsContainer =
         thePanelsSection.querySelector(".panels-container");
 
-      gsap.set(panelsContainer, { height: 920 });
-      gsap.set(panels, { height: 920 });
+      gsap.set(panelsContainer, { height: 1000 });
+      gsap.set(panels, { height: 1000 });
 
       let totalPanelsWidth = 0;
       panels.forEach(function (panel: any) {
@@ -31,10 +31,10 @@ function panelOneAnimation() {
         ease: "none",
         scrollTrigger: {
           trigger: panelsContainer,
-          pin: true,
-          start: "top 140",
+          pin: false,
+          start: "top 50%",
           scrub: 1,
-          end: "bottom 50",
+          end: "bottom 60%",
         },
       });
     }

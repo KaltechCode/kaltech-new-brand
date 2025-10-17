@@ -68,14 +68,20 @@
   &-section-title {
     color: var(--tp-common-black);
     width: 100%;
-    font-size: clamp(45px, 20px + 5em, 70px);
+    font-size: clamp(30pxpx, 4vw + 1.5rem, 60px);
     font-weight: 500;
     line-height: 1.1;
-    letter-spacing: -2.8px;
+    letter-spacing: 1px;
 
     @media #{$xs} {
       font-size: 48px;
       text-align: center;
+    }
+    @media #{$sm} {
+      font-size: clamp(25px, 3vw + 1.5rem, 50px);
+    }
+    @media #{$xs} {
+      font-size: clamp(20px, 3vw + 1rem, 140px);
     }
   }
   &-thumb {
@@ -148,6 +154,7 @@
       text-transform: capitalize;
       margin-bottom: 30px;
       display: inline-block;
+      letter-spacing: 1px;
     }
     & p {
       color: #3e3e44;
@@ -164,6 +171,7 @@
     }
   }
   &-area {
+    background-color: #fbfbfb;
     @media #{$xs} {
       padding-top: 60px;
       padding-bottom: 100px;

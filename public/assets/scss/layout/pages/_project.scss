@@ -275,6 +275,9 @@
     &.addclass {
       background-color: var(--tp-common-black);
     }
+    @media #{$xxl} {
+      padding-top: 80px;
+    }
   }
   &-content {
     position: absolute;
