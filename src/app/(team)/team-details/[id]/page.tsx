@@ -14,17 +14,16 @@ export function generateStaticParams() {
   }));
 }
 
-export default function TeamDetailsPage({
+export default async function TeamDetailsPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const team = [...team_data].find((t) => t.id === Number(params.id));
+  const { id } = await params;
+  const team = [...team_data].find((t) => t.id === Number(id));
   return team ? (
     <TeamDetailsMain item={team} />
   ) : (
-    <div className="text-center pt-100">
-      Team not found with id: {params.id}
-    </div>
+    <div className="text-center pt-100">Team not found with id: {id}</div>
   );
 }

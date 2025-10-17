@@ -2,6 +2,7 @@ import React, { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import menu_data, { menu_data_1 } from "@/data/menu-data";
+import { usePathname } from "next/navigation";
 
 const imgStyle: CSSProperties = {
   width: "100%",
@@ -9,11 +10,17 @@ const imgStyle: CSSProperties = {
   objectFit: "cover",
 };
 const HeaderMenus = () => {
+  const pathname = usePathname();
   return (
     <ul>
       {menu_data_1.map((menu) => (
         <li key={menu.id} className="has-dropdown">
-          <Link href={menu.link} className="home-link-menu">
+          <Link
+            href={menu.link}
+            className={`home-link-menu ${
+              pathname === menu.link ? "is-active" : ""
+            }`}
+          >
             {menu.title}
           </Link>
           {/* {menu.home_menus ? (

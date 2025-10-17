@@ -5,7 +5,6 @@ import {
   Kanit,
   Montserrat,
   Open_Sans,
-  Big_Shoulders_Display,
   Marcellus,
 } from "next/font/google";
 import localFont from "next/font/local";

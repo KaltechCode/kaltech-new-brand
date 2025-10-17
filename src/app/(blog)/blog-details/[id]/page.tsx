@@ -35,23 +35,30 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BlogDetailsPage({
+export async function generateMetadata({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const blog = [...blog_data].find((b) => b.id === Number(id));
+  if (!blog) return { title: "Blog not found" };
+  return { title: blog.title || "Blog Details" };
+}
+
+export default async function BlogDetailsPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
 }) {
+  const { id } = await params;
   // Find the blog post that matches the current page's ID.
-  const blog = [...blog_data].find((b) => b.id === Number(params.id));
+  const blog = [...blog_data].find((b) => b.id === Number(id));
 
   // If no blog is found, render the not-found page.
   if (!blog) {
     notFound();
   }
-
-  // Generate metadata for the specific blog post.
-  const metadata: Metadata = {
-    title: blog.title || "Blog Details",
-  };
 
   return <BlogDetailsMain blog={blog} />;
 }
