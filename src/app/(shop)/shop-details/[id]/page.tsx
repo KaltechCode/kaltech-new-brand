@@ -35,9 +35,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }): Promise<Metadata> {
-  const product = product_data.find((p) => p.id === Number(params.id));
+  const { id } = await params;
+  const product = product_data.find((p) => p.id === Number(id));
 
   // Set the product title in the metadata if found.
   if (product) {
@@ -51,12 +52,13 @@ export async function generateMetadata({
   };
 }
 
-export default function ShopDetailsPage({
+export default async function ShopDetailsPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const product = product_data.find((p) => p.id === Number(params.id));
+  const { id } = await params;
+  const product = product_data.find((p) => p.id === Number(id));
 
   // If a product is not found, show the not-found page.
   if (!product) {
