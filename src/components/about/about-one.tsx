@@ -82,7 +82,7 @@ const AboutOne = () => {
                     <span className="tp-btn-circle-icon custom-arrow">
                       <UpArrow />
                     </span>
-                    <i className="tp-btn-circle-dot custom-dot"></i>
+                    <i className="tp-btn-circle-dot custom-dot cuttom-text-d"></i>
                   </Link>
                 </div>
               </div>
