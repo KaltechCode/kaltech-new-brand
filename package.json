@@ -18,7 +18,7 @@
     "isotope-layout": "^3.0.6",
     "jquery": "^3.7.1",
     "next": "^15.5.6",
-    "next-themes": "^0.3.0",
+    "next-themes": "^0.4.6",
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.2",
     "react-compare-image": "^3.4.0",
