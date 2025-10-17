@@ -267,7 +267,7 @@
 }
 .tp-hero-3 {
   &-ptb {
-    padding-top: 210px;
+    padding-top: 140px;
     padding-bottom: 70px;
     @media #{$md} {
       padding-top: 200px;
@@ -277,21 +277,18 @@
     }
   }
   &-title {
-    font-size: 140px;
-    font-weight: 700;
+    font-size: clamp(50px, 7vw + 1.5rem, 140px);
+    font-weight: 400;
     line-height: 1;
-    letter-spacing: -5.6px;
+    letter-spacing: 1px;
     color: var(--tp-common-black);
     font-family: var(--tp-ff-heading);
     margin-bottom: 35px;
-    @media #{$lg} {
-      font-size: 115px;
-    }
-    @media #{$md} {
-      font-size: 95px;
+    @media #{$sm} {
+      font-size: clamp(55px, 6.5vw + 1.3rem, 140px);
     }
     @media #{$xs} {
-      font-size: 60px;
+      font-size: clamp(40px, 5vw + 1rem, 140px);
     }
   }
   &-category {
@@ -302,7 +299,8 @@
     text-transform: uppercase;
     color: var(--tp-common-black);
     font-family: var(--tp-ff-marcellus);
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
   &-circle-shape {
     position: absolute;

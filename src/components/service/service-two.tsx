@@ -88,7 +88,7 @@ export default function ServiceTwo() {
               providing the following services:
             </p>
           </div>
-          <div className="col-xl-12 col-lg-8">
+          <div className="col-xl-12">
             <div className="tp-service-2-accordion-box">
               <div className="accordion" id="accordionExample">
                 {service_accordion.map((s) => (

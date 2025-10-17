@@ -12,16 +12,16 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import "./globals.scss";
 
-const gellery = localFont({
+const gallery = localFont({
   src: [
     {
       path: "../../public/assets/fonts/Oxanium-ExtraBold.ttf",
-      weight: "400",
+      weight: "800",
       style: "normal",
     },
     {
       path: "../../public/assets/fonts/Oxanium-Light.ttf",
-      weight: "400",
+      weight: "300",
       style: "normal",
     },
     {
@@ -36,11 +36,12 @@ const gellery = localFont({
 const syne_heading = localFont({
   src: [
     {
-      path: "../../public/assets/fonts/Azonix.otf",
+      path: "../../public/assets/fonts/OvercameDemoRegular.ttf",
       weight: "400",
       style: "normal",
     },
   ],
+  variable: "--tp-ff-heading",
 });
 // const kanit = localFont({
 //   src: [
@@ -102,7 +103,7 @@ export default function RootLayout({
       <body
         id="body"
         suppressHydrationWarning={true}
-        className={`${gellery.variable} ${aladin.variable} ${syne_body.variable} ${syne_heading.variable} ${syne_p.variable} ${syne.variable} ${big_shoulders.variable} ${marcellus.variable}`}
+        className={`${gallery.variable} ${aladin.variable} ${syne_body.variable} ${syne_heading.variable} ${syne_p.variable} ${syne.variable} ${big_shoulders.variable} ${marcellus.variable}`}
       >
         <ThemeProvider defaultTheme="light">{children}</ThemeProvider>
       </body>
