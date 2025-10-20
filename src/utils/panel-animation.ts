@@ -127,8 +127,11 @@ function panelOneAnimation() {
 
   pp.add(
     {
-      isDesktop: "(min-width: 2000px)", // Condition 1: >= 1500px
-      isLaptop: "(min-width: 1200px) and (max-width: 1920px)", // Condition 2: >= 1200px
+      isDesktop: "(min-width: 1500px)",
+      // Condition 1: >= 1500px
+      isPortrait: "(min-width: 1200px) and (orientation: portrait)",
+      isLaptop:
+        "(min-width: 1200px) and (max-width: 1499px) and (orientation: landscape)", // Condition 2: 1200px–1499px
     },
     (context) => {
       let { isDesktop, isLaptop } = context.conditions as any;
@@ -206,7 +209,6 @@ function panelOneAnimation() {
       sections.forEach((section, index) => {
         ScrollTrigger.create({
           trigger: section,
-          markers: false,
           start: "bottom 115%",
           end: "bottom -100%",
           toggleClass: { targets: listItem[index], className: "addclass" },
@@ -240,7 +242,6 @@ function panelTwoAnimation() {
           end: "bottom 100%",
           endTrigger: ".project-panel-area",
           pinSpacing: false,
-          markers: false,
         },
       });
     });
@@ -331,7 +332,6 @@ function servicePanel() {
           end: "bottom 100%",
           endTrigger: ".project-panel-area-2",
           pinSpacing: false,
-          markers: false,
         },
       });
     });

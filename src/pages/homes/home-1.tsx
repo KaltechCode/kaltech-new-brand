@@ -2,8 +2,6 @@
 import { gsap } from "gsap";
 import React, { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
-import Image from "next/image";
-import Link from "next/link";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import {
   ScrollSmoother,
@@ -95,27 +93,16 @@ const HomeMain = () => {
   });
   return (
     <Wrapper showBackToTop={false}>
-      {/* magic cursor start */}
-      {/* <div id="magic-cursor">
-        <div id="ball"></div>
-      </div> */}
-      {/* magic cursor end */}
-
-      {/* header area start */}
       <HeaderOne />
-
-      {/* header area end */}
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             {/* hero area start */}
-            {/* <HeroBannerOne /> */}
             <HeroBannerFour />
             {/* hero area end */}
 
             {/* video area */}
-            {/* <VideOne /> */}
             <AboutOne />
             {/* video area */}
 

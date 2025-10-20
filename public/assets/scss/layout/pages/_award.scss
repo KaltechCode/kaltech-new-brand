@@ -173,6 +173,7 @@
     }
   }
   &-space {
+    margin-top: -100px;
     padding: 80px 90px;
     padding-bottom: 320px;
     @media #{$xl} {

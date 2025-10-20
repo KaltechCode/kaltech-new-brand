@@ -1,17 +1,17 @@
-'use client';
+"use client";
 import React from "react";
 import { useTheme } from "next-themes";
 import dynamic from "next/dynamic";
 
-const  ThemeSetting = () => {
+const ThemeSetting = () => {
   const { setTheme, theme } = useTheme();
   const [settingOpen, setSettingOpen] = React.useState(false);
 
-  console.log('theme', theme);
+  console.log("theme", theme);
 
   function handleOpenSetting() {
     setSettingOpen(!settingOpen);
-  };
+  }
   return (
     <div
       className={`tp-theme-settings-area transition-3 ${
@@ -20,7 +20,7 @@ const  ThemeSetting = () => {
     >
       <div className="tp-theme-wrapper">
         <div className="tp-theme-header text-center">
-          <h4 className="tp-theme-header-title">Liko Mode Settings</h4>
+          <p className="tp-theme-header-title">Mode Settings</p>
         </div>
 
         <div className="tp-theme-dir mb-20">
@@ -31,7 +31,12 @@ const  ThemeSetting = () => {
             >
               Dark
             </span>
-            <input type="checkbox" id="tp-dir-toggler" checked={theme === "dark"} readOnly />
+            <input
+              type="checkbox"
+              id="tp-dir-toggler"
+              checked={theme === "dark"}
+              readOnly
+            />
             <i className="tp-theme-dir-slide"></i>
             <span
               onClick={() => setTheme("light")}
@@ -67,5 +72,5 @@ const  ThemeSetting = () => {
 };
 
 export default dynamic(() => Promise.resolve(ThemeSetting), {
-  ssr: false
-})
+  ssr: false,
+});
