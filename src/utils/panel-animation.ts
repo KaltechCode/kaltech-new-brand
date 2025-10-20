@@ -192,7 +192,6 @@ function panelOneAnimation() {
             start: startValue, // Use the determined start value
             scrub: 1,
             end: endValue as any, // Use the determined end value
-            markers: true,
           },
         });
       }
