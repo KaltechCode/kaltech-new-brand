@@ -48,9 +48,6 @@ const AboutOne = () => {
                   data-speed="0.6"
                   data-lag="0.2"
                 />
-                <span className="tp-about-2-thumb-text">
-                  I&apos;M A SUNGLASSES INFLUENCER
-                </span>
               </div>
             </div>
           </div>
@@ -58,7 +55,9 @@ const AboutOne = () => {
           {/* second column */}
           <div className="col-span-2">
             <div className="tp-about-2-content about-content">
-              <h3>We are your one stop hub for all your digital needs</h3>
+              <h3 className="tp-text-black">
+                We are your one stop hub for all your digital needs
+              </h3>
               <p className="mb-30">
                 Kaltech Consultancy is a powerhouse of digital creativity,
                 equipped with a talented team of designers, developers,
@@ -74,10 +73,7 @@ const AboutOne = () => {
               {/* <div className="tp-award-2-btn-box"> */}
               <div className="tp-projct-5-2-btn-box d-flex justify-content-end mt-20">
                 <div className="tp-hover-btn-wrapper">
-                  <Link
-                    className="tp-btn-black-sm tp-hover-btn-item tp-hover-btn style-2"
-                    href="/about-us"
-                  >
+                  <Link className="tp-btn-black-sm" href="/about-us">
                     <span className="">More Info</span>
                     <span className="tp-btn-circle-icon custom-arrow">
                       <UpArrow />

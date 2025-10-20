@@ -149,10 +149,15 @@
       //   display: none;
       // }
       padding: 8px 24px;
-      background-color: #111;
+      background-color: var(--tp-common-black);
       text-align: center;
-      color: #fff;
+      color: var(--tp-common-white);
       border-radius: 5px;
+      border: 1px solid var(--tp-common-white);
+      &:hover {
+        background-color: var(--tp-common-white);
+        color: var(--tp-common-black);
+      }
     }
   }
 }

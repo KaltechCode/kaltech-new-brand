@@ -11,12 +11,13 @@ export default function AwardTwo() {
       <div className="tp-award-2-shape">
         <span className="tp-award-2-circle"></span>
         <span className="tp-award-2-img">
-          <Image
+          {/* <Image
             src={award_img}
             alt="kaltech 3D Image"
             height={600}
             width={500}
-          />
+            priority
+          /> */}
         </span>
       </div>
       <div className="container container-1480">
