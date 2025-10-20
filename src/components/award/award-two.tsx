@@ -7,7 +7,7 @@ import { UpArrow } from "../svg";
 
 export default function AwardTwo() {
   return (
-    <div className="tp-award-2-area tpaward tp-award-2-space p-relative fix">
+    <div className="tp-award-2-area addclass tpaward tp-award-2-space p-relative fix">
       <div className="tp-award-2-shape">
         <span className="tp-award-2-circle"></span>
         <span className="tp-award-2-img">
