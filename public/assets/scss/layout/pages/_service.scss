@@ -82,12 +82,13 @@
       padding-bottom: 60px;
     }
     @media #{$xl, $xxl, $xxxl, $xxxxl} {
-      margin-top: 0px;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 5em 60px;
+    }
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
     }
   }
   &-shape-img {

@@ -18,11 +18,11 @@ export default function FooterTwo({
   return (
     <footer className={``} style={{ marginTop: 40 }}>
       <div
-        className={`tp-footer-2-area pt-100 pb-20 ${
+        className={`tp-footer-2-area pt-100 pb-20 pl-60 pr-60 ${
           whiteFooter ? "tp-footer-white" : "black-bg"
         }`}
       >
-        <div className="container container-1480">
+        <div className="container">
           <div className="row">
             <div className="col-xl-3 col-lg-4 col-md-6 mb-50">
               <div className="tp-footer-2-widget footer-col-2-1">

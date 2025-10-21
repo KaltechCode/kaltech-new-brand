@@ -9,6 +9,7 @@
   width: 100%;
   @media #{$lg, $xl, $xxl, $xxxl, $xxxxl} {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
@@ -40,7 +41,7 @@
     & .about-content {
       @media #{$lg, $xl, $xxl, $xxxl, $xxxxl} {
         grid-column: 1 / 4;
-        margin-right: 10px;
+        // margin-right: 10px;
       }
     }
     & .img-container {
@@ -136,7 +137,7 @@
   }
   &-content {
     // padding-left: 40px;
-    padding-right: 55px;
+    // padding-right: 55px;
     @media #{$xl} {
       padding-left: 0;
       padding-right: 0;
@@ -195,11 +196,13 @@
       padding-bottom: 100px;
     }
     @media #{$xl, $xxl, $xxxl, $xxxxl} {
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 5em 60px;
+    }
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
     }
   }
 

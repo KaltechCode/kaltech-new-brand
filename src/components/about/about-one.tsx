@@ -12,9 +12,9 @@ import Link from "next/link";
 const imgStyle: CSSProperties = { height: "auto" };
 const AboutOne = () => {
   return (
-    <div className="tp-about-2-area pt-50 pb-50">
+    <div className="tp-about-2-area">
       <div className="container container-1480">
-        <div className="row justify-content-center align-items-center">
+        <div className="justify-content-center align-items-center">
           <div className="two-column-layout">
             <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-30 text-start">
               <h2 className="tp-about-2-section-title">About Us</h2>
