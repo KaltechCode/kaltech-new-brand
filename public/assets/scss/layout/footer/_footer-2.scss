@@ -55,6 +55,14 @@
       }
     }
   }
+  &-area {
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
+  }
   &-contact-item {
     margin-bottom: 15px;
     & span {

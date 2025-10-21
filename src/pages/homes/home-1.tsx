@@ -98,62 +98,18 @@ const HomeMain = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* hero area start */}
             <HeroBannerFour />
-            {/* hero area end */}
 
-            {/* video area */}
             <AboutOne />
-            {/* video area */}
 
-            {/* brand area */}
-            {/* <BrandOne /> */}
             <ServiceTwo />
-            {/* brand area */}
 
-            {/* service area */}
-            {/* <ServiceOne /> */}
-            {/* service area */}
-
-            {/* project area */}
-            {/* <ProjectOne /> */}
-            <ProjectTwo />
-            {/* project area */}
-
-            {/* award area */}
-            {/* <AwardOne /> */}
             <AwardTwo />
-
-            {/* award area */}
-
-            {/* team area */}
-            {/* <TeamOne /> */}
-            {/* team area */}
-
-            {/* testimonial area */}
-            {/* <TestimonialOne /> */}
-            {/* testimonial area */}
           </main>
 
-          {/* footer area */}
-          {/* <FooterOne /> */}
           <FooterTwo />
-
-          {/* footer area */}
         </div>
       </div>
-
-      {/* footer shape */}
-      {/* <div className="tp-footer-shape-wrap z-index-5 smooth">
-        <Link href="/contact">
-          <div className="tp-footer-shape p-relative">
-            <Image className="img-1" src={shape_1} alt="shape" />
-            <Image className="img-2" src={shape_2} alt="shape" />
-            <span></span>
-          </div>
-        </Link>
-      </div> */}
-      {/* footer shape */}
     </Wrapper>
   );
 };

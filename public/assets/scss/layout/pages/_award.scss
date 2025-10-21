@@ -171,6 +171,9 @@
     &.addclass {
       background-color: var(--tp-common-black);
     }
+    @media #{$xl, $xxl, $xxxl, $xxxxl} {
+      padding: 5em 0;
+    }
   }
   &-space {
     margin-top: -100px;
