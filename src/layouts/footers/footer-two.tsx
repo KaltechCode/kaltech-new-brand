@@ -132,7 +132,7 @@ export default function FooterTwo({
           whiteFooter ? "tp-copyright-white" : "black-bg"
         }`}
       >
-        <div className="container container-1480">
+        <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
