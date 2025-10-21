@@ -13,7 +13,7 @@ export default function TeamArea() {
   }
   return (
     <>
-      <div className="tp-team-area pb-120 fix">
+      <div className="tp-team-area pb-120 fix" >
         <div className="container container-1530">
           <div className="row">
             {team_data.map((item) => (

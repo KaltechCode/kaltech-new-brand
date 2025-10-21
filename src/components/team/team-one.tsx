@@ -48,7 +48,7 @@ const TeamOne = ({ spacing = "pt-20" }: IProps) => {
   }
   return (
     <>
-      <div className={`tp-team-area ${spacing} pb-120 fix`}>
+      <div className={`tp-team-area ${spacing} pb-120 fix`} >
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-12">

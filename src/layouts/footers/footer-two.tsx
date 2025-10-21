@@ -16,7 +16,7 @@ export default function FooterTwo({
   topCls = "footer-top",
 }: IProps) {
   return (
-    <footer className={``} style={{ marginTop: 40 }}>
+    <footer className={``} >
       <div
         className={`tp-footer-2-area pt-100 pb-20 ${
           whiteFooter ? "tp-footer-white" : "black-bg"
@@ -58,20 +58,20 @@ export default function FooterTwo({
                   <h4 className="tp-footer-2-widget-title">Quick Links</h4>
                   <ul>
                     <li>
-                      <a href="/development">Development</a>
+                      <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="/marketing">Marketing</a>
+                      <a href="/about-us">About Us</a>
                     </li>
                     <li>
-                      <a href="/branding">Branding</a>
+                      <a href="/services">Services</a>
                     </li>
                     <li>
                       {" "}
-                      <a href="/motion-graphics">Motion Graphics</a>
+                      <a href="/blog-modern">Blog</a>
                     </li>
                     <li>
-                      <a href="/porfolio">Portfolio</a>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </div>

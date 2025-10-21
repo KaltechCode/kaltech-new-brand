@@ -6,25 +6,25 @@ const counter_data = [
   {
     id: 1,
     title: "PROJECTS COMPLETED",
-    count: 200,
+    count: 210,
     text: "+",
   },
   {
     id: 2,
-    title: "YEARS OF EXPERIENCE",
+    title: "YEARS OF BUILDING",
     count: 17,
     text: "+",
   },
   {
     id: 3,
     title: "TEAM MEMBERS",
-    count: 9,
+    count: 15,
     text: "+",
   },
   {
     id: 4,
     title: "GROWING AGENCY",
-    count: 194,
+    count: 200,
     text: "%",
   },
 ];
