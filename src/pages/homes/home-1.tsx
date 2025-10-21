@@ -2,8 +2,6 @@
 import { gsap } from "gsap";
 import React, { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
-import Image from "next/image";
-import Link from "next/link";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import {
   ScrollSmoother,
@@ -16,19 +14,6 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
 // internal imports
 import Wrapper from "@/layouts/wrapper";
 import HeaderOne from "@/layouts/headers/header-one";
-import HeroBannerOne from "@/components/hero-banner/hero-banner-one";
-import VideOne from "@/components/video/video-one";
-import BrandOne from "@/components/brand/brand-one";
-import ServiceOne from "@/components/service/service-one";
-import ProjectOne from "@/components/project/project-one";
-import AwardOne from "@/components/award/award-one";
-import TeamOne from "@/components/team/team-one";
-import TestimonialOne from "@/components/testimonial/testimonial-one";
-import FooterOne from "@/layouts/footers/footer-one";
-
-// images
-import shape_1 from "@/assets/img/home-01/footer/footer-circle-shape-1.png";
-import shape_2 from "@/assets/img/home-01/footer/footer-circle-shape-2.png";
 
 // animation
 import { videoAnimOne, videoAnimTwo } from "@/utils/video-anim";
@@ -108,27 +93,16 @@ const HomeMain = () => {
   });
   return (
     <Wrapper showBackToTop={false}>
-      {/* magic cursor start */}
-      {/* <div id="magic-cursor">
-        <div id="ball"></div>
-      </div> */}
-      {/* magic cursor end */}
-
-      {/* header area start */}
       <HeaderOne />
-
-      {/* header area end */}
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             {/* hero area start */}
-            {/* <HeroBannerOne /> */}
             <HeroBannerFour />
             {/* hero area end */}
 
             {/* video area */}
-            {/* <VideOne /> */}
             <AboutOne />
             {/* video area */}
 
