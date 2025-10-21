@@ -176,8 +176,9 @@
     margin-top: -100px;
     padding: 80px 90px;
     padding-bottom: 320px;
-    @media #{$xl} {
-      padding: 140px 20px;
+    @media #{$xl, $xxl, $xxxl, $xxxxl} {
+      padding: 20px;
+      margin-top: 0px;
     }
     @media #{$lg,$md} {
       margin-top: 0;

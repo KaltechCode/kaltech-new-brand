@@ -134,34 +134,26 @@ function panelOneAnimation() {
         "(min-width: 1200px) and (max-width: 1499px) and (orientation: landscape)", // Condition 2: 1200px–1499px
     },
     (context) => {
-      let { isDesktop, isLaptop } = context.conditions as any;
+      let { isDesktop, isLaptop, isPortrait } = context.conditions as any;
 
       // --- SETUP VARIABLES BASED ON EXCLUSIVE RANGES ---
       let pinValue = false;
       let startValue: string | number = "top 40%";
       let endValue: string | number | ((st: any) => string | number) =
         "bottom 75%";
-      let heightValue = 920; // Using 920 for desktop
+      let heightValue = 720;
 
-      // 1. Check for DESKTOP (1500px and up)
-      if (isDesktop) {
-        // isDesktop is TRUE, so we apply the 1500px settings (pin: false)
-        pinValue = false;
-        startValue = "top 40%";
-        endValue = "+=300";
-        heightValue = 920;
-      }
-      // 2. Check for LAPTOP range (1200px up to 1499px)
-      else if (isLaptop) {
-        // isDesktop is FALSE, but isLaptop is TRUE, so we are in the 1200-1499 range
-        pinValue = true; // This is the pinning range
-        startValue = "top 100";
-        // Use the complex end calculation for the pinning section
+      if (isDesktop || isPortrait) {
+        startValue = `top ${window.innerHeight - 650}`;
+        endValue = `+=${window.innerHeight - 600}`;
+        heightValue = 720;
+      } else if (isLaptop) {
+        startValue = "top 140";
         endValue = (st: any) =>
           "+=" + (st.vars.trigger.offsetWidth - innerWidth);
         heightValue = window.innerHeight;
+        pinValue = true;
       }
-      // --- APPLY TWEENS USING THE CALCULATED VARIABLES ---
       const panelsSections = gsap.utils.toArray(".panels");
       for (var i = 0; i < panelsSections.length; i++) {
         const thePanelsSection: any = panelsSections[i];
@@ -172,7 +164,6 @@ function panelOneAnimation() {
         const panelsContainer =
           thePanelsSection.querySelector(".panels-container");
 
-        // Fix: Use native JS for width calculation (replaces JQuery)
         let totalPanelsWidth = 0;
         panels.forEach(function (panel: any) {
           if (panel) {
@@ -180,6 +171,7 @@ function panelOneAnimation() {
           }
         });
 
+        window.alert(isPortrait);
         gsap.set(panelsContainer, {
           height: heightValue,
           width: totalPanelsWidth,
@@ -191,9 +183,10 @@ function panelOneAnimation() {
           ease: "none",
           scrollTrigger: {
             trigger: panelsContainer,
-            pin: pinValue, // Use the determined pin value
+            // pin: pinValue, // Use the determined pin value
             start: startValue, // Use the determined start value
             scrub: 1,
+            pin: pinValue,
             end: endValue as any, // Use the determined end value
           },
         });

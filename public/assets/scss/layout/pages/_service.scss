@@ -81,6 +81,14 @@
     @media #{$sm} {
       padding-bottom: 60px;
     }
+    @media #{$xl, $xxl, $xxxl, $xxxxl} {
+      margin-top: 0px;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &-shape-img {
     padding-left: 90px;
