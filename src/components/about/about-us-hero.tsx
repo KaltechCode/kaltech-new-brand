@@ -12,50 +12,30 @@ export default function AboutUsHero() {
   };
   return (
     <div
-      className="ab-inner-hero-area ab-inner-hero-bg p-relative"
-      style={{backgroundImage: "url(/assets/img/inner-about/hero/hero-1.jpg)"}}
+      className="ab-inner-hero-area p-relative "
+      
     >
       <div className="breadcurmb-site d-none">
         <h6>About Us</h6>
       </div>
-      <div className="ab-inner-hero-scroll smooth">
-        <a className="pointer" onClick={scrollTo}>
-          <span>
-            Scroll to explore
-            <ScrollDown />
-          </span>
-        </a>
-      </div>
-      <div className="container container-1480">
+   
+      <div className="container container-1480 mb-100">
         <div className="row">
-          <div className="col-xl-8">
+          <div className="pt-90">
             <div
-              className="ab-inner-hero-title-box"
+              className=""
               data-lag="0.2"
               data-stagger="0.08"
             >
-              <span className="ab-inner-hero-subtitle">
-                Digital <br /> creative agency
-              </span>
-              <h1 className="ab-inner-hero-title tp-char-animation">
-                Building Digital Presence
-              </h1>
-              <p>Digital experiences with maximum emotional impact</p>
-            </div>
-          </div>
-        </div>
-        <div className="row justify-content-end">
-          <div className="col-xl-5 col-lg-8">
-            <div
-              className="ab-inner-hero-content"
-              data-lag="0.2"
-              data-stagger="0.08"
-            >
-              <p>
-                Liko develops, designs & delivers websites & creative campaigns
-                that drive results,
-              </p>
-               <a className="tp-btn-white-sm border-style" href="#">Our Story</a>
+          
+              <h5 className="ab-inner-hero-title tp-char-animation pt-20" style={{ color: "black", textTransform: "uppercase", fontSize: "70px", letterSpacing: "0px"}}>
+              We are a team of <br/>  passionate digital creatives 
+              </h5>
+              <br />
+              <br />
+              <video className="object-cover w-full h-full" style={{width: "100%"}} muted loop autoPlay playsInline>
+                <source src="https://kaltechassets.s3.us-east-2.amazonaws.com/Kaltech/newassets/AboutPage.mp4" />
+              </video>
             </div>
           </div>
         </div>

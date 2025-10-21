@@ -3,6 +3,22 @@
 @import "swiper/css/bundle";
 @import "../../public/assets/scss/main.scss";
 
+/* Utility classes */
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+/* Theme-aware hero title */
+.hero-title {
+  font-size: 70px;
+  text-transform: uppercase;
+  color: var(--bs-dark);
+}
+
+[data-bs-theme="dark"] .hero-title {
+  color: var(--bs-white);
+}
+
 /* Active link underline animation */
 .home-link-menu {
   position: relative;
