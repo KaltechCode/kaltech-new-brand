@@ -159,6 +159,14 @@
       }
     }
   }
+  &-area {
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
+  }
   &-social {
     & a {
       height: 35px;
