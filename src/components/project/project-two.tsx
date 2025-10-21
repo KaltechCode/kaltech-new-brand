@@ -34,18 +34,18 @@ const project_data = [
     subtitle: "Concept",
     title: "High Lights",
   },
-  {
-    id: 6,
-    img: "/assets/img/home-02/project/project-6.jpg",
-    subtitle: "Branding",
-    title: "Fashion",
-  },
-  {
-    id: 7,
-    img: "/assets/img/home-02/project/project-7.jpg",
-    subtitle: "Concept",
-    title: "Branding",
-  },
+  // {
+  //   id: 6,
+  //   img: "/assets/img/home-02/project/project-6.jpg",
+  //   subtitle: "Branding",
+  //   title: "Fashion",
+  // },
+  // {
+  //   id: 7,
+  //   img: "/assets/img/home-02/project/project-7.jpg",
+  //   subtitle: "Concept",
+  //   title: "Branding",
+  // },
 ];
 
 export default function ProjectTwo() {
