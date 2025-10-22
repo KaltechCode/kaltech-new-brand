@@ -170,10 +170,11 @@
     transition: 0.3s;
     &.addclass {
       background-color: var(--tp-common-black);
+      @media #{$xl, $xxl, $xxxl, $xxxxl} {
+        padding: 5em 0;
+      }
     }
-    @media #{$xl, $xxl, $xxxl, $xxxxl} {
-      padding: 5em 0;
-    }
+
     & .container {
       max-width: 100%;
       @media #{$xxxl, $xxxxl} {

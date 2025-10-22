@@ -85,6 +85,17 @@ export default function ServiceTwo() {
                 a team of experts committed in delivering outstanding results by
                 providing the following services:
               </p>
+              <div className="tp-projct-5-2-btn-box flex-1 d-flex justify-content-start align-item-end mt-20">
+                <div className="tp-hover-btn-wrapper">
+                  <Link className="tp-btn-black-sm" href="/">
+                    <span className="">More Info</span>
+                    <span className="tp-btn-circle-icon custom-arrow">
+                      <UpArrow />
+                    </span>
+                    <i className="tp-btn-circle-dot custom-dot"></i>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div className="col-xl-12">
               <div className="tp-service-2-accordion-box">

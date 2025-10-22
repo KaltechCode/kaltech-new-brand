@@ -110,6 +110,9 @@
     & .ab-about-category-title-box {
       padding-left: 0px;
     }
+    & .ab-about-category-title {
+      letter-spacing: 1px;
+    }
     & .ab-2-hero-social-wrap {
       top: 31%;
       @media #{$xl} {

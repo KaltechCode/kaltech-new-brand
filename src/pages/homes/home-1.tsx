@@ -30,7 +30,6 @@ import {
 import HeroBannerFour from "@/components/hero-banner/hero-banner-four";
 import AboutOne from "@/components/about/about-one";
 import ServiceTwo from "@/components/service/service-two";
-import ProjectTwo from "@/components/project/project-two";
 import { panelOneAnimation } from "@/utils/panel-animation";
 import { awardAnimOne } from "@/utils/award-anim";
 import { instagramAnim } from "@/utils/instagram-anim";
