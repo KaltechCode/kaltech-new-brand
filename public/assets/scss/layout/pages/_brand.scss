@@ -9,6 +9,22 @@
     transition-timing-function: linear;
 }
 
+/* BrandFive customizations (light mode defaults) */
+.brand-five{
+    background-color: var(--tp-common-white);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brand-five-text{
+    color: var(--tp-common-black);
+}
+
+/* Ensure the title inside BrandFive uses the correct color in light mode */
+.brand-five .ab-brand-title{
+    color: var(--tp-common-black);
+}
+
 .tp-brand{
     &-area{
         padding-top: 600px;
