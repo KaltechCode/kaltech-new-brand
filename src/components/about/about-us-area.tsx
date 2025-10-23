@@ -10,35 +10,51 @@ import ab_3 from "@/assets/img/inner-about/about/about-2.jpg";
 
 export default function AboutUsArea() {
   return (
-    <div className="ab-about-area ab-about-mt pb-90 z-index-5 pt-40">
+    <div className="ab-about-area ab-about-mt pb-70 z-index-5 pt-40">
       <div className="container container-1480">
         <div id="about-info" className="row">
-           <div className="ab-about-content"  >
-              {/* <span>
+          <div className="ab-about-content">
+            {/* <span>
                 <Hand />
                 Hi!
               </span> */}
-            
-              <p
-                className="tp-dropcap tp_fade_bottom"
+
+            <div className="ab-brand-title-box  text-center">
+              <h4
+                className="ab-brand-title"
                 style={{
-                  fontSize: "20px",
-                  textAlign: "justify",
-                  lineHeight: "30px",
-                  width: "100%",
-                  maxWidth: "1400px",
-                  margin: "0 auto",
+                  fontSize: "clamp(28px, 5vw, 50px)",
+                  letterSpacing: "2px",
+                  lineHeight: "1.2",
                 }}
               >
-
-                  <div className="ab-brand-title-box mb-30 text-center">
-                    <h4 className="ab-brand-title">Our Story</h4>
-                  </div>
-                  
-              <br />
-                Kaltech Consultancy is a powerhouse of digital creativity, equipped with a talented team of designers, developers, consultants, data analysts, engineers, and strategists. Equipped with over two decades of experience and a passion for innovation, we specialize in crafting visually stunning and user-centric business systems that captivate audiences from different business ventures. We combine our technical proficiency with a deep understanding of the latest industry trends and best practices, ensuring your business remains ahead of the curve.
-              </p>
+                Our Story
+              </h4>
             </div>
+
+            <p
+              className="tp-dropcap tp_fade_bottom"
+              style={{
+                fontSize: "20px",
+
+                lineHeight: "30px",
+                width: "100%",
+                maxWidth: "1400px",
+                margin: "0 auto",
+              }}
+            >
+              <br />
+              Kaltech Consultancy is a powerhouse of digital creativity,
+              equipped with a talented team of designers, developers,
+              consultants, data analysts, engineers, and strategists. Equipped
+              with over two decades of experience and a passion for innovation,
+              we specialize in crafting visually stunning and user-centric
+              business systems that captivate audiences from different business
+              ventures. We combine our technical proficiency with a deep
+              understanding of the latest industry trends and best practices,
+              ensuring your business remains ahead of the curve.
+            </p>
+          </div>
           {/* <div className="col-xxl-9">
            
           </div> */}

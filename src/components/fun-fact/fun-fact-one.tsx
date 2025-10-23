@@ -39,9 +39,19 @@ export default function FunFactOne() {
                 <Leaf />
                 Fun Facts
               </span>
-              <h4 className="ab-inner-funfact-title tp_title_anim">
+              <h4
+                className="ab-inner-funfact-title tp_title_anim"
+                style={{
+                  letterSpacing: "2px",
+                  fontSize: "clamp(28px, 5vw, 50px)",
+
+                  lineHeight: "",
+                }}
+              >
                 Agency <br /> Snapshots
               </h4>
+              <br />
+              <br />
             </div>
           </div>
           <div className="col-xl-8">
@@ -49,7 +59,15 @@ export default function FunFactOne() {
               <div className="row gx-75">
                 {counter_data.map((item) => (
                   <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
-                    <div className="ab-funfact-item mb-90">
+                    <div
+                      className="ab-funfact-item mb-90"
+                      style={{
+                        letterSpacing: "2px",
+                        fontSize: "clamp(28px, 5vw, 50px)",
+
+                        lineHeight: "",
+                      }}
+                    >
                       <span>
                         <CounterItem min={0} max={item.count} />
                         {item.text}

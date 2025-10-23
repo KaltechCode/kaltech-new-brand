@@ -31,7 +31,15 @@ export default function BrandFive() {
         <div className="row">
           <div className="col-xl-12">
             <div className="ab-brand-title-box mb-30 text-center">
-              <h4 className="ab-brand-title" style={{ letterSpacing: "2px" }}>
+              <h4
+                className="ab-brand-title"
+                style={{
+                  letterSpacing: "2px",
+                  fontSize: "clamp(28px, 5vw, 50px)",
+          
+                  lineHeight: "1.2",
+                }}
+              >
                 Our clients
               </h4>
             </div>
