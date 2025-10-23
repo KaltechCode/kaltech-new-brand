@@ -24,26 +24,36 @@ export default function InstagramArea() {
   ];
 
   return (
-    <div className="tp-instagram-area tp-instagram-ptb text-center">
-      <div className="tp-instagram-thumb-wrap p-relative">
+    <div
+      className="tp-instagram-area tp-instagram-ptb"
+      style={{
+        marginBottom: "100px",
+        paddingBottom: "100px",
+        overflow: "hidden",
+        position: "relative",
+        height: "100vh",
+        backgroundColor: "red",
+      }}
+    >
+      <div className="tp-instagram-thumb-wrap p-relative pb-60 pt-60">
         {instagram_images.map((item) => (
           <div
             key={item.id}
             className={`tp-instagram-thumb-inner-${item.id} d-none d-xl-block`}
           >
-            <Image src={item.img} alt="inst-img" />
+            <Image
+              src={item.img}
+              alt="inst-img"
+              style={{ height: "100%", width: "100%" }}
+            />
           </div>
         ))}
-        <div className="tp-instagram-thumb-inner-8 d-none d-xl-block">
-          <a href="#">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-        </div>
+
         <div className="tp-instagram-thumb">
           {/* <Image src={inst_8} alt="inst-img" */}
-          <img src="/assets/img/home-02/instagram/insta-1.jpg" alt="inst-img"/>
+          <img src="/assets/img/home-02/instagram/insta-1.jpg" alt="inst-img" />
         </div>
-        <div className="tp-instagram-content-wrap text-start">
+        {/* <div className="tp-instagram-content-wrap text-start">
           <div className="tp-instagram-title-box">
             <span className="tp-instagram-subtitle">INSTAGRAM</span>
             <h4 className="tp-instagram-title">@likoagency</h4>
@@ -59,7 +69,7 @@ export default function InstagramArea() {
               </span>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

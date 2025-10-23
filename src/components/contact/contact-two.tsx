@@ -12,8 +12,10 @@ export default function ContactTwo() {
           <div className="col-xl-5">
             <div className="ab-about-category-title-box mb-40 p-relative">
               <h4 className="ab-about-category-title">
-                Send a Message <br />
-                <span>Contact Us</span>
+                Have questions or need assistance? <br />
+                <span>
+                  Reach out to our team <br /> we're here to help
+                </span>
               </h4>
               <Image
                 className="ab-about-shape-1 d-none d-xl-block"

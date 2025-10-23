@@ -1,14 +1,9 @@
 "use client";
 import { gsap } from "gsap";
-import React, { useEffect } from "react";
+import React from "react";
 import { useGSAP } from "@gsap/react";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
-import {
-  ScrollSmoother,
-  ScrollTrigger,
-  SplitText,
-  cursorAnimation,
-} from "@/plugins";
+import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
@@ -35,23 +30,22 @@ import { awardAnimOne } from "@/utils/award-anim";
 import { instagramAnim } from "@/utils/instagram-anim";
 import AwardTwo from "@/components/award/award-two";
 import FooterTwo from "@/layouts/footers/footer-two";
+import InstagramArea from "@/components/instagram/instagram-area";
 
 const HomeMain = () => {
   useScrollSmooth();
 
-  useEffect(() => {
-    if (
-      typeof window !== "undefined" &&
-      document.querySelector(".tp-magic-cursor")
-    ) {
-      cursorAnimation();
-    }
-  }, []);
-
   useGSAP(() => {
     const timer = setTimeout(() => {
+      // Hero animations
+      heroTitleAnim();
+      heroBgAnimation();
+
+      // Video animations
       videoAnimOne();
-      // portfolio image wrap
+      videoAnimTwo();
+
+      // Portfolio image wrap
       gsap.timeline({
         scrollTrigger: {
           trigger: ".tp-project-full-img-wrap",
@@ -61,32 +55,22 @@ const HomeMain = () => {
           pinSpacing: false,
         },
       });
-      // team marquee
-      teamMarqueAnim();
-      hoverBtn();
-      footerTwoAnimation();
-      fadeAnimation();
-      charAnimation();
-      bounceAnimation();
-    }, 100);
-    return () => clearTimeout(timer);
-  });
-  useGSAP(() => {
-    const timer = setTimeout(() => {
-      // hero animation
-      heroTitleAnim();
-      heroBgAnimation();
-      // bounce animation
-      bounceAnimation();
-      // video anim
-      videoAnimTwo();
-      // panel animation
+
+      // Panel animation
       panelOneAnimation();
-      // award animation
+
+      // Award animation
       awardAnimOne();
-      // instagram animation
+
+      // Instagram animation
       instagramAnim();
+
+      // UI animations
       hoverBtn();
+      // footerTwoAnimation();
+      // fadeAnimation();
+      // charAnimation();
+      bounceAnimation();
     }, 100);
     return () => clearTimeout(timer);
   });
@@ -102,6 +86,8 @@ const HomeMain = () => {
             <AboutOne />
 
             <ServiceTwo />
+
+            <InstagramArea />
 
             <AwardTwo />
           </main>
