@@ -316,9 +316,34 @@
   }
   &-area {
     background-color: #fbfbfb;
+    background-image: radial-gradient(
+        circle at 25% 25%,
+        rgba(255, 255, 255, 0.8) 2px,
+        transparent 2px
+      ),
+      radial-gradient(
+        circle at 75% 75%,
+        rgba(0, 0, 0, 0.05) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        45deg,
+        transparent 40%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 60%
+      );
+    background-size: 60px 60px, 40px 40px, 100px 100px;
+    background-position: 0 0, 20px 20px, 0 0;
     @media #{$xs} {
       padding-top: 60px;
       padding-bottom: 100px;
+    }
+    @media #{$xl, $xxl, $xxxl, $xxxxl} {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 

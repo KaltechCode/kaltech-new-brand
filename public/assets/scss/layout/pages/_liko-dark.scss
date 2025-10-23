@@ -1,4 +1,4 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
 
 /*----------------------------------------*/
 /*  7.12 liko-dark css start
@@ -2196,24 +2196,18 @@
             }
         }
 
-        .tp-product-details-review-input-title label {
-            color: rgba(245, 245, 245, 0.6);
-        }
+  .tp-product-details-review-input-title label {
+    color: rgba(245, 245, 245, 0.6);
+  }
 
-        .tp-service-4-icon img {
-            filter: invert(1);
-        }
+  .tp-service-4-icon img {
+    filter: invert(1);
+  }
 
-        .project-details-1-social a {
-            border: 1px solid rgba(245, 245, 245, 0.6);
-            & svg{
-                color: var(--tp-common-white);
-            }
-        }
-    
-    
+  .project-details-1-social a {
+    border: 1px solid rgba(245, 245, 245, 0.6);
+    & svg {
+      color: var(--tp-common-white);
     }
-    
-
-
-
+  }
+}
