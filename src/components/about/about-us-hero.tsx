@@ -28,6 +28,7 @@ export default function AboutUsHero() {
                   fontSize: "clamp(28px, 5vw, 50px)",
                   letterSpacing: "2px",
                   lineHeight: "1.2",
+                  textAlign: "center"
                 }}
               >
                 We are a team of <br /> passionate digital creatives
