@@ -10,7 +10,7 @@ import ab_3 from "@/assets/img/inner-about/about/about-2.jpg";
 
 export default function AboutUsArea() {
   return (
-    <div className="ab-about-area ab-about-mt pb-90 z-index-5 pt-30">
+    <div className="ab-about-area ab-about-mt pb-90 z-index-5 pt-40">
       <div className="container container-1480">
         <div id="about-info" className="row">
            <div className="ab-about-content"  >
@@ -26,12 +26,15 @@ export default function AboutUsArea() {
                   textAlign: "justify",
                   lineHeight: "30px",
                   width: "100%",
-                  maxWidth: "1350px",
+                  maxWidth: "1400px",
                   margin: "0 auto",
                 }}
               >
 
-                  <p className="pt-30" style={{textAlign: "center"}}>OUR STORY </p>
+                  <div className="ab-brand-title-box mb-30 text-center">
+                    <h4 className="ab-brand-title">Our Story</h4>
+                  </div>
+                  
               <br />
                 Kaltech Consultancy is a powerhouse of digital creativity, equipped with a talented team of designers, developers, consultants, data analysts, engineers, and strategists. Equipped with over two decades of experience and a passion for innovation, we specialize in crafting visually stunning and user-centric business systems that captivate audiences from different business ventures. We combine our technical proficiency with a deep understanding of the latest industry trends and best practices, ensuring your business remains ahead of the curve.
               </p>
@@ -41,11 +44,11 @@ export default function AboutUsArea() {
           </div> */}
         </div>
         <div className="row">
-          <div className="col-xl-20">
+          <div className="col-12">
             <div className="row">
-              <div className="col-xl-3 col-lg-3 col-md-5 mb-40">
+              <div className="col-xl-3 col-lg-4 col-md-5 mb-40">
                 <div className="ab-about-category-title-box p-relative">
-                  <h4 className="ab-about-category-title" style={{letterSpacing: "1px"}}>
+                  <h4 className="ab-about-category-title">
                     {/* Something <br /> */}
                     What we do
                     <span></span>
@@ -57,9 +60,9 @@ export default function AboutUsArea() {
                   />
                 </div>
               </div>
-              <div className="col-xl-8 col-lg-7 col-md-7 pt-15">
-                <div className="row">
-                  <div className="col-xl-4 col-lg-4 col-md-4 mb-40">
+              <div className="col-xl-9 col-lg-8 col-md-7 pt-7">
+                <div className="row gx-4">
+                  <div className="col-md-4 mb-30">
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
                       <ul>
                         <li>Web design and Development</li>
@@ -68,7 +71,7 @@ export default function AboutUsArea() {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-xl-4 col-lg-4 col-md-4 mb-40">
+                  <div className="col-md-4 mb-30">
                     <div className="ab-about-category-list category-space-2 tp_fade_bottom">
                       <ul>
                         <li>Social Media Marketing</li>
@@ -77,7 +80,7 @@ export default function AboutUsArea() {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-xl-4 col-lg-4 col-md-4 mb-40">
+                  <div className="col-md-4 mb-30">
                     <div className="ab-about-category-list category-space-3 tp_fade_bottom">
                       <ul>
                         <li>Logo Design</li>

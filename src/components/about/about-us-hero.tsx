@@ -28,7 +28,7 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
           
-              <h5 className="ab-inner-hero-title tp-char-animation pt-20" style={{ color: "black", textTransform: "uppercase", fontSize: "70px", letterSpacing: "0px"}}>
+              <h5 className="ab-inner-hero-title tp-char-animation pt-20 about-hero-title" style={{ textTransform: "uppercase", fontSize: "50px", letterSpacing: "0px" }}>
               We are a team of <br/>  passionate digital creatives 
               </h5>
               <br />

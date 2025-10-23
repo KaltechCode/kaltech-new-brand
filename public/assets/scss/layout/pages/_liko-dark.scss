@@ -632,7 +632,7 @@
             color: rgba(245, 247, 245, 0.5);
         }
         & .ab-about-category-list ul li {
-            color: rgba(245, 247, 245, 0.7);
+            color: rgb(245, 247, 245);
         }
         & .ab-about-category-list ul li::after {
             background-color: rgba(245, 247, 245, 0.7);
@@ -970,6 +970,40 @@
         }
         & .tp-btn-circle.style-2 {
             border-color: rgba(245, 247, 245, 0.14);
+            color: var(--tp-common-white);
+        }
+
+        /* BrandFive darkmode overrides */
+        & .brand-five{
+            background-color: var(--tp-common-dark);
+            background-image: none;
+        }
+
+        & .brand-five-text{
+            color: rgb(255, 255, 255);
+        }
+
+        & .brand-five .ab-brand-title{
+            color: var(--tp-common-white);
+        }
+
+        /* About page brand title dark override */
+        & .ab-brand-title{
+            color: var(--tp-common-white);
+        }
+
+        /* Stronger context-scoped dark override for about page title */
+        & .ab-about-content .ab-brand-title{
+            color: var(--tp-common-white);
+        }
+
+        /* About hero title dark override */
+        & .about-hero-title{
+            color: var(--tp-common-white);
+        }
+
+        /* stronger selector to override other rules */
+        & .ab-inner-hero-title.about-hero-title{
             color: var(--tp-common-white);
         }
     

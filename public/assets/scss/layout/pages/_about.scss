@@ -12,6 +12,76 @@
   }
 }
 
+/* about hero theme-aware title */
+.about-hero-title{
+  color: var(--tp-common-black);
+}
+
+/* Ensure ab-brand-title defaults to black in light mode */
+.ab-brand-title{
+  color: var(--tp-common-black);
+  letter-spacing: 2px; /* preserve previous spacing */
+}
+
+/* Stronger, context-scoped rule to ensure about page brand title is black in light mode */
+.ab-about-content .ab-brand-title{
+  color: var(--tp-common-black);
+  letter-spacing: 2px;
+}
+
+/* Responsive hero title and video for about page */
+.about-hero-title{
+  text-transform: uppercase;
+  font-size: 70px; /* default for large screens */
+  letter-spacing: 0px;
+  line-height: 1.05;
+  margin: 0 0 30px 0;
+  color: var(--tp-common-black);
+}
+
+.about-hero-video{
+  width: 100%;
+  display: block;
+  margin: 30px 0 0 0;
+  max-height: 520px;
+}
+
+/* Smaller screens */
+@media #{$xl} {
+  .about-hero-title{
+    font-size: 60px;
+  }
+}
+@media #{$lg} {
+  .about-hero-title{
+    font-size: 48px;
+  }
+}
+@media #{$md} {
+  .about-hero-title{
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .about-hero-video{
+    max-height: 400px;
+  }
+}
+@media #{$sm}, #{$xs} {
+  .about-hero-title{
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .about-hero-video{
+    max-height: 260px;
+  }
+}
+
+/* stronger selector to override other .ab-inner-hero-title rules */
+.ab-inner-hero-title.about-hero-title{
+  color: var(--tp-common-black);
+}
+
 .about-us-content-container {
   width: 100%;
   // background-color: red;
@@ -64,6 +134,80 @@
     }
   }
 }
+/* Intro paragraph for about page (replaces inline styles) */
+.about-intro {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: var(--tp-common-dark);
+}
+
+/* Category list items padding moved to SCSS; theme-aware text color */
+.ab-about-category-item {
+  padding: 18px;
+  background: transparent;
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    & li {
+      color: var(--tp-common-dark);
+      padding: 6px 0;
+    }
+  }
+}
+
+/* What we do section alignment */
+.ab-about-area {
+  .container-1480 {
+    .row {
+      margin: 0;
+      .col-12 {
+        padding: 0;
+        .row {
+          margin: 0;
+          > div {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Category list styles */
+.ab-about-category-list {
+  padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 8px 0;
+      color: var(--tp-common-dark);
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/* What we do title box alignment */
+.ab-about-category-title-box {
+  margin: 0;
+  .ab-about-category-title {
+    margin: 0;
+    letter-spacing: 1px;
+  }
+}
+
 .tp-about-2 {
   &-section-title {
     color: var(--tp-common-black);
