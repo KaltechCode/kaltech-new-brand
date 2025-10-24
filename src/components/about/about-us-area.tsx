@@ -36,7 +36,7 @@ export default function AboutUsArea() {
               className="tp-dropcap tp_fade_bottom"
               style={{
                 fontSize: "20px",
-
+                letterSpacing: "0.4px",
                 lineHeight: "30px",
                 width: "100%",
                 maxWidth: "1400px",
@@ -81,27 +81,46 @@ export default function AboutUsArea() {
                   <div className="col-md-4 mb-30">
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
                       <ul>
+                        {/* <span>DEVLOPMENT</span> */}
+
                         <li>Web design and Development</li>
                         <li>Content Management System</li>
                         <li>Mobile Application Development</li>
+                        <li>Desktop Application Development</li>
                       </ul>
                     </div>
                   </div>
                   <div className="col-md-4 mb-30">
                     <div className="ab-about-category-list category-space-2 tp_fade_bottom">
                       <ul>
+                        {/* <span>MARKETING</span> */}
                         <li>Social Media Marketing</li>
                         <li>Search Engine Optimization</li>
                         <li>Email Marketing</li>
+                        <li>Explainer videos</li>
+
                       </ul>
                     </div>
                   </div>
                   <div className="col-md-4 mb-30">
                     <div className="ab-about-category-list category-space-3 tp_fade_bottom">
                       <ul>
+                        {/* <span>BRANDING</span> */}
                         <li>Logo Design</li>
                         <li>Business Branding</li>
-                        <li>Explainer videos</li>
+                        <li>Brand Ambasadors</li>
+                        <li>Logo and Title Animations</li>
+
+
+
+                      </ul>
+                    </div>
+                  </div>
+                         <div className="col-md-4 mb-30">
+                    <div className="ab-about-category-list category-space-3 tp_fade_bottom">
+                      <ul>
+                        {/* <span>MOTION GRAPHICS</span> */}
+
                       </ul>
                     </div>
                   </div>

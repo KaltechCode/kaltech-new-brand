@@ -4,6 +4,131 @@
 /*  7.12 funfact css start
 /*----------------------------------------*/
 
+.ab-funfact-area {
+  background-color: #ffff;
+//   padding: 60px 0;
+  transition: all 0.3s ease;
+
+  [data-theme='dark'] & {
+    background-color: var(--tp-common-dark);
+  }
+}
+
+.ab-funfact-title-box {
+  .ab-inner-subtitle {
+    font-size: 18px;
+    color: var(--tp-common-black);
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: currentColor;
+        transition: fill 0.3s ease;
+      }
+    }
+
+    [data-theme='dark'] & {
+      color: var(--tp-common-white);
+    }
+  }
+
+  .ab-inner-funfact-title {
+    font-size: clamp(28px, 5vw, 50px);
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    color: var(--tp-common-black);
+    margin: 0;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: var(--tp-common-white);
+    }
+    
+       @media #{$md}{
+        text-align: center;
+        padding-bottom: 20px;
+      }
+         @media #{$sm}{
+        text-align: center;
+        padding-bottom: 20px;
+      }
+  }
+}
+
+.ab-funfact-wrap {
+  padding-top: 20px;
+  
+  @media #{$xl} {
+    padding-top: 0;
+  }
+}
+
+.ab-funfact-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: transparent;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    [data-theme='dark'] & {
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.03);
+    }
+  }
+  
+  .counter-number {
+    font-size: clamp(40px, 6vw, 70px);
+    font-weight: 200;
+    line-height: 1;
+    color: var(--tp-common-black);
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: var(--tp-common-white);
+    }
+  }
+  
+  .counter-title {
+    font-size: 16px;
+    color: var(--tp-common-black);
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    [data-theme='dark'] & {
+      color: var(--tp-common-white);
+    }
+  }
+
+  [data-theme='dark'] &:hover {
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@media #{$sm} {
+  .ab-funfact-item {
+    padding: 20px 15px;
+    
+    .counter-number {
+      font-size: 40px;
+    }
+    
+    .counter-title {
+      font-size: 14px;
+    }
+  }
+}
+
 // new css
   .slide-funfact-overlay{
         position: relative;

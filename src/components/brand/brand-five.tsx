@@ -21,7 +21,7 @@ const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6, b_7, b_8];
 export default function BrandFive() {
   return (
     <div
-      className="ab-brand-area pt-40 pb-100 brand-five"
+      className="ab-brand-area pt-30 pb-100 brand-five"
       style={{
         backgroundImage:
           "url(/assets/img/inner-about/brand/brand-bg-shape.png)",
@@ -32,7 +32,7 @@ export default function BrandFive() {
           <div className="col-xl-12">
             <div className="ab-brand-title-box mb-30 text-center">
               <h4
-                className="ab-brand-title"
+                className="ab-brand-title pt-30 pb-20"
                 style={{
                   letterSpacing: "2px",
                   fontSize: "clamp(28px, 5vw, 50px)",
@@ -64,11 +64,7 @@ export default function BrandFive() {
                         alt="brand"
                         width={220}
                         height={220}
-                        style={{
-                          objectFit: "contain",
-                          maxWidth: "200px",
-                          maxHeight: "200px",
-                        }}
+                        className="brand-logo"
                       />
                     </div>
                   ))}
@@ -99,22 +95,18 @@ export default function BrandFive() {
               <br />
               <br />
 
-              <div className="tp-projct-5-2-btn-box d-flex justify-content-center">
-                <div className="tp-hover-btn-wrapper">
-                  <Link
-                    className="tp-btn-circle tp-hover-btn-item tp-hover-btn style-2"
-                    href="/contact"
-                  >
-                    <span className="tp-btn-circle-text custom-text ">
-                      Get In <br /> Touch
-                    </span>
-                    <span className="tp-btn-circle-icon custom-arrow">
-                      <MdArrowOutward />
-                    </span>
-                    <i className="tp-btn-circle-dot custom-dot"></i>
-                  </Link>
-                </div>
-              </div>
+         <div className="tp-projct-5-2-btn-box d-flex justify-content-center mt-20">
+                 <div className="tp-hover-btn-wrapper">
+                   <Link className="tp-btn-black-sm" href="/contact">
+                     <span className="">More Info</span>
+                     <span className="tp-btn-circle-icon custom-arrow">
+                       <UpArrow />
+                     </span>
+                     <i className="tp-btn-circle-dot custom-dot"></i>
+                   </Link>
+                 </div>
+               </div>
+             
             </div>
           </div>
         </div>
