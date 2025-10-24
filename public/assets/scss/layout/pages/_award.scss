@@ -200,7 +200,7 @@
     }
   }
   &-title {
-    font-size: 190px;
+    font-size: 160px;
     font-weight: 600;
     line-height: 1;
     letter-spacing: 1px;
@@ -221,21 +221,29 @@
       font-size: 95px;
     }
     @media #{$xs} {
-      font-size: 80px;
+      font-size: clamp(75px, 3em + 4rem, 80px);
     }
     @media #{$sm} {
       font-size: 70px;
     }
     & span {
-      padding-left: 200px;
+      padding-left: 250px;
       @media #{$xxl} {
-        padding-left: 120px;
+        padding-left: 150px;
       }
       @media #{$lg} {
         padding-left: 50px;
       }
       @media #{$md,$xs} {
         padding-left: 0px;
+      }
+    }
+    & h2 {
+      @media #{$xl, $xxl, $xxxl, $xxxxl} {
+        padding-left: 190px;
+      }
+      @media #{$lg} {
+        padding-left: 50px;
       }
     }
   }
@@ -259,17 +267,21 @@
     margin-bottom: 60px;
     & p {
       margin-bottom: 0;
-      max-width: 300px;
+      max-width: 380px;
       color: rgba(255, 255, 255, 0.6);
       position: absolute;
       top: 0;
-      right: 140px;
+      right: 100px;
       @media #{$lg,$md} {
         right: 0;
+        max-width: 350px;
+        margin-top: 100px;
       }
       @media #{$xs} {
         position: static;
         margin-bottom: 50px;
+        max-width: 350px;
+        margin-top: 100px;
       }
     }
   }

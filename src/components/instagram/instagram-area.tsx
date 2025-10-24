@@ -22,28 +22,141 @@ export default function InstagramArea() {
     { id: 6, img: inst_6 },
     { id: 7, img: inst_7 },
   ];
-
   return (
-    <div className="tp-instagram-area tp-instagram-ptb text-center">
-      <div className="tp-instagram-thumb-wrap p-relative">
-        {instagram_images.map((item) => (
+    <div
+      className="tp-instagram-area tp-instagram-ptb text-center p-relative mb-100"
+      style={{}}
+    >
+      <div className="tp-instagram-thumb-wrap p-relative " style={{}}>
+        {/* {instagram_images.map((item) => (
           <div
             key={item.id}
             className={`tp-instagram-thumb-inner-${item.id} d-none d-xl-block`}
           >
             <Image src={item.img} alt="inst-img" />
           </div>
-        ))}
-        <div className="tp-instagram-thumb-inner-8 d-none d-xl-block">
-          <a href="#">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
+        ))} */}
+        <div
+          className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
+          style={{
+            top: "-150px",
+            position: "absolute",
+            left: "8%",
+            height: "120px",
+            width: "180px",
+            borderRadius: "5px",
+            overflow: "hidden",
+          }}
+        >
+          <Image
+            src={instagram_images[0].img}
+            alt="inst-img"
+            style={{ width: "100%", height: "100%" }}
+          />
         </div>
+
+        <div
+          className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
+          style={{
+            top: "-150px",
+            position: "absolute",
+            right: "0",
+            height: "120px",
+            width: "250px",
+            borderRadius: "5px",
+            overflow: "hidden",
+          }}
+        >
+          <Image
+            src={instagram_images[1].img}
+            alt="inst-img"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        </div>
+
+        <div
+          className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
+          style={{
+            position: "absolute",
+            right: "-320px",
+            bottom: "0",
+            height: "270px",
+            width: "270px",
+            borderRadius: "5px",
+            overflow: "hidden",
+          }}
+        >
+          <Image src={instagram_images[2].img} alt="inst-img" />
+        </div>
+        <div
+          className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
+          style={{
+            position: "absolute",
+            right: "-170px",
+            height: "120px",
+            width: "120px",
+            borderRadius: "5px",
+            bottom: "-170px",
+            overflow: "hidden",
+          }}
+        >
+          <Image src={instagram_images[3].img} alt="inst-img" />
+        </div>
+        <div
+          className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
+          style={{
+            position: "absolute",
+            right: "0",
+            height: "70px",
+            width: "70px",
+            bottom: "-120px",
+            borderRadius: "5px",
+            overflow: "hidden",
+          }}
+        >
+          <Image src={instagram_images[4].img} alt="inst-img" />
+        </div>
+        <div
+          className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
+          style={{
+            position: "absolute",
+            left: "-100px",
+            bottom: 0,
+            height: "70px",
+            width: "70px",
+            borderRadius: "5px",
+            overflow: "hidden",
+          }}
+        >
+          <Image src={instagram_images[5].img} alt="inst-img" />
+        </div>
+        <div
+          className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
+          style={{
+            position: "absolute",
+            top: "80px",
+            left: "-330px",
+            height: "250px",
+            width: "260px",
+            borderRadius: "5px",
+            overflow: "hidden",
+          }}
+        >
+          <Image src={instagram_images[6].img} alt="inst-img" />
+        </div>
+        {/* <div className={`tp-instagram-thumb-inner-y d-none d-xl-block`}>
+          <Image src={instagram_images[7].img} alt="inst-img" />
+        </div> */}
+
         <div className="tp-instagram-thumb">
           {/* <Image src={inst_8} alt="inst-img" */}
-          <img src="/assets/img/home-02/instagram/insta-1.jpg" alt="inst-img"/>
+          <img
+            src="/assets/img/home-02/instagram/insta-1.jpg"
+            alt="inst-img"
+            style={{ height: 430, width: 550, borderRadius: "10px" }}
+          />
         </div>
-        <div className="tp-instagram-content-wrap text-start">
+        {/* <div className="tp-instagram-content-wrap text-start">
           <div className="tp-instagram-title-box">
             <span className="tp-instagram-subtitle">INSTAGRAM</span>
             <h4 className="tp-instagram-title">@likoagency</h4>
@@ -59,7 +172,7 @@ export default function InstagramArea() {
               </span>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

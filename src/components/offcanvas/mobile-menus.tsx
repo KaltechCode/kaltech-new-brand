@@ -28,13 +28,14 @@ export default function MobileMenus() {
                   ? "has-homemenu"
                   : ""
               } ${menu.home_menus ? "dropdown-opened" : ""}`}
+              onClick={() => openMobileMenu(menu.title)}
             >
-              <a className="pointer" onClick={() => openMobileMenu(menu.title)}>
+              <Link href={menu.link} className="pointer">
                 {menu.title}
                 <button className="dropdown-toggle-btn">
                   <i className="fa-light fa-long-arrow-right"></i>
                 </button>
-              </a>
+              </Link>
               {/* {menu.home_menus ? (
                 <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none"}}>
                   <div className="tp-menu-fullwidth">

@@ -46,7 +46,7 @@ const ContactMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Kaltech</span>
+                        {/* <span className="tm-hero-subtitle">Kaltech</span> */}
                         <h4 className="tm-hero-title-big tp-char-animation">
                           Get in touch
                         </h4>
