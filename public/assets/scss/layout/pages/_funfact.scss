@@ -7,6 +7,16 @@
 .ab-funfact-area {
   background-color: #ffff;
 //   padding: 60px 0;
+
+.container{
+  // background-color: aqua;
+  @media #{$md, $xl, $xxl, $xxxl, $xxxxl} {
+    max-width: 1480px;
+  // width: 100%;
+
+    
+  }
+}
   transition: all 0.3s ease;
 
   [data-theme='dark'] & {
