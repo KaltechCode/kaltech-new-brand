@@ -98,7 +98,7 @@ export default function BrandFive() {
          <div className="tp-projct-5-2-btn-box d-flex justify-content-center mt-20">
                  <div className="tp-hover-btn-wrapper">
                    <Link className="tp-btn-black-sm" href="/contact">
-                     <span className="">More Info</span>
+                     <span className="">Get In Touch</span>
                      <span className="tp-btn-circle-icon custom-arrow">
                        <UpArrow />
                      </span>
