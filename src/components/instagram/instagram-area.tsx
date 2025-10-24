@@ -25,14 +25,7 @@ export default function InstagramArea() {
   return (
     <div
       className="tp-instagram-area tp-instagram-ptb text-center p-relative mb-100"
-      style={{
-        height: "110vh",
-        background: "#fff",
-        display: "flex",
-        paddingBottom: "11%",
-        alignItems: "flex-end",
-        maxHeight: "1000px",
-      }}
+      style={{}}
     >
       <div className="tp-instagram-thumb-wrap p-relative " style={{}}>
         {/* {instagram_images.map((item) => (
@@ -160,7 +153,7 @@ export default function InstagramArea() {
           <img
             src="/assets/img/home-02/instagram/insta-1.jpg"
             alt="inst-img"
-            style={{ height: 200, width: 250, borderRadius: "10px" }}
+            style={{ height: 430, width: 550, borderRadius: "10px" }}
           />
         </div>
         {/* <div className="tp-instagram-content-wrap text-start">

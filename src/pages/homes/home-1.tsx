@@ -58,7 +58,7 @@ const HomeMain = () => {
       awardAnimOne();
 
       // Instagram animation
-      instagramAnim();
+      // instagramAnim();
 
       // UI animations
       hoverBtn();

@@ -8,14 +8,12 @@ function instagramAnim() {
       // Home 8
       let tp_instagram_3 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".tp-instagram-thumb-wrap",
-          start: "top 50%",
-          pin: "tp-instagram-thumb-wrap",
+          trigger: ".tp-instagram-area",
+          start: "top 20%",
           markers: true,
           scrub: 1,
           pinSpacing: false,
-          endTrigger: ".tp-instagram-thumb-wrap",
-          end: "+=700",
+          endTrigger: ".tp-instagram-thumb",
         },
       });
       tp_instagram_3.to(".tp-instagram-thumb img", {
