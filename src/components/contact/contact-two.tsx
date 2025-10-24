@@ -11,10 +11,14 @@ export default function ContactTwo() {
         <div className="row">
           <div className="col-xl-5">
             <div className="ab-about-category-title-box mb-40 p-relative">
-              <h4 className="ab-about-category-title">
-                Have questions or need assistance? <br />
+              <h4
+                className="ab-about-category-title"
+                style={{ fontFamily: "kanit" }}
+              >
+                Have questions or need any assistance?
+                <br />
                 <span>
-                  Reach out to our team <br /> we&apos;re here to help
+                  Reach out to our team, <br /> we are here to help.
                 </span>
               </h4>
               <Image
