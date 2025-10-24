@@ -14,7 +14,7 @@ export default function ContactTwo() {
               <h4 className="ab-about-category-title">
                 Have questions or need assistance? <br />
                 <span>
-                  Reach out to our team <br /> we're here to help
+                  Reach out to our team <br /> we&apos;re here to help
                 </span>
               </h4>
               <Image

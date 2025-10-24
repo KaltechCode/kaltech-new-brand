@@ -47,7 +47,7 @@ const ContactTwoMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Kaltech Studio</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
                           Get <br /> in touch
                         </h4>
@@ -102,7 +102,7 @@ const ContactTwoMain = () => {
                       >
                         <div className="cn-contactform-support-text text-center">
                           <span>
-                            Or&apos; you can contact one of our studios directly
+                            Or, you can contact one of our studios directly
                             below. We aim to respond within 24 hours.
                           </span>
                         </div>
