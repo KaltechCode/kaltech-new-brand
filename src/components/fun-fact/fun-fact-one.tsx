@@ -30,7 +30,7 @@ const counter_data = [
 ];
 export default function FunFactOne() {
   return (
-    <div className="ab-funfact-area pb-40  mb-80">
+    <div className="ab-funfact-area pr-60 pl-60 pb-40  mb-80">
       <div className="container container-1480">
         <div className="row align-items-center">
           <div className="col-xl-4">
