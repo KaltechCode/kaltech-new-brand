@@ -39,7 +39,7 @@ export default function AboutUsArea() {
                 letterSpacing: "0.4px",
                 lineHeight: "30px",
                 width: "100%",
-                maxWidth: "1550px",
+                maxWidth: "1380px",
                 margin: "0 auto",
               }}
             >
