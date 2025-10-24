@@ -32,6 +32,7 @@ import { hoverBtn } from "@/utils/hover-btn";
 
 const HomeTwoMain = () => {
   useScrollSmooth();
+
   useEffect(() => {
     document.body.classList.add("tp-smooth-scroll");
     return () => {
@@ -58,8 +59,6 @@ const HomeTwoMain = () => {
     }, 100);
     return () => clearTimeout(timer);
   });
-
- 
 
   return (
     <Wrapper>

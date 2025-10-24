@@ -1,6 +1,6 @@
 "use client";
 import { gsap } from "gsap";
-import React from "react";
+import React, { useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
@@ -31,10 +31,16 @@ import { instagramAnim } from "@/utils/instagram-anim";
 import AwardTwo from "@/components/award/award-two";
 import FooterTwo from "@/layouts/footers/footer-two";
 import InstagramArea from "@/components/instagram/instagram-area";
+import ScrollAnimatedSection from "@/components/ui/scroll-example";
 
 const HomeMain = () => {
   useScrollSmooth();
-
+  useEffect(() => {
+    document.body.classList.add("tp-smooth-scroll");
+    return () => {
+      document.body.classList.remove("tp-smooth-scroll");
+    };
+  }, []);
   useGSAP(() => {
     const timer = setTimeout(() => {
       // Hero animations
@@ -44,17 +50,6 @@ const HomeMain = () => {
       // Video animations
       videoAnimOne();
       videoAnimTwo();
-
-      // Portfolio image wrap
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".tp-project-full-img-wrap",
-          start: "top 65",
-          end: "bottom 0%",
-          pin: ".tp-project-full-img",
-          pinSpacing: false,
-        },
-      });
 
       // Panel animation
       panelOneAnimation();
@@ -70,7 +65,7 @@ const HomeMain = () => {
       // footerTwoAnimation();
       // fadeAnimation();
       // charAnimation();
-      bounceAnimation();
+      // bounceAnimation();
     }, 100);
     return () => clearTimeout(timer);
   });

@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import award_img from "@/assets/img/home-02/award/KALTECH-3D-LOGO-2.png";
+
 import Link from "next/link";
 import { UpArrow } from "../svg";
 
 export default function AwardTwo() {
   return (
-    <div className="tp-award-2-area addclass tpaward tp-award-2-space p-relative fix pr-60 pl-60 ">
+    <div className="tp-award-2-area addclass tpaward tp-award-2-space p-relative fix pr-60 pl-60">
       <div className="tp-award-2-shape">
         <span className="tp-award-2-circle"></span>
         <span className="tp-award-2-img">

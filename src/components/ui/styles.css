@@ -1,0 +1,23 @@
+/* styles.css */
+
+.card {
+  padding: 30px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 12px;
+  width: 300px;
+  /* Define the properties you want to transition */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Initial state (off-screen/hidden) */
+.animate-out {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Final state (on-screen/visible) */
+.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}

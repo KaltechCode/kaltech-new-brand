@@ -8,18 +8,19 @@ function instagramAnim() {
       // Home 8
       let tp_instagram_3 = gsap.timeline({
         scrollTrigger: {
-          trigger: ".tp-instagram-area",
-          start: "top 30%",
-          pin: true,
+          trigger: ".tp-instagram-thumb-wrap",
+          start: "top 50%",
+          pin: "tp-instagram-thumb-wrap",
           markers: true,
           scrub: 1,
           pinSpacing: false,
-          end: "bottom 40%",
+          endTrigger: ".tp-instagram-thumb-wrap",
+          end: "+=700",
         },
       });
       tp_instagram_3.to(".tp-instagram-thumb img", {
-        width: "200px",
-        height: "200px",
+        width: "500px",
+        height: "450px",
         borderRadius: "10px",
       });
     });
