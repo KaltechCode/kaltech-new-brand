@@ -59,76 +59,59 @@ export default function AboutUsArea() {
            
           </div> */}
         </div>
-        <div className="row">
-          <div className="col-12">
-            <div className="row">
-              <div className="col-xl-3 col-lg-4 col-md-5 mb-40">
-                <div className="ab-about-category-title-box p-relative">
-                  <h4 className="ab-about-category-title">
-                    {/* Something <br /> */}
-                    What we do
-                    <span></span>
-                  </h4>
-                  <Image
-                    className="ab-about-shape-1 d-none d-md-block"
-                    src={shape}
-                    alt="shape"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-9 col-lg-8 col-md-7 pt-7">
-                <div className="row gx-4">
-                  <div className="col-md-4 mb-30">
-                    <div className="ab-about-category-list category-space-1 tp_fade_bottom">
-                      <ul>
-                        {/* <span>DEVLOPMENT</span> */}
-
-                        <li>Web design and Development</li>
-                        <li>Content Management System</li>
-                        <li>Mobile Application Development</li>
-                        <li>Desktop Application Development</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-30">
-                    <div className="ab-about-category-list category-space-2 tp_fade_bottom">
-                      <ul>
-                        {/* <span>MARKETING</span> */}
-                        <li>Social Media Marketing</li>
-                        <li>Search Engine Optimization</li>
-                        <li>Email Marketing</li>
-                        <li>Explainer videos</li>
-
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-30">
-                    <div className="ab-about-category-list category-space-3 tp_fade_bottom">
-                      <ul>
-                        {/* <span>BRANDING</span> */}
-                        <li>Logo Design</li>
-                        <li>Business Branding</li>
-                        <li>Brand Ambasadors</li>
-                        <li>Logo and Title Animations</li>
-
-
-
-                      </ul>
-                    </div>
-                  </div>
-                         <div className="col-md-4 mb-30">
-                    <div className="ab-about-category-list category-space-3 tp_fade_bottom">
-                      <ul>
-                        {/* <span>MOTION GRAPHICS</span> */}
-
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<div className="row what-we-do-section">
+  <div className="col-12">
+    <div className="row">
+      <div className="col-xl-3 col-lg-4 col-md-5 col-12 mb-40">
+        <div className="ab-about-category-title-box p-relative">
+          <h4 className="ab-about-category-title">
+            What we do
+            <span></span>
+          </h4>
+          <Image
+            className="ab-about-shape-1 d-none d-md-block"
+            src={shape}
+            alt="shape"
+          />
+        </div>
+      </div>
+      <div className="col-xl-9 col-lg-8 col-md-7 col-12 pt-7">
+        <div className="row gx-4">
+          <div className="col-lg-4 col-md-6 col-12 mb-30">
+            <div className="ab-about-category-list category-space-1 tp_fade_bottom">
+              <ul>
+                <li>Web design and Development</li>
+                <li>Content Management System</li>
+                <li>Mobile Application Development</li>
+                <li>Desktop Application Development</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-12 mb-30">
+            <div className="ab-about-category-list category-space-2 tp_fade_bottom">
+              <ul>
+                <li>Social Media Marketing</li>
+                <li>Search Engine Optimization</li>
+                <li>Email Marketing</li>
+                <li>Explainer videos</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-12 mb-30">
+            <div className="ab-about-category-list category-space-3 tp_fade_bottom">
+              <ul>
+                <li>Logo Design</li>
+                <li>Business Branding</li>
+                <li>Brand Ambasadors</li>
+                <li>Logo and Title Animations</li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   );
