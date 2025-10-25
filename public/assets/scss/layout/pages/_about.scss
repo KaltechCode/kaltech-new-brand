@@ -17,6 +17,71 @@
 .about-hero-title{
   color: var(--tp-common-black);
 }
+// updates
+/* Custom breakpoint for vertical stacking at 1000px */
+@media (max-width: 1000px) {
+  .ab-about-area {
+    .what-we-do-section {
+      /* Make title section full width and centered */
+      .col-xl-3, .col-lg-4, .col-md-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
+      
+      /* Make content section full width */
+      .col-xl-9, .col-lg-8, .col-md-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 0 !important;
+      }
+      
+      /* Stack service columns vertically */
+      .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      
+      /* Center the title */
+      .ab-about-category-title-box {
+        text-align: center;
+        padding-left: 0 !important;
+        
+        .ab-about-category-title {
+          display: inline-block;
+        }
+      }
+      
+      /* Hide the decorative shape */
+      .ab-about-shape-1 {
+        display: none !important;
+      }
+      
+      /* Remove category spacing for mobile */
+      .ab-about-category-list {
+        &.category-space-1,
+        &.category-space-2,
+        &.category-space-3 {
+          padding-left: 0 !important;
+        }
+        
+        ul {
+          li {
+            font-size: 16px;
+            // padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 
 
 /* Ensure ab-brand-title defaults to black in light mode */
 .ab-brand-title{
