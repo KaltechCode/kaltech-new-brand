@@ -8,16 +8,15 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
-import ServiceDetailsArea from "@/components/service/service-details-area";
+import HeaderOne from "@/layouts/headers/header-one";
+import MarketingData from "@/components/service/data/marketing";
 import LineImgSlider from "@/components/line-text/line-img-slider";
 import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
-import Motion from "@/components/service/data/motion";
 
-const ServiceDetailsMain = () => {
+const Marketing = () => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -29,31 +28,27 @@ const ServiceDetailsMain = () => {
   });
 
   return (
-    <Wrapper>
+  <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderOne />
       {/* header area end */}
 
-    
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <main>
             {/* service details area */}
-            <ServiceDetailsArea />
+            <MarketingData />
             {/* service details area */}
 
-            {/* line image slider  */}
-            <LineImgSlider />
-            {/* line image slider  */}
-            <Motion />
             {/* big text */}
             <BigText />
-            {/* big text */}
-        
-
-          {/* footer area */}
-          <FooterTwo topCls="" />
-          {/* footer area */}
-    
+          </main>
+          {/* big text */}
+          <FooterTwo />
+        </div>
+      </div>
     </Wrapper>
   );
 };
 
-export default ServiceDetailsMain;
+export default Marketing;

@@ -664,6 +664,9 @@
         & .sv-small-text-box span {
             color: var(--tp-common-white);
         }
+        & .sv-small-text-box span p{
+            color: #ffff;
+        }
         //   about me end  //
     
     
@@ -1418,14 +1421,17 @@
         & .sv-hero-title {
             color: var(--tp-common-white);
         }
-        & .sv-hero-title-box p {
-            color: #87878d;
+        & .sv-page-hero-content p {
+            color: #ffffff;
         }
         & .service-details__banner-text p {
             color: var(--tp-common-white);
         }
         & .service-details__left-text .text-1 {
             color: var(--tp-common-white);
+        }
+        & .service-details__subtitle{
+            color: #fff;
         }
         & .service-details__left-text p {
             color: var(--tp-common-white);
