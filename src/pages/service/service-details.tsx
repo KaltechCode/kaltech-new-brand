@@ -15,7 +15,7 @@ import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
-import Motion from "@/components/service/data/motion";
+import Motion from "@/components/service/data/data-analytics";
 
 const ServiceDetailsMain = () => {
   useScrollSmooth();

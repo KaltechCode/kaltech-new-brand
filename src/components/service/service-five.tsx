@@ -27,8 +27,8 @@ const service_data = [
   },
     {
     id: 3,
-    title: "Motion Graphics",
-    desc: "Motion graphics is a powerful tool for communicating complex ideas in a simple and engaging way.",
+    title: "Data Analytics",
+    desc: "Data analytics is the process of examining data sets to draw conclusions about the information they contain.",
     icon: s_1,
   },
 ];

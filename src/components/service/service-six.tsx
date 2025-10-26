@@ -58,15 +58,15 @@ const service_data = [
     id: 4,
     img: ser_img_3,
     subtitle: "Kaltech Consultancy",
-    title: "MOTION GRAPHICS",
-    text: "Motion graphics is a powerful tool for communicating complex ideas in a simple and engaging way.",
+    title: "DATA ANALYTICS",
+    text: "Unlock the power of your data with our comprehensive data analytics services. We help businesses transform raw data into actionable insights, enabling informed decision-making and strategic growth.",
     lists: [
-      "Social media videos",
-      "Explainer Videos",
-      "Logo and Title animations",
-      "Animated Infographics",
+      "Business Intelligence",
+      "Data Visualizations",
+      "Predictive Analytics",
+      "Big Data Solutions",
     ],
-    url: "/motion-graphics",
+    url: "/data-analytics",
 
   },
 ];

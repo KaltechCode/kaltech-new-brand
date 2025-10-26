@@ -72,37 +72,6 @@ export const menu_data_1: IMenuDT[] = [
     id: 2,
     title: "About Us",
     link: "/about-us",
-    pages_mega_menu: {
-      first: {
-        title: "LIST TYPES",
-        submenus: [
-          { title: "ABOUT US", link: "/about-us" },
-          { title: "FAQ Page", link: "/faq" },
-          { title: "ABOUT ME", link: "/about-me" },
-          { title: "Pricing", link: "/pricing" },
-          { title: "Team Page", link: "/team" },
-          { title: "OUR CLIENTS", link: "/brand" },
-          { title: "Team Details", link: "/team-details/1" },
-          { title: "Register", link: "/register" },
-          { title: "OUR SERVICES", link: "/service" },
-          { title: "LogIn", link: "/login" },
-          { title: "SERVICES DETAILS", link: "/service-details" },
-          { title: "ERROR PAGE", link: "/error" },
-        ],
-      },
-      second: {
-        title: "Shop Page",
-        submenus: [
-          { title: "Shop Page", link: "/shop" },
-          { title: "Shop Details One", link: "/shop-details/1" },
-          { title: "Shop Details Two", link: "/shop-details-2" },
-          { title: "my account", link: "/account" },
-          { title: "Cart", link: "/cart" },
-          { title: "Checkout", link: "/checkout" },
-          { title: "Wishlist", link: "/wishlist" },
-        ],
-      },
-    },
   },
   {
     id: 3,

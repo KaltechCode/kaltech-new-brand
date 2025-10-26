@@ -4,7 +4,7 @@ import Image from "next/image";
 // image
 import ser_hero from "@/assets/img/inner-service/hero/hero-1.jpg";
 import ser_hero_shape from "@/assets/img/inner-service/hero/hero-shape-1.jpg";
-import Motion from "./data/motion";
+import Motion from "./data/data-analytics";
 
 export default function ServiceHero() {
   return (
