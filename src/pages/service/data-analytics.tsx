@@ -9,14 +9,14 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 // internal imports
 import Wrapper from "@/layouts/wrapper";
 import HeaderOne from "@/layouts/headers/header-one";
-import Motion from "@/components/service/data/motion";
+import Analytics from "@/components/service/data/data-analytics";
 import LineImgSlider from "@/components/line-text/line-img-slider";
 import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
 
-const MotionGraphics = () => {
+const Analytic = () => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -37,7 +37,7 @@ const MotionGraphics = () => {
         <div id="smooth-content">
           <main>
             {/* service details area */}
-            <Motion />
+            <Analytics />
             {/* service details area */}
 
             {/* big text */}
@@ -51,4 +51,4 @@ const MotionGraphics = () => {
   );
 };
 
-export default MotionGraphics;
+export default Analytic;

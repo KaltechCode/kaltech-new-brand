@@ -7,7 +7,7 @@ import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
 import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
 import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
 
-type ServiceKey = "web" | "cms" | "mobile" | "desktop";
+type ServiceKey = "web" | "cms" | "mobile" | "desktop" | "motion";
 
 const developmentData = {
   subtitle: "KALTECH CONSULTANCY",
@@ -33,7 +33,9 @@ const developmentData = {
     { name: "Web Design & Development", key: "web" as const },
     { name: "Content Management System", key: "cms" as const },
     { name: "Mobile App Development", key: "mobile" as const },
-    { name: "Desktop App Development", key: "desktop" as const }
+    { name: "Desktop App Development", key: "desktop" as const },
+    { name: "Motion Graphics", key: "motion" as const }
+
   ],
   sidebarContent: {
     web: {
@@ -57,6 +59,12 @@ const developmentData = {
     desktop: {
       title: "Desktop App Development",
       description: "Powerful desktop applications for Windows, macOS, and Linux. We create feature-rich software solutions using Electron and native frameworks that maximize productivity, streamline operations, and deliver enterprise-grade performance.",
+      ctaText: "Let's Talk",
+      ctaLink: "/contact"
+    },
+    motion: {
+      title: "Motion Graphics",
+      description: "Motion graphics is a powerful tool for communicating complex ideas in a simple and engaging way",
       ctaText: "Let's Talk",
       ctaLink: "/contact"
     }

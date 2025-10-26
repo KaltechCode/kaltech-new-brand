@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import MotionGraphics from "@/pages/service/motion-graphics";
+import MotionGraphics from "@/pages/service/data-analytics";
 
 export const metadata: Metadata = {
   title: "Kaltech - Motion Graphics Service",
