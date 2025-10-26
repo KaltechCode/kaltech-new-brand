@@ -6,6 +6,7 @@ import ser_img_1 from "@/assets/img/inner-service/service/service-1.jpg";
 import ser_img_2 from "@/assets/img/inner-service/service/service-2.jpg";
 import ser_img_3 from "@/assets/img/inner-service/service/service-3.jpg";
 import ser_img_4 from "@/assets/img/inner-service/service/service-4.jpg";
+
 import { RightArrow, ShapeTwo } from "../svg";
 import Link from "next/link";
 
@@ -13,54 +14,60 @@ const service_data = [
   {
     id: 1,
     img: ser_img_1,
-    subtitle: "Design Studio",
-    title: "Logos and branding",
+    subtitle: "Kaltech Consultancy",
+    title: "BRANDING",
     text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
     lists: [
       "Logo Design",
-      "Graphic identity",
-      "Business communication",
-      "Web design",
+      "Graphic Identity",
+      "Business Branding",
+      "Brand Ambassdor",
     ],
+    url: "/branding",
   },
   {
     id: 2,
     img: ser_img_2,
-    subtitle: "Design Studio",
-    title: "Web Design",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
+    subtitle: "Kaltech Consultancy",
+    title: "DEVELOPMENT",
+    text: "We build scalable and efficient web and mobile applications tailored to your business needs.",
     lists: [
-      "Logo Design",
-      "Graphic identity",
-      "Business communication",
-      "Web design",
+      "Web Design and Development",
+      "Content Management System",
+      "Mobile Application Development",
+      "Desktop Application Development",
     ],
+    url: "/development",
+
   },
   {
     id: 3,
-    img: ser_img_3,
-    subtitle: "Design Studio",
-    title: "Motion-Design",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
+    img: ser_img_4,
+    subtitle: "Kaltech Consultancy",
+    title: "MARKETING",
+    text: "Our marketing services are designed to help businesses reach their target audience effectively.",
     lists: [
-      "Logo Design",
-      "Graphic identity",
-      "Business communication",
-      "Web design",
+      "Social Media Marketing",
+      "Search Engine Optimazation",
+      "Email Marketing",
     ],
+    url: "/marketing",
+
   },
   {
     id: 4,
-    img: ser_img_4,
-    subtitle: "Design Studio",
-    title: "Web Analytics",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
+    img: ser_img_3,
+    subtitle: "Kaltech Consultancy",
+    title: "MOTION GRAPHICS",
+    text: "Motion graphics is a powerful tool for communicating complex ideas in a simple and engaging way.",
     lists: [
-      "Logo Design",
-      "Graphic identity",
-      "Business communication",
-      "Web design",
+      "Social media videos",
+      "Explainer Videos",
+      "Logo and Title animations",
+      "Animated Infographics",
     ],
+    url: "/motion-graphics",
+
   },
 ];
 
@@ -88,7 +95,7 @@ export default function ServiceSix() {
                         <i>{item.id < 9 ? "0" + item.id : item.id}</i>
                         {item.subtitle}
                       </span>
-                      <h4 className="sv-service-title">{item.title}</h4>
+                      <h4 className="sv-service-title" style={{letterSpacing: "1.4px"}}>{item.title}</h4>
                     </div>
                     <div className="sv-service-space-wrap">
                       <div className="sv-service-text">
@@ -104,7 +111,7 @@ export default function ServiceSix() {
                       <div className="sv-service-btn">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
-                          href="/service-details"
+                          href={item.url}
                         >
                           <span className="zikzak-content">
                             See <br /> Details
