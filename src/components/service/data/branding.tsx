@@ -7,6 +7,8 @@ import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
 import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
 import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
 
+type ServiceKey = "logo" | "identity" | "business" | "ambassador";
+
 const brandingData = {
   subtitle: "KALTECH CONSULTANCY",
   title: "Branding",
@@ -28,10 +30,10 @@ const brandingData = {
   smallImages: [sv_2, sv_3],
   bottomText: "Great branding design creates memorable experiences that resonate with your target audience and build long-term loyalty. Bonus points for when it also looks and feels aesthetically pleasing while maintaining consistency across all touchpoints!",
   services: [
-    { name: "Logo Design", key: "logo" },
-    { name: "Graphic Identity", key: "identity" },
-    { name: "Business Branding", key: "business" },
-    { name: "Brand Ambassador", key: "ambassador" }
+    { name: "Logo Design", key: "logo" as const },
+    { name: "Graphic Identity", key: "identity" as const },
+    { name: "Business Branding", key: "business" as const },
+    { name: "Brand Ambassador", key: "ambassador" as const }
   ],
   sidebarContent: {
     logo: {
@@ -62,7 +64,7 @@ const brandingData = {
 };
 
 export default function Branding() {
-  const [activeService, setActiveService] = React.useState("logo");
+  const [activeService, setActiveService] = React.useState<ServiceKey>("logo");
 
   return (
     <div className="service-details__area service-details__space pt-200 pb-120">

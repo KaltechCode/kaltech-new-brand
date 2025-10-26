@@ -7,6 +7,8 @@ import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
 import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
 import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
 
+type ServiceKey = "social" | "seo" | "email";
+
 const marketingData = {
   subtitle: "KALTECH CONSULTANCY",
   title: "Marketing",
@@ -28,9 +30,9 @@ const marketingData = {
   smallImages: [sv_2, sv_3],
   bottomText: "Exceptional marketing campaigns create lasting impact and measurable results. Our data-driven approach ensures every marketing dollar is invested wisely to maximize your return on investment and accelerate business growth.",
   services: [
-    { name: "Social Media Marketing", key: "social" },
-    { name: "Search Engine Optimization", key: "seo" },
-    { name: "Email Marketing", key: "email" }
+    { name: "Social Media Marketing", key: "social" as const },
+    { name: "Search Engine Optimization", key: "seo" as const },
+    { name: "Email Marketing", key: "email" as const }
   ],
   sidebarContent: {
     social: {
@@ -55,7 +57,7 @@ const marketingData = {
 };
 
 export default function Marketing() {
-  const [activeService, setActiveService] = React.useState("social");
+  const [activeService, setActiveService] = React.useState<ServiceKey>("social");
 
   return (
     <div className="service-details__area service-details__space pt-200 pb-120">

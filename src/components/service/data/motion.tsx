@@ -7,6 +7,8 @@ import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
 import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
 import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
 
+type ServiceKey = "socialVideos" | "explainer" | "logoAnim" | "infographics" | "titles";
+
 const motionGraphicsData = {
   subtitle: "KALTECH CONSULTANCY",
   title: "Motion Graphics",
@@ -28,11 +30,11 @@ const motionGraphicsData = {
   smallImages: [sv_2, sv_3],
   bottomText: "Exceptional motion graphics capture attention and communicate your message in seconds. Our animations are designed to resonate with your target audience while maintaining your brand's unique identity and visual appeal.",
   services: [
-    { name: "Social Media Videos", key: "socialVideos" },
-    { name: "Explainer Videos", key: "explainer" },
-    { name: "Logo Animations", key: "logoAnim" },
-    { name: "Animated Infographics", key: "infographics" },
-    { name: "Title Sequences", key: "titles" }
+    { name: "Social Media Videos", key: "socialVideos" as const },
+    { name: "Explainer Videos", key: "explainer" as const },
+    { name: "Logo Animations", key: "logoAnim" as const },
+    { name: "Animated Infographics", key: "infographics" as const },
+    { name: "Title Sequences", key: "titles" as const }
   ],
   sidebarContent: {
     socialVideos: {
@@ -69,7 +71,7 @@ const motionGraphicsData = {
 };
 
 export default function Motion() {
-  const [activeService, setActiveService] = React.useState("explainer");
+  const [activeService, setActiveService] = React.useState<ServiceKey>("explainer");
 
   return (
     <div className="service-details__area service-details__space pt-200 pb-120">

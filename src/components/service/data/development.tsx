@@ -7,6 +7,8 @@ import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
 import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
 import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
 
+type ServiceKey = "web" | "cms" | "mobile" | "desktop";
+
 const developmentData = {
   subtitle: "KALTECH CONSULTANCY",
   title: "Development",
@@ -28,10 +30,10 @@ const developmentData = {
   smallImages: [sv_2, sv_3],
   bottomText: "Exceptional development delivers seamless functionality and outstanding performance. Our applications are built with scalability in mind, ensuring they grow alongside your business needs and adapt to changing market demands.",
   services: [
-    { name: "Web Design & Development", key: "web" },
-    { name: "Content Management System", key: "cms" },
-    { name: "Mobile App Development", key: "mobile" },
-    { name: "Desktop App Development", key: "desktop" }
+    { name: "Web Design & Development", key: "web" as const },
+    { name: "Content Management System", key: "cms" as const },
+    { name: "Mobile App Development", key: "mobile" as const },
+    { name: "Desktop App Development", key: "desktop" as const }
   ],
   sidebarContent: {
     web: {
@@ -62,7 +64,7 @@ const developmentData = {
 };
 
 export default function Development() {
-  const [activeService, setActiveService] = React.useState("web");
+  const [activeService, setActiveService] = React.useState<ServiceKey>("web");
 
   return (
     <div className="service-details__area service-details__space pt-200 pb-120">
