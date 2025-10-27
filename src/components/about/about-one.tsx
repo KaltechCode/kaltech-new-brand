@@ -4,7 +4,6 @@ import Image from "next/image";
 // images
 import shape from "@/assets/img/home-02/service/sv-shape-1.png";
 import ab_2 from "@/assets/img/home-02/about/ab-2.jpg";
-import ab_3 from "@/assets/img/home-02/about/ab-s.jpg";
 import { UpArrow } from "../svg";
 import Link from "next/link";
 
