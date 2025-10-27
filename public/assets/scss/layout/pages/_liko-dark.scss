@@ -553,6 +553,7 @@
       linear-gradient(var(--tp-common-white), var(--tp-common-white));
   }
   //   home 05 end  //
+  
 
   //   home 08 start  //
   .tp-studio-hero-title {
@@ -562,13 +563,13 @@
     color: var(--tp-common-white);
   }
   & .tp-btn-black-sm {
-    background-color: transparent;
-    color: var(--tp-common-white);
-    border: 1px solid var(--tp-common-white);
+    background-color: transparent !important;
+    color: var(--tp-common-white) !important;
+    border: 1px solid var(--tp-common-white) !important;
     &:hover {
-      color: var(--tp-common-black);
-      border-color: var(--tp-common-white);
-      background-color: var(--tp-common-white);
+      color: var(--tp-common-black) !important;
+      border-color: var(--tp-common-white) !important;
+      background-color: var(--tp-common-white) !important;
       & span {
         color: var(--tp-common-black);
       }
