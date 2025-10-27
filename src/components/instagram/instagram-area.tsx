@@ -1,7 +1,9 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
-import { Leaf } from "../svg";
+import { useMotionValueEvent, useScroll, useSpring, useTransform } from "motion/react";
+import { motion } from "motion/react";
+
 // instagram images
 import inst_1 from "@/assets/img/home-02/instagram/insta-inner-1.jpg";
 import inst_2 from "@/assets/img/home-02/instagram/insta-inner-2.jpg";
@@ -22,10 +24,77 @@ export default function InstagramArea() {
     { id: 6, img: inst_6 },
     { id: 7, img: inst_7 },
   ];
+  const refContainer = useRef(null);
+  const { scrollYProgress, scrollY } = useScroll();
+  // container: refContainer,
+  // target: refContainer,
+  // offset: ["start end", "end end"],
+
+  const rawScale = useTransform(scrollYProgress, [.1, 0.55], [0.3, 1]);
+  const rawScale3 = useTransform(scrollYProgress, [.2, 0.65], [0.3, 1]);
+  const rawScale4 = useTransform(scrollYProgress, [.23, 0.67], [0.3, 1]);
+  const rawPosT1= useTransform(scrollYProgress, [.1, 0.55],[10, -150])
+  const rawPosL3= useTransform(scrollYProgress, [.1, 0.35],[-12, -320])
+  const rawPosL4= useTransform(scrollYProgress, [.1, 0.35],[-12, -170])
+  const rawPosR5= useTransform(scrollYProgress, [.1, 0.35],[-15, -120])
+
+    const scale = useSpring(rawScale, { 
+      stiffness: 100, // Lower is springier/slower
+      damping: 30,    // Higher is more resistive/slower
+    restDelta: 0.001 
+  });
+
+  
+    const scale3 = useSpring(rawScale3, { 
+      stiffness: 100, // Lower is springier/slower
+      damping: 30,    // Higher is more resistive/slower
+    restDelta: 0.001 
+  });
+
+    const scale4 = useSpring(rawScale4, { 
+      stiffness: 100, // Lower is springier/slower
+      damping: 30,    // Higher is more resistive/slower
+    restDelta: 0.001 
+  });
+
+    const posT1 = useSpring(rawPosT1, { 
+      stiffness: 100, // Lower is springier/slower
+      damping: 30,    // Higher is more resistive/slower
+    restDelta: 0.001 
+  });
+
+    const posL3 = useSpring(rawPosL3, { 
+      stiffness: 100, // Lower is springier/slower
+      damping: 30,    // Higher is more resistive/slower
+    restDelta: 0.001 
+  });
+
+    const posL4 = useSpring(rawPosL4, { 
+      stiffness: 100, // Lower is springier/slower
+      damping: 30,    // Higher is more resistive/slower
+    restDelta: 0.001 
+  });
+
+    const posR5 = useSpring(rawPosR5, { 
+      stiffness: 100, // Lower is springier/slower
+      damping: 30,    // Higher is more resistive/slower
+    restDelta: 0.001 
+  });
+
+   
+
+
+
+  // useMotionValueEvent(scrollY, "change", (value) => {
+  //   console.log(value);
+
+  // });
+  console.log(scale)
   return (
     <div
       className="tp-instagram-area tp-instagram-ptb text-center p-relative mb-100"
       style={{}}
+      ref={refContainer}
     >
       <div className="tp-instagram-thumb-wrap p-relative " style={{}}>
         {/* {instagram_images.map((item) => (
@@ -36,16 +105,17 @@ export default function InstagramArea() {
             <Image src={item.img} alt="inst-img" />
           </div>
         ))} */}
-        <div
+        <motion.div
           className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
           style={{
-            top: "-150px",
+            top: posT1,
             position: "absolute",
             left: "8%",
             height: "120px",
             width: "180px",
             borderRadius: "5px",
             overflow: "hidden",
+            scale: scale,
           }}
         >
           <Image
@@ -53,18 +123,19 @@ export default function InstagramArea() {
             alt="inst-img"
             style={{ width: "100%", height: "100%" }}
           />
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
           className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
           style={{
-            top: "-150px",
+            top: posT1,
             position: "absolute",
             right: "0",
             height: "120px",
             width: "250px",
             borderRadius: "5px",
             overflow: "hidden",
+            scale
           }}
         >
           <Image
@@ -72,51 +143,54 @@ export default function InstagramArea() {
             alt="inst-img"
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
           className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
           style={{
             position: "absolute",
-            right: "-320px",
+            right: posL3,
             bottom: "0",
-            height: "270px",
-            width: "270px",
+            height: "280px",
+            width: "290px",
             borderRadius: "5px",
             overflow: "hidden",
+            scale: scale3
           }}
         >
           <Image src={instagram_images[2].img} alt="inst-img" />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
           style={{
             position: "absolute",
-            right: "-170px",
+            right: posL4,
             height: "120px",
-            width: "120px",
+            width: "150px",
             borderRadius: "5px",
             bottom: "-170px",
             overflow: "hidden",
+            scale: scale4
           }}
         >
           <Image src={instagram_images[3].img} alt="inst-img" />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
           style={{
             position: "absolute",
             right: "0",
             height: "70px",
             width: "70px",
-            bottom: "-120px",
+            bottom: posR5,
             borderRadius: "5px",
             overflow: "hidden",
+            scale: scale4
           }}
         >
           <Image src={instagram_images[4].img} alt="inst-img" />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
           style={{
             position: "absolute",
@@ -126,11 +200,12 @@ export default function InstagramArea() {
             width: "70px",
             borderRadius: "5px",
             overflow: "hidden",
+            scale: scale3
           }}
         >
           <Image src={instagram_images[5].img} alt="inst-img" />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className={`tp-instagram-thumb-inner-y d-none d-xl-block`}
           style={{
             position: "absolute",
@@ -140,22 +215,23 @@ export default function InstagramArea() {
             width: "260px",
             borderRadius: "5px",
             overflow: "hidden",
+            scale: scale
           }}
         >
           <Image src={instagram_images[6].img} alt="inst-img" />
-        </div>
+        </motion.div>
         {/* <div className={`tp-instagram-thumb-inner-y d-none d-xl-block`}>
           <Image src={instagram_images[7].img} alt="inst-img" />
         </div> */}
 
-        <div className="tp-instagram-thumb">
+        <motion.div className="tp-instagram-thumb" style={{scale }}>
           {/* <Image src={inst_8} alt="inst-img" */}
           <img
             src="/assets/img/home-02/instagram/insta-1.jpg"
             alt="inst-img"
-            style={{ height: 430, width: 550, borderRadius: "10px" }}
+            style={{ height: 430, width: 550, borderRadius: "10px", }}
           />
-        </div>
+        </motion.div>
         {/* <div className="tp-instagram-content-wrap text-start">
           <div className="tp-instagram-title-box">
             <span className="tp-instagram-subtitle">INSTAGRAM</span>
