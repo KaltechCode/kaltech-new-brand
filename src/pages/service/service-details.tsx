@@ -15,6 +15,7 @@ import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
+import Motion from "@/components/service/data/data-analytics";
 
 const ServiceDetailsMain = () => {
   useScrollSmooth();
@@ -33,9 +34,7 @@ const ServiceDetailsMain = () => {
       <HeaderEleven />
       {/* header area end */}
 
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main>
+    
             {/* service details area */}
             <ServiceDetailsArea />
             {/* service details area */}
@@ -43,17 +42,16 @@ const ServiceDetailsMain = () => {
             {/* line image slider  */}
             <LineImgSlider />
             {/* line image slider  */}
-
+            <Motion />
             {/* big text */}
             <BigText />
             {/* big text */}
-          </main>
+        
 
           {/* footer area */}
           <FooterTwo topCls="" />
           {/* footer area */}
-        </div>
-      </div>
+    
     </Wrapper>
   );
 };

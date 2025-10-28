@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
+import HeaderOne from "@/layouts/headers/header-one";
 import { ServiceItems } from "@/components/service/service-five";
 import ServiceHero from "@/components/service/service-hero";
 import ServiceSix from "@/components/service/service-six";
@@ -36,7 +36,7 @@ const ServiceMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderOne />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -47,22 +47,17 @@ const ServiceMain = () => {
             {/* service hero */}
 
             {/* service area */}
-            <div className="tp-service-5-area sv-service-style pb-70">
+            <div className="tp-service-5-area sv-service-style pb-70 pt-120">
               <div className="container container-1530">
                 <div className="row">
-                  <div className="col-xl-12">
-                    <div className="tp-service-5-title-box mb-90">
+                  {/* <div className="">
+                    <div className="tp-service-5-title-box ">
                       <span className="ab-inner-subtitle mb-20">
                         <Leaf />
                         Services
                       </span>
-                      <h4 className="tp-service-5-title">
-                        We strongly believe that only design reinforced by{" "}
-                        <br />
-                        strategy can provide real results.
-                      </h4>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="tp-service-5-wrap">
                   <ServiceItems />
@@ -76,17 +71,17 @@ const ServiceMain = () => {
             {/* service area */}
 
             {/* brand area */}
-            <div className="tp-brand-4-area pt-120 pb-120">
+            {/* <div className="tp-brand-4-area pt-120 pb-120">
               <div className="container">
                 <div className="row gx-0">
                   <BrandItems />
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* brand area */}
 
             {/* line image slider  */}
-            <LineImgSlider />
+            {/* <LineImgSlider /> */}
             {/* line image slider  */}
 
             {/* big text */}

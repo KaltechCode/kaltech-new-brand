@@ -1,53 +1,48 @@
 import { ITeamDT } from "@/types/team-d-t";
 
 const team_data:ITeamDT[] = [
-  {
+    {
     id:1,
-    image:"/assets/img/home-01/team/team-1-1.jpg",
-    designation:"Art direction",
-    name:"JANE MILLS",
+    image:"/assets/img/home-01/team/Sahil.webp",
+    designation:"Lead UI/UX Designer",
+    name:"Sahil",
   },
   {
     id:2,
-    image:"/assets/img/home-01/team/team-1-2.jpg",
-    designation:"Art direction",
-    name:"JIMathis",
+    image:"/assets/img/home-01/team/Victor.webp",
+    designation:"Strategic Consultant",
+    name:"Victor",
   },
+
   {
     id:3,
-    image:"/assets/img/home-01/team/team-1-3.jpg",
-    designation:"Art direction",
-    name:"Randolph",
+    image:"/assets/img/home-01/team/Olamilekan.webp",
+    designation:"Marketing Director",
+    name:"Olamilekan",
   },
   {
     id:4,
-    image:"/assets/img/home-01/team/team-1-4.jpg",
-    designation:"Art direction",
-    name:"Mullins",
+    image:"/assets/img/home-01/team/Blume.webp",
+    designation:"Lead Technical Consultant",
+    name:"Blume",
   },
   {
     id:5,
-    image:"/assets/img/home-01/team/team-1-9.jpg",
-    designation:"Art direction",
-    name:"Minor",
+    image:"/assets/img/home-01/team/Sasanka.webp",
+    designation:"Full-Stack Developer",
+    name:"Sasanka",
   },
   {
     id:6,
-    image:"/assets/img/home-01/team/team-1-6.jpg",
-    designation:"Art direction",
-    name:"Lucas",
+    image:"/assets/img/home-01/team/Abdullah.webp",
+    designation:"Frontend Developer",
+    name:"Abdullah",
   },
   {
     id:7,
-    image:"/assets/img/home-01/team/team-1-7.jpg",
-    designation:"Art direction",
-    name:"JDeborah",
-  },
-  {
-    id:8,
-    image:"/assets/img/home-01/team/team-1-8.jpg",
-    designation:"Art direction",
-    name:"Miller",
+    image:"/assets/img/home-01/team/Olamide.webp",
+    designation:"Full-Stack Developer",
+    name:"Olamide",
   },
 ];
 

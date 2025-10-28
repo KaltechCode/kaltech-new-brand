@@ -9,6 +9,56 @@
     transition-timing-function: linear;
 }
 
+/* BrandFive customizations (light mode defaults) */
+.brand-five{
+    background-color: var(--tp-common-white);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brand-five-text{
+    color: var(--tp-common-black);
+}
+
+/* Brand logo responsive styles */
+.brand-logo {
+    object-fit: contain;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+
+    @media #{$xl} {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    @media #{$lg} {
+        max-width: 160px;
+        max-height: 160px;
+    }
+
+    @media #{$md} {
+        max-width: 140px;
+        max-height: 140px;
+    }
+
+    @media #{$sm} {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    @media #{$xs} {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+/* Ensure the title inside BrandFive uses the correct color in light mode */
+.brand-five .ab-brand-title{
+    color: var(--tp-common-black);
+}
+
 .tp-brand{
     &-area{
         padding-top: 600px;

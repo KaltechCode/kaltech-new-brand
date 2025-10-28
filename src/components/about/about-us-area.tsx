@@ -10,99 +10,108 @@ import ab_3 from "@/assets/img/inner-about/about/about-2.jpg";
 
 export default function AboutUsArea() {
   return (
-    <div className="ab-about-area ab-about-mt pb-90 z-index-5">
+    <div className="ab-about-area ab-about-mt pb-70 z-index-5 pt-40">
       <div className="container container-1480">
-        <div className="ab-about-thumb-wrap mb-180">
-          <div className="row align-items-end">
-            <div className="col-xl-6 col-lg-6 col-md-6">
-              <div className="ab-about-left-thumb">
-                <Image
-                  data-speed=".7"
-                  src={ab_1}
-                  alt="about-img"
-                  style={{ height: "auto" }}
-                />
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-6 col-md-6">
-              <div className="ab-about-right-thumb p-relative">
-                <Image
-                  data-speed="1.1"
-                  className="inner-img z-index-5"
-                  src={ab_2}
-                  alt="about-img"
-                  style={{ height: "auto" }}
-                />
-                <Image
-                  data-speed="0.9"
-                  src={ab_3}
-                  alt="about-img"
-                  style={{ height: "auto" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
         <div id="about-info" className="row">
-          <div className="col-xxl-9">
-            <div className="ab-about-content p-relative">
-              <span>
+          <div className="ab-about-content">
+            {/* <span>
                 <Hand />
                 Hi!
-              </span>
-              <p className="tp-dropcap tp_fade_bottom">
-                We are a creative studio that specializes in providing
-                high-quality design and branding solutions to businesses and
-                individuals. Our team is composed of talented designers,
-                developers, and marketers.!
-              </p>
+              </span> */}
+
+            <div className="ab-brand-title-box  text-center">
+              <h4
+                className="ab-brand-title"
+                style={{
+                  fontSize: "clamp(28px, 5vw, 50px)",
+                  letterSpacing: "2px",
+                  lineHeight: "1.2",
+                }}
+              >
+                Our Story
+              </h4>
+            </div>
+
+            <p
+              className="tp-dropcap tp_fade_bottom"
+              style={{
+                fontSize: "20px",
+                letterSpacing: "0.4px",
+                lineHeight: "30px",
+                width: "100%",
+                maxWidth: "1340px",
+                margin: "0 auto",
+              }}
+            >
+              <br />
+              Kaltech Consultancy is a powerhouse of digital creativity,
+              equipped with a talented team of designers, developers,
+              consultants, data analysts, engineers, and strategists. Equipped
+              with over two decades of experience and a passion for innovation,
+              we specialize in crafting visually stunning and user-centric
+              business systems that captivate audiences from different business
+              ventures. We combine our technical proficiency with a deep
+              understanding of the latest industry trends and best practices,
+              ensuring your business remains ahead of the curve.
+            </p>
+          </div>
+          {/* <div className="col-xxl-9">
+           
+          </div> */}
+        </div>
+<div className="row what-we-do-section">
+  <div className="col-12">
+    <div className="row">
+      <div className="col-xl-3 col-lg-4 col-md-5 col-12 mb-40">
+        <div className="ab-about-category-title-box p-relative">
+          <h4 className="ab-about-category-title">
+            What we do
+            <span></span>
+          </h4>
+          <Image
+            className="ab-about-shape-1 d-none d-md-block"
+            src={shape}
+            alt="shape"
+          />
+        </div>
+      </div>
+      <div className="col-xl-9 col-lg-8 col-md-7 col-12 pt-7">
+        <div className="row gx-4">
+          <div className="col-lg-4 col-md-6 col-12 mb-30">
+            <div className="ab-about-category-list category-space-1 tp_fade_bottom">
+              <ul>
+                <li>Web design and Development</li>
+                <li>Content Management System</li>
+                <li>Mobile Application Development</li>
+                <li>Desktop Application Development</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-12 mb-30">
+            <div className="ab-about-category-list category-space-2 tp_fade_bottom">
+              <ul>
+                <li>Social Media Marketing</li>
+                <li>Search Engine Optimization</li>
+                <li>Email Marketing</li>
+                <li>Explainer videos</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 col-12 mb-30">
+            <div className="ab-about-category-list category-space-3 tp_fade_bottom">
+              <ul>
+                <li>Logo Design</li>
+                <li>Business Branding</li>
+                <li>Brand Ambasadors</li>
+                <li>Logo and Title Animations</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xl-9">
-            <div className="row">
-              <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
-                <div className="ab-about-category-title-box p-relative">
-                  <h4 className="ab-about-category-title">
-                    Something <br />
-                    <span>WHAT I DO</span>
-                  </h4>
-                  <Image
-                    className="ab-about-shape-1 d-none d-md-block"
-                    src={shape}
-                    alt="shape"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-7 col-lg-7 col-md-8">
-                <div className="row">
-                  <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
-                    <div className="ab-about-category-list category-space-1 tp_fade_bottom">
-                      <ul>
-                        <li>Art direction</li>
-                        <li>Branding</li>
-                        <li>Content Production</li>
-                        <li>User Interface Design</li>
-                        <li>Animation</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
-                    <div className="ab-about-category-list category-space-2 tp_fade_bottom">
-                      <ul>
-                        <li>Brand Identity</li>
-                        <li>User Interface</li>
-                        <li>User Experience</li>
-                        <li>Responsive Design</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   );
