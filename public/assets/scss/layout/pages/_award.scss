@@ -200,11 +200,12 @@
     }
   }
   &-title {
-    font-size: 160px;
+    font-size: 65px;
     font-weight: 600;
     line-height: 1;
     letter-spacing: 1px;
     color: var(--tp-common-white);
+    padding-left: 50px;
     @media #{$xxxxl} {
       font-size: 170px;
     }
@@ -218,34 +219,64 @@
       font-size: 120px;
     }
     @media #{$md} {
-      font-size: 95px;
+      font-size: clamp(55px, 1em + 2rem, 60px);
+      padding-left: 100px;
     }
     @media #{$xs} {
-      font-size: clamp(75px, 3em + 4rem, 80px);
+      font-size: clamp(60px, 3em + 4rem, 75px);
     }
-    @media #{$sm} {
-      font-size: 70px;
+    @media #{$xsm} {
+      font-size: clamp(60px, 3em + 4rem, 75px);
     }
-    & span {
+    &.tp-award-title-1{
+      padding-left: 250px;
+      @media #{$xxl} {
+        padding-left: 150px;
+      }
+      @media #{$lg} {
+        margin-top: -50px;
+        padding-left: 50px;
+        font-size: clamp(55px, calc(4em + 2rem), 110px);
+      }
+      @media #{$md} {
+        padding-left: 100px;
+        margin-top: 10;
+        font-size: clamp(55px, calc(3em + 2rem), 100px);
+
+      }
+      @media #{$sm} {
+        padding-left: 40px;
+        text-align: left;
+      }
+      @media #{$xsm} {
+        padding-left: 0px;
+        text-align: center;
+      }
+    }
+    &.tp-award-title-2{
       padding-left: 250px;
       @media #{$xxl} {
         padding-left: 150px;
       }
       @media #{$lg} {
         padding-left: 50px;
+        font-size: clamp(55px, calc(4em + 2rem), 110px);
       }
-      @media #{$md,$xs} {
+      @media #{$md} {
+        padding-left: 0;
+        font-size: clamp(55px, calc(3em + 2rem), 100px);
+
+      }
+      @media #{$sm} {
+        padding-left: 40px;
+        text-align: center;
+      }
+      @media #{$xsm} {
         padding-left: 0px;
+        text-align: center;
       }
     }
-    & h2 {
-      @media #{$xl, $xxl, $xxxl, $xxxxl} {
-        padding-left: 190px;
-      }
-      @media #{$lg} {
-        padding-left: 50px;
-      }
-    }
+    
   }
   &-subtitle {
     font-size: 18px;
@@ -319,6 +350,9 @@
   }
   &-btn-box {
     margin-right: 220px;
+    @media #{$md}{
+      margin-top: 110px;
+    }
     @media #{$lg,$md,$xs} {
       margin-right: 0;
     }

@@ -404,7 +404,11 @@
       padding-top: 60px;
       padding-bottom: 100px;
     }
-    @media #{$xl, $xxl, $xxxl, $xxxxl} {
+    @media #{$md, $lg}{
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+    @media #{ $xl, $xxl, $xxxl, $xxxxl} {
       padding: 5em 60px;
     }
     & .container {

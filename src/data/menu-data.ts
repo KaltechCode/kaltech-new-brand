@@ -188,7 +188,7 @@ const menu_data: IMenuDT[] = [
   {
     id: 2,
     title: "About Us",
-    link: "#",
+    link: "/about-us",
   },
   {
     id: 3,

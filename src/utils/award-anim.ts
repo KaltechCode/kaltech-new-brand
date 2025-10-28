@@ -27,10 +27,10 @@ function awardAnimOne() {
       },
     })
     .to(".tp-award-title-1 ", {
-      x: "-15%",
+      x: "-12%",
     });
   gsap.set(".tp-award-title-1", {
-    x: "10%",
+    x: "8%",
   });
   // title 2
   gsap
@@ -44,10 +44,10 @@ function awardAnimOne() {
       },
     })
     .to(".tp-award-title-2 ", {
-      x: "15%",
+      x: "10%",
     });
   gsap.set(".tp-award-title-2", {
-    x: "-10%",
+    x: "-5%",
   });
 }
 
