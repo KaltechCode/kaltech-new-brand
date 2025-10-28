@@ -75,11 +75,9 @@
 }
 .tp-service-2 {
   &-area {
-    margin-top: 100px;
-    @media #{$xl,$lg,$md,$xs} {
-      margin-top: 0;
-    }
-    @media #{$sm} {
+    
+    @media #{$xs} {
+      padding-top: 60px;
       padding-bottom: 60px;
     }
     @media #{$md, $lg}{
