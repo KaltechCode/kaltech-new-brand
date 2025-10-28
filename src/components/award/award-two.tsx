@@ -22,8 +22,10 @@ export default function AwardTwo() {
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
+          <span></span>
+            {/* first */}
             <div className="tp-award-2-title-box p-relative">
-              <span className="tp-award-2-subtitle"></span>
+              <span className="tp-award-2-title"></span>
               <h2 className="tp-award-2-title tp-award-title-1">Driven</h2>
               <h2 className="tp-award-2-title tp-award-title-2">
                 <span>
@@ -38,6 +40,8 @@ export default function AwardTwo() {
                 here to power your digital transformation.
               </p>
             </div>
+
+            {/* second */}
             <div className="tp-award-2-btn-box">
               <div className="tp-projct-5-2-btn-box d-flex justify-content-end">
                 <div className="tp-hover-btn-wrapper">

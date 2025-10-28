@@ -250,10 +250,10 @@
     }
   }
   &-title-big {
-    font-size: clamp(90px, 12em + 5rem, 160px);
+    font-size: clamp(60px, calc(3em + 2rem), 160px);
     font-weight: 500;
     line-height: 0.9;
-    letter-spacing: -2px;
+    letter-spacing: 0px;
     text-align: center;
     color: var(--tp-common-black-2);
   }

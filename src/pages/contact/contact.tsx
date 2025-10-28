@@ -48,6 +48,7 @@ const ContactMain = () => {
                       <div className="tm-hero-content">
                         {/* <span className="tm-hero-subtitle">Kaltech</span> */}
                         <h4 className="tm-hero-title-big tp-char-animation">
+                          
                           Get in touch
                         </h4>
                       </div>
