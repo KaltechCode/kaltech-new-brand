@@ -7,23 +7,29 @@ import s_2 from "@/assets/img/home-01/service/service-icon-2.png";
 import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 
 const service_data = [
-  {
+    {
     id: 1,
-    title: "Branding",
-    desc: "Branding is one of the most important ingredients for the success of any business.",
-    icon: s_2,
+    title: "Development",
+    desc: "We build scalable and efficient web and mobile applications tailored to your business needs.",
+    icon: s_1,
   },
   {
     id: 2,
-    title: "Website design",
-    desc: "The perfect cocktail should still look and taste perfect no matter the size of the glass you serve it in.",
-    icon: s_1,
+    title: "Branding",
+    desc: "Our branding services help businesses establish a strong and memorable brand identity.",
+    icon: s_2,
   },
   {
     id: 3,
     title: "Marketing",
-    desc: "We take that same approach with the apps & websites we create. you go there because of the overall experience.",
+    desc: "Our marketing services are designed to help businesses reach their target audience effectively.",
     icon: s_3,
+  },
+    {
+    id: 3,
+    title: "Data Analytics",
+    desc: "Data analytics is the process of examining data sets to draw conclusions about the information they contain.",
+    icon: s_1,
   },
 ];
 
@@ -31,7 +37,7 @@ const service_data = [
 export function ServiceItems() {
   return (
     <div className="row">
-      <div className="col-xxl-3"></div>
+      {/* <div className="col-xxl-3"></div> */}
       {service_data.map((item) => (
         <div key={item.id} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
           <div className="tp-service-5-item tp_fade_bottom space-1">
