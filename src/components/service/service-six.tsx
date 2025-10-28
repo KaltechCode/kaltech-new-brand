@@ -97,7 +97,7 @@ export default function ServiceSix() {
                       </span>
                       <h4 className="sv-service-title" style={{letterSpacing: "1.4px"}}>{item.title}</h4>
                     </div>
-                    <div className="sv-service-space-wrap">
+                    <div className="">
                       <div className="sv-service-text">
                         <p>{item.text}</p>
                       </div>
