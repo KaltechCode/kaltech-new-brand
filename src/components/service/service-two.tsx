@@ -73,6 +73,7 @@ export default function ServiceTwo() {
           </div>
 
           <div className="align-items-start two-column-layout">
+           
             <div className="tp-service-2-title-box">
               <span className="tp-section-subtitle-3">
                 <span>
@@ -85,7 +86,7 @@ export default function ServiceTwo() {
                 a team of experts committed in delivering outstanding results by
                 providing the following services:
               </p>
-              <div className="tp-projct-5-2-btn-box flex-1 d-flex justify-content-start align-item-end mt-20">
+              <div className="tp-projct-5-2-btn-box flex-1 d-flex justify-content-start align-item-end mt-30">
                 <div className="tp-hover-btn-wrapper">
                   <Link className="tp-btn-black-sm" href="/">
                     <span className="">More Info</span>
@@ -97,8 +98,10 @@ export default function ServiceTwo() {
                 </div>
               </div>
             </div>
+
+
             <div className="col-xl-12">
-              <div className="tp-service-2-accordion-box">
+              <div className="tp-service-2-accordion-box" style={{marginTop: 25}}>
                 <div className="accordion" id="accordionExample">
                   {service_accordion.map((s) => (
                     <div key={s.id} className="accordion-items">
