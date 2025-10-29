@@ -18,6 +18,7 @@ const service_accordion = [
       "Web design and Development",
       "Content Management System",
       "Mobile Application Development",
+      "Motion Graphics"
     ],
     link: "development",
   },
@@ -42,13 +43,13 @@ const service_accordion = [
   {
     id: 4,
     icon: ser_4,
-    title: "Motion Graphics",
+    title: "Data analytics",
     desc: [
-      "Explainer videos",
-      "Social media",
+      "Trends Metric",
+      "Sale Metric",
       "animations Logo and title animations",
     ],
-    link: "motion-graphics",
+    link: "data-analytics",
   },
 ];
 export default function ServiceTwo() {

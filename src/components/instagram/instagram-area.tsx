@@ -5,13 +5,13 @@ import { useMotionValueEvent, useScroll, useSpring, useTransform } from "motion/
 import { motion } from "motion/react";
 
 // instagram images
-import inst_1 from "@/assets/img/home-02/instagram/insta-inner-1.jpg";
-import inst_2 from "@/assets/img/home-02/instagram/insta-inner-2.jpg";
-import inst_3 from "@/assets/img/home-02/instagram/insta-inner-3.jpg";
-import inst_4 from "@/assets/img/home-02/instagram/insta-inner-4.jpg";
-import inst_5 from "@/assets/img/home-02/instagram/insta-inner-5.jpg";
-import inst_6 from "@/assets/img/home-02/instagram/insta-inner-6.jpg";
-import inst_7 from "@/assets/img/home-02/instagram/insta-inner-7.jpg";
+import inst_1 from "@/assets/img/custom/whoWeAre/Kaltech-Question.webp";
+import inst_2 from "@/assets/img/custom/whoWeAre/kaltech-development.webp";
+import inst_3 from "@/assets/img/custom/whoWeAre/Kaltech-Feel-free.webp";
+import inst_4 from "@/assets/img/custom/whoWeAre/kaltech-were.webp";
+import inst_5 from "@/assets/img/custom/whoWeAre/Katech-Kumisfoundatiion.webp";
+import inst_6 from "@/assets/img/custom/whoWeAre/Kaltech-logo.webp";
+import inst_7 from "@/assets/img/custom/whoWeAre/Kaltech-are-you.webp";
 import { useMediaQuery } from "@/utils/getMedis";
 
 export default function InstagramArea() {
@@ -38,11 +38,11 @@ export default function InstagramArea() {
   // offset: ["start end", "end end"],
 
   const rawScale = useTransform(scrollYProgress, [.1, 0.55], [0.3, 1]);
-  const sRawScale = useTransform(scrollYProgress, [.1, 0.15], [0.5, 1]);
+  const sRawScale = useTransform(scrollYProgress, [.1, 0.15], [0.8, 1]);
   const rawScale3 = useTransform(scrollYProgress, [.2, 0.65], [0.3, 1]);
-  const sRawScale3 = useTransform(scrollYProgress, [.2, 0.35], [0.5, 1]);
+  const sRawScale3 = useTransform(scrollYProgress, [.2, 0.35], [0.8, 1]);
   const rawScale4 = useTransform(scrollYProgress, [.23, 0.67], [0.3, 1]);
-  const sRawScale4 = useTransform(scrollYProgress, [.23, 0.37], [0.5, 1]);
+  const sRawScale4 = useTransform(scrollYProgress, [.23, 0.37], [0.8, 1]);
   const rawPosT1= useTransform(scrollYProgress, [.1, 0.55],[10, -150])
   const sRawPosT1= useTransform(scrollYProgress, [.1, 0.25],[6, -120])
   const rawPosL3= useTransform(scrollYProgress, [.1, 0.35],[-12, -320])
@@ -156,7 +156,7 @@ export default function InstagramArea() {
           className={`tp-instagram-thumb-inner-3`}
           style={{
             // right: posL3,
-            scale: scale3
+            scale: scale3,
           }}
         >
           <Image src={instagram_images[2].img} alt="inst-img" />
@@ -196,6 +196,7 @@ export default function InstagramArea() {
           className={`tp-instagram-thumb-inner-7`}
           style={{
             scale: scale,
+            
           }}
         >
           <Image src={instagram_images[6].img} alt="inst-img" style={{height: "100%", width: "100%"}} />
@@ -212,7 +213,7 @@ export default function InstagramArea() {
           {/* <Image src={inst_8} alt="inst-img" */}
 
           <img
-            src="/assets/img/home-02/instagram/insta-1.jpg"
+            src="/assets/img/custom/whoWeAre/Kaltect-Looking-for-an-answer.webp"
             alt="inst-img"
             style={{height: "100%", width: "100%"}}
           />
