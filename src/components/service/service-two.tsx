@@ -47,7 +47,7 @@ const service_accordion = [
     desc: [
       "Trends Metric",
       "Sale Metric",
-      "animations Logo and title animations",
+      "Data Visualization",
     ],
     link: "data-analytics",
   },
