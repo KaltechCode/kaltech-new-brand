@@ -111,7 +111,7 @@ export default function InstagramArea() {
   return (
     <div
       className="tp-instagram-area tp-instagram-ptb text-center p-relative mb-100"
-      style={{}}
+      style={{height: 650}}
       ref={refContainer}
     >
       <div className="tp-instagram-thumb-wrap p-relative " style={{height: "max-content"}}>
@@ -157,6 +157,7 @@ export default function InstagramArea() {
           style={{
             // right: posL3,
             scale: scale3,
+            
           }}
         >
           <Image src={instagram_images[2].img} alt="inst-img" />

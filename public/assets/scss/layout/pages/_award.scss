@@ -260,11 +260,11 @@
       }
       @media #{$lg} {
         padding-left: 50px;
-        font-size: clamp(55px, calc(4em + 2rem), 110px);
+        font-size: clamp(55px, calc(4em + 2rem), 100px);
       }
       @media #{$md} {
         padding-left: 0;
-        font-size: clamp(55px, calc(3em + 2rem), 100px);
+        font-size: clamp(55px, calc(3em + 2rem), 60px);
 
       }
       @media #{$sm} {

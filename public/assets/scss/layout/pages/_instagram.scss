@@ -21,36 +21,44 @@
 
   &-area {
     display: flex;
-    @media #{$xs,$lg} {
-      height: 100vh;
+    @media #{$xs} {
+      display: none;
     }
+    
     @media #{$md} {
-      height: 50vh;
+      height: 70vh;
       align-items: center;
+      max-height: 650px;
     }
-    @media #{$smL} {
-      height: 120vh;
+    @media #{$lg} {
+      height: 60vh;
       align-items: center;
+      max-height: 800px;
     }
     @media #{$xl} {
       height: 110vh;
       align-items: flex-end;
-      max-height: 920px;
+      max-height: 850px;
       padding-bottom: "10%";
+    }
+
+    @media #{$smL} {
+      height: 120vh;
+      align-items: center;
+      display: flex;
     }
     @media #{$lgL} {
       align-items: center;
-      max-height: 700px;
+      height: 100vh;
+      max-height: 750px;
     }
     @media #{$xxl,$xxxl, $xxxxl} {
       height: 100vh;
       align-items: center;
-      max-height: 920px;
+      max-height: 820px;
       padding-bottom: "5%";
     }
-    @media #{$xsm} {
-      display: none;
-    }
+    
   }
   &-thumb {
     height: 100%;
@@ -73,7 +81,11 @@
         width: 360px;
 
       }
-      @media #{$lg, $xl, $xxl, $xxxl, $xxxxl} {
+      @media #{$lg} {
+        width: 500px;
+        height: 350px;
+      }
+      @media #{$xl, $xxl, $xxxl, $xxxxl} {
         width: 550px;
         height: 400px;
       }
@@ -97,7 +109,6 @@
               top: -120px;
               height: 100px;
               width: 120px;
-  
             }
         & img {
           height: 100%;
@@ -130,7 +141,6 @@
         overflow: hidden;
         right: -320px;
         @media #{$smL, $md} {
-          bottom: 0;
           right: -180px;
           height: 170px;
           width: 160px;
@@ -140,6 +150,24 @@
           height: 240px;
           width: 250px;
         }
+        @media #{$lgL} {
+          right: -250px;
+          height: 240px;
+          width: 250px;
+        }
+        @media #{$lgL} {
+          right: -250px;
+          height: 240px;
+          width: 250px;
+        }
+        
+        @media #{$lg} {
+          right: -250px;
+          height: 230px;
+          width: 240px;
+        }
+        
+        
         
         & img {
           height: 100%;
@@ -206,6 +234,12 @@ width: 100%;
           height: 215px;
             width: 215px;
             left: -245px;
+            top: 70px;
+        }
+        @media #{$lg} {
+          height: 200px;
+            width: 200px;
+            left: -215px;
             top: 70px;
         }
         & img {
