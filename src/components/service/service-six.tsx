@@ -76,7 +76,7 @@ export default function ServiceSix() {
     <div className="sv-service-area project-panel-area-2">
       <div className="container-fluid p-0">
         {service_data.map((item) => (
-          <div key={item.id} className="sv-service-item project-panel-2">
+          <div key={item.id} id={item.url.replace('/', '')} className="sv-service-item project-panel-2">
             <div className="row g-0">
               <div className="col-xl-6 col-lg-6">
                 <div className="sv-service-thumb">

@@ -7,29 +7,33 @@ import s_2 from "@/assets/img/home-01/service/service-icon-2.png";
 import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 
 const service_data = [
-    {
+  {
     id: 1,
     title: "Development",
     desc: "We build scalable and efficient web and mobile applications tailored to your business needs.",
     icon: s_1,
+    tag: "#development"
   },
   {
     id: 2,
     title: "Branding",
     desc: "Our branding services help businesses establish a strong and memorable brand identity.",
     icon: s_2,
+    tag: "#branding"
   },
   {
     id: 3,
     title: "Marketing",
     desc: "Our marketing services are designed to help businesses reach their target audience effectively.",
     icon: s_3,
+    tag: "#marketing"
   },
-    {
-    id: 3,
+  {
+    id: 4,
     title: "Data Analytics",
     desc: "Data analytics is the process of examining data sets to draw conclusions about the information they contain.",
     icon: s_1,
+    tag: "#data-analytics"
   },
 ];
 
@@ -46,7 +50,7 @@ export function ServiceItems() {
             </div>
             <div className="tp-service-4-content">
               <h4 className="tp-service-4-title-sm tp-text-black">
-                <Link href="/service">{item.title}</Link>
+                <Link href={`/service${item.tag}`}>{item.title}</Link>
               </h4>
               <p>{item.desc}</p>
             </div>
@@ -77,7 +81,7 @@ export default function ServiceFive() {
           </div>
         </div>
         <div className="tp-service-5-wrap">
-          <ServiceItems/>
+          <ServiceItems />
         </div>
       </div>
     </div>
