@@ -80,14 +80,20 @@
       padding-top: 60px;
       padding-bottom: 60px;
     }
+    @media #{$smL} {
+      padding-bottom: 0;
+      align-items: center;
+    }
+
     @media #{$md, $lg}{
       padding-top: 5em;
-      padding-bottom: 5em;
+      // padding-bottom: 5em;
     }
    
     @media #{$xl, $xxl, $xxxl, $xxxxl} {
       padding: 5em 60px;
     }
+    
     & .container {
       max-width: 100%;
       @media #{$xxxl, $xxxxl} {
