@@ -87,8 +87,8 @@ const ServiceMain = () => {
             {/* line image slider  */}
 
             {/* big text */}
-            <BigText />
-            {/* <ContactOne/> */}
+            {/* <BigText /> */}
+            <ContactOne/>
             {/* big text */}
           </main>
 
