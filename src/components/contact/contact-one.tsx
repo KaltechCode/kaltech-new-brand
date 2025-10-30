@@ -40,8 +40,8 @@ export default function ContactOne() {
       <div className="container">
         <div className="col-xl-12">
           <div className="tp-cta-title-box p-relative">
-            <h4 ref={titleRef}  className="tp-cta-title cta-text">
-              Let's talk
+            <h4 ref={titleRef} className="tp-cta-title cta-text">
+              Let&apos;s talk
               <br />
               <span className="about-it">about it</span>
             </h4>
