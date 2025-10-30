@@ -24,7 +24,7 @@ export default function ServiceHero() {
               >
                 OUR Services
               </h4>
-              <p className="tp_fade_bottom pl-10" style={{fontSize: "23px", lineHeight: "30px"} }>
+              <p className="tp_fade_bottom pl-10" style={{fontSize: "18px", lineHeight: "30px"} }>
                 At Kaltech Consultancy, we know that in today’s digital age, a strong online presence is crucial for any business.We are your one stop hub for all your digital needs, with our services ranging from development, marketing, and branding. We develop custom user centric applications to meet every business need. We use the latest tech stack to ensure that each individual project doesn’t only look good, function as intended but also meet modern design and coding standards
               </p>
             </div>

@@ -13,20 +13,6 @@ import Link from "next/link";
 const service_data = [
   {
     id: 1,
-    img: ser_img_1,
-    subtitle: "Kaltech Consultancy",
-    title: "BRANDING",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
-    lists: [
-      "Logo Design",
-      "Graphic Identity",
-      "Business Branding",
-      "Brand Ambassdor",
-    ],
-    url: "/branding",
-  },
-  {
-    id: 2,
     img: ser_img_2,
     subtitle: "Kaltech Consultancy",
     title: "DEVELOPMENT",
@@ -40,6 +26,21 @@ const service_data = [
     url: "/development",
 
   },
+  {
+    id: 2,
+    img: ser_img_1,
+    subtitle: "Kaltech Consultancy",
+    title: "BRANDING",
+    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
+    lists: [
+      "Logo Design",
+      "Graphic Identity",
+      "Business Branding",
+      "Brand Ambassdor",
+    ],
+    url: "/branding",
+  },
+  
   {
     id: 3,
     img: ser_img_4,

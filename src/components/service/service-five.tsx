@@ -40,10 +40,10 @@ const service_data = [
 // service items
 export function ServiceItems() {
   return (
-    <div className="row">
+    <div className="row mt-37">
       {/* <div className="col-xxl-3"></div> */}
       {service_data.map((item) => (
-        <div key={item.id} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+        <div key={item.id} className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
           <div className="tp-service-5-item tp_fade_bottom space-1">
             <div className="tp-service-4-icon">
               <Image src={item.icon} alt="icon" />
