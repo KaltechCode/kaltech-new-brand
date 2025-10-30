@@ -63,7 +63,7 @@ const HomeMain = () => {
       // UI animations
       hoverBtn();
       // footerTwoAnimation();
-      // fadeAnimation();
+      fadeAnimation();
       // charAnimation();
       // bounceAnimation();
     }, 100);

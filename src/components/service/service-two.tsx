@@ -116,6 +116,7 @@ export default function ServiceTwo() {
                           data-bs-target={`#collapse-${s.id}`}
                           aria-expanded="false"
                           aria-controls={`collapse-${s.id}`}
+                          style={{ fontSize: ""}}
                         >
                           <span>
                             <Image

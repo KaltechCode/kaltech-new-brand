@@ -41,28 +41,26 @@ export default function AwardTwo() {
               </p>
             </div>
 
-            {/* second */}
-            <div className="tp-award-2-btn-box">
-              <div className="tp-projct-5-2-btn-box d-flex justify-content-end">
+             <div className="tp-award-2-btn-box d-flex justify-content-end">
                 <div className="tp-hover-btn-wrapper">
                   <Link
-                    className="tp-btn-circle tp-hover-btn-item tp-hover-btn"
-                    href="/portfolio-details-1"
+                    className="tp-btn-custom-circle tp-hover-btn-item tp-hover-btn style-2"
+                    href="/contact"
                   >
-                    <span className="tp-btn-circle-text">
-                      See Our <br /> Projects
+                    <span className="tp-btn-circle-text custom-text ">
+                      Get In <br /> Touch
                     </span>
-                    <span className="tp-btn-circle-icon">
+                    <span className="tp-btn-circle-icon custom-arrow">
                       <UpArrow />
                     </span>
-                    <i className="tp-btn-circle-dot"></i>
+                    <i className="tp-btn-circle-dot custom-dot"></i>
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }
