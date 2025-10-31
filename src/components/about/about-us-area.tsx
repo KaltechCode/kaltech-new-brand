@@ -10,8 +10,8 @@ import ab_3 from "@/assets/img/inner-about/about/about-2.jpg";
 
 export default function AboutUsArea() {
   return (
-    <div className="ab-about-area ab-about-mt pb-70 z-index-5 pt-40">
-      <div className="container container-1480">
+    <div className="ab-about-area ab-about-mt pb-70 z-index-5 pt-40 pl-60 pr-60">
+      <div className="container">
         <div id="about-info" className="row">
           <div className="ab-about-content">
             {/* <span>
@@ -39,7 +39,6 @@ export default function AboutUsArea() {
                 letterSpacing: "0.4px",
                 lineHeight: "30px",
                 width: "100%",
-                maxWidth: "1340px",
                 margin: "0 auto",
               }}
             >

@@ -22,6 +22,7 @@
 @media (max-width: 1000px) {
   .ab-about-area {
     .what-we-do-section {
+
       /* Make title section full width and centered */
       .col-xl-3, .col-lg-4, .col-md-5 {
         flex: 0 0 100%;
@@ -84,10 +85,21 @@
 // 
 
 /* Ensure ab-brand-title defaults to black in light mode */
-.ab-brand-title{
+.ab-brand {
+  &-area{
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
+  }
+  &-title{
   color: var(--tp-common-black);
   letter-spacing: 2px; /* preserve previous spacing */
 }
+}
+
 
 /* Stronger, context-scoped rule to ensure about page brand title is black in light mode */
 .ab-about-content .ab-brand-title{
@@ -228,21 +240,14 @@
 
 /* What we do section alignment */
 .ab-about-area {
-  .container-1480 {
-    .row {
-      margin: 0;
-      .col-12 {
-        padding: 0;
-        .row {
-          margin: 0;
-          > div {
-            padding-left: 0;
-            padding-right: 0;
-          }
-        }
-      }
+
+  & .container {
+    max-width: 100% !important;
+    @media #{$xxxl, $xxxxl} {
+      max-width: 1480px !important;
     }
   }
+
 }
 
 /* Category list styles */
@@ -505,6 +510,7 @@
         background-size: 0% 1px, 100% 1px;
       }
     }
+    
   }
   &-content-wrap {
     margin-right: -90px;

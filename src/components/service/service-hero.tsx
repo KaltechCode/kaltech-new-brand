@@ -8,13 +8,13 @@ import Motion from "./data/data-analytics";
 
 export default function ServiceHero() {
   return (
-    <div className="sv-hero-area pt-120 ">
-      <div className="container container-1530">
+    <div className="sv-hero-area">
+      <div className="container">
         
           <div className="row mb-60">
             <div className="sv-page-hero-content text-center">
               <h4
-                className="sv-hero-title tp-char-animation pb-30 pl-30"
+                className="sv-hero-title tp-char-animation pb-30"
                 style={{
                   fontSize: "40px",
                   letterSpacing: "2px",
@@ -23,7 +23,7 @@ export default function ServiceHero() {
               >
                 OUR Services
               </h4>
-              <p className="tp_fade_bottom pl-20" style={{fontSize: "23px", lineHeight: "30px"}}>
+              <p className="tp_fade_bottom" style={{fontSize: "23px", lineHeight: "30px"}}>
                 At Kaltech Consultancy, we know that in today’s digital age, a strong online presence is crucial for any business.We are your one stop hub for all your digital needs, with our services ranging from development, marketing, and branding. We develop custom user centric applications to meet every business need. We use the latest tech stack to ensure that each individual project doesn’t only look good, function as intended but also meet modern design and coding standards
               </p>
             </div>

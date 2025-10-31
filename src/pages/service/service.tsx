@@ -47,8 +47,8 @@ const ServiceMain = () => {
             {/* service hero */}
 
             {/* service area */}
-            <div className="tp-service-5-area sv-service-style pb-70 pt-120">
-              <div className="container container-1530">
+            <div className="tp-service-5-area sv-service-style">
+              <div className="container">
                 <div className="row">
                   {/* <div className="">
                     <div className="tp-service-5-title-box ">

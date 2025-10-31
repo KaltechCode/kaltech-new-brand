@@ -13,12 +13,8 @@ export default function AboutUsHero() {
 
   return (
     <div className="ab-inner-hero-area p-relative">
-      <div className="breadcurmb-site d-none">
-        <h6>About Us</h6>
-      </div>
-
       <div className="container container-1480 mb-100">
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="pt-90">
             <div data-lag="0.2" data-stagger="0.08">
               {/* Responsive font size with proper spacing */}

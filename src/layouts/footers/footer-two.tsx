@@ -108,7 +108,7 @@ export default function FooterTwo({
               <div className="tp-footer-2-widget footer-col-2-4">
                 <div className="tp-footer-2-widget-newslatter">
                   <h4 className="tp-footer-2-widget-title">
-                    Subscribe to our newsletter
+                    Schedule a meeting <br /> Book Now
                   </h4>
                   <form action="#">
                     <div className="tp-footer-2-input p-relative">
