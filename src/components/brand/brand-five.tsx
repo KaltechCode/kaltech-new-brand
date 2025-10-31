@@ -21,7 +21,7 @@ const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6, b_7, b_8];
 export default function BrandFive() {
   return (
     <div
-      className="ab-brand-area pt-30 pb-100 brand-five"
+      className="ab-brand-area pt-30 pb-100 pl-60 pr-60 brand-five"
       style={{
         backgroundImage:
           "url(/assets/img/inner-about/brand/brand-bg-shape.png)",
@@ -53,7 +53,7 @@ export default function BrandFive() {
               style={{ width: "100%", paddingTop: "10px" }}
             >
               <div className="swiper-container ab-brand-slide-active">
-                <Marquee speed={80} gradient={false} pauseOnHover>
+                <Marquee speed={80} gradient={false} pauseOnHover direction="right">
                   {brand_images.map((b, i) => (
                     <div
                       key={i}

@@ -7,7 +7,7 @@ import ser_img_2 from "@/assets/img/inner-service/service/service-2.jpg";
 import ser_img_3 from "@/assets/img/inner-service/service/service-3.jpg";
 import ser_img_4 from "@/assets/img/inner-service/service/service-4.jpg";
 
-import { RightArrow, ShapeTwo } from "../svg";
+import { RightArrow, ShapeTwo, UpArrow } from "../svg";
 import Link from "next/link";
 
 const service_data = [
@@ -109,7 +109,10 @@ export default function ServiceSix() {
                           ))}
                         </ul>
                       </div>
-                      <div className="sv-service-btn">
+
+
+                      {/* service btn  */}
+                      {/* <div className="sv-service-btn">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
                           href={item.url}
@@ -120,7 +123,25 @@ export default function ServiceSix() {
                           </span>
                           <ShapeTwo />
                         </Link>
-                      </div>
+                      </div> */}
+                      <div className="d-flex justify-content-end">
+                <div className="tp-hover-btn-wrapper">
+                  <Link
+                    className="tp-btn-custom-circle tp-hover-btn-item tp-hover-btn style-2"
+                    href="/contact"
+                  >
+                    <span className="tp-btn-circle-text custom-text ">
+                      Get In <br /> Touch
+                    </span>
+                    <span className="tp-btn-circle-icon custom-arrow">
+                      <UpArrow />
+                    </span>
+                    <i className="tp-btn-circle-dot custom-dot"></i>
+                  </Link>
+                </div>
+              </div>
+
+
                     </div>
                   </div>
                 </div>

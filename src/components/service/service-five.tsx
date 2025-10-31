@@ -2,9 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // images
-import s_1 from "@/assets/img/home-01/service/service-icon-1.png";
-import s_2 from "@/assets/img/home-01/service/service-icon-2.png";
-import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
+import s_1 from "@/assets/img/home-02/service/WebDevIcon.png";
+import s_2 from "@/assets/img/home-02/service/MarketingIcon.png";
+import s_3 from "@/assets/img/home-02/service/BusinessIcon.png";
+import s_4 from "@/assets/img/home-02/service/sv-icon-4.png";
 
 const service_data = [
   {
@@ -16,24 +17,23 @@ const service_data = [
   },
   {
     id: 2,
-    title: "Branding",
-    desc: "Our branding services help businesses establish a strong and memorable brand identity.",
-    icon: s_2,
-    tag: "#branding"
-  },
-  {
-    id: 3,
     title: "Marketing",
     desc: "Our marketing services are designed to help businesses reach their target audience effectively.",
     icon: s_3,
     tag: "#marketing"
   },
   {
-    id: 4,
+    id: 3,
+    title: "Branding",
+    desc: "Our branding services help businesses establish a strong and memorable brand identity.",
+    icon: s_2,
+  },
+  
+    {
+    id: 3,
     title: "Data Analytics",
     desc: "Data analytics is the process of examining data sets to draw conclusions about the information they contain.",
-    icon: s_1,
-    tag: "#data-analytics"
+    icon: s_4,
   },
 ];
 
@@ -45,8 +45,8 @@ export function ServiceItems() {
       {service_data.map((item) => (
         <div key={item.id} className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
           <div className="tp-service-5-item tp_fade_bottom space-1">
-            <div className="tp-service-4-icon">
-              <Image src={item.icon} alt="icon" />
+            <div className="tp-service-4-icon" style={{width: "50px", height: "50px", objectFit: "cover"}}>
+              <Image src={item.icon} alt="icon"  style={{width: "100%", height: "100%", objectFit: "contain"}}/>
             </div>
             <div className="tp-service-4-content">
               <h4 className="tp-service-4-title-sm tp-text-black">

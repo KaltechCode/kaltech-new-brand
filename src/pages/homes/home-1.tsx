@@ -12,12 +12,9 @@ import HeaderOne from "@/layouts/headers/header-one";
 
 // animation
 import { videoAnimOne, videoAnimTwo } from "@/utils/video-anim";
-import { teamMarqueAnim } from "@/utils/scroll-marque";
 import { hoverBtn } from "@/utils/hover-btn";
 import { footerTwoAnimation } from "@/utils/footer-anim";
 import {
-  bounceAnimation,
-  charAnimation,
   fadeAnimation,
   heroBgAnimation,
   heroTitleAnim,
@@ -27,7 +24,6 @@ import AboutOne from "@/components/about/about-one";
 import ServiceTwo from "@/components/service/service-two";
 import { panelOneAnimation } from "@/utils/panel-animation";
 import { awardAnimOne } from "@/utils/award-anim";
-import { instagramAnim } from "@/utils/instagram-anim";
 import AwardTwo from "@/components/award/award-two";
 import FooterTwo from "@/layouts/footers/footer-two";
 import InstagramArea from "@/components/instagram/instagram-area";
@@ -62,7 +58,7 @@ const HomeMain = () => {
 
       // UI animations
       hoverBtn();
-      // footerTwoAnimation();
+      footerTwoAnimation();
       fadeAnimation();
       // charAnimation();
       // bounceAnimation();

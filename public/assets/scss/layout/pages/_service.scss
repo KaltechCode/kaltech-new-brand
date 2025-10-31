@@ -73,6 +73,7 @@
     }
   }
 }
+
 .tp-service-2 {
   &-area {
     
@@ -140,6 +141,7 @@
 
   }
 }
+
 .tp-service-3 {
   &-wrap {
     padding-top: 65px;
@@ -366,13 +368,29 @@
 }
 .tp-service-5 {
   &-area {
-    @media #{$md} {
-      padding-top: 0;
-    }
     @media #{$xs} {
-      padding-top: 100px;
-      &.sv-service-style {
-        padding-top: 0;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media #{$smL} {
+      padding-bottom: 5em;
+      align-items: center;
+      padding-top: 5em;
+    }
+
+    @media #{$md, $lg}{
+      padding-top: 5em;
+      padding-bottom: 5em;
+      // padding-bottom: 5em;
+    }
+    @media #{$xl, $xxl, $xxxl, $xxxxl} {
+      padding: 5em 60px;
+    }
+   
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
       }
     }
   }
@@ -663,6 +681,27 @@
       }
     }
   }
+  &-area{
+    @media #{$xs} {
+      padding-top: 7em;
+      padding-bottom: 5em;
+    }
+    @media #{$md, $lg}{
+      padding-top: 7em;
+      padding-bottom: 4em;
+      // padding-bottom: 5em;
+    }
+    @media #{$xl, $xxl, $xxxl, $xxxxl} {
+      padding: 9em 60px 3rem;
+  
+    }
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
+  }
 }
 .sv-service {
   &-content-wrap {
@@ -811,6 +850,32 @@
   @media #{$sm} {
     font-size: 80px;
     white-space: nowrap;
+  }
+  &-area{
+    @media #{$xs} {
+      padding-top: 7em;
+      padding-bottom: 10em;
+    }
+    @media #{$smL} {
+      padding-bottom: 7em;
+      align-items: center;
+      padding-top: 10em;
+    }
+
+    @media #{$md, $lg}{
+      padding-top: 7em;
+      padding-bottom: 10em;
+      // padding-bottom: 5em;
+    }
+    @media #{$xl, $xxl, $xxxl, $xxxxl} {
+      padding: 7em 60px 10em;
+    }
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
   }
 }
 .service-details {

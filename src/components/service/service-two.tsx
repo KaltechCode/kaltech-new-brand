@@ -54,7 +54,7 @@ const service_accordion = [
 ];
 export default function ServiceTwo() {
   return (
-    <div className="tp-service-2-area ">
+    <div className="tp-service-2-area">
       <div className="container container-1480">
         <div className="row justify-content-center align-items-center">
           <div className="two-column-layout">
