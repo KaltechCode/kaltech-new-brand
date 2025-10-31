@@ -13,6 +13,8 @@ import MarketingData from "@/components/service/data/marketing";
 import LineImgSlider from "@/components/line-text/line-img-slider";
 import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
+import FooterFour from "@/layouts/footers/footer-four";
+
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
 
@@ -44,7 +46,7 @@ const Marketing = () => {
             <BigText />
           </main>
           {/* big text */}
-          <FooterTwo />
+          <FooterFour />
         </div>
       </div>
     </Wrapper>

@@ -13,20 +13,6 @@ import Link from "next/link";
 const service_data = [
   {
     id: 1,
-    img: ser_img_1,
-    subtitle: "Kaltech Consultancy",
-    title: "BRANDING",
-    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
-    lists: [
-      "Logo Design",
-      "Graphic Identity",
-      "Business Branding",
-      "Brand Ambassdor",
-    ],
-    url: "/branding",
-  },
-  {
-    id: 2,
     img: ser_img_2,
     subtitle: "Kaltech Consultancy",
     title: "DEVELOPMENT",
@@ -40,6 +26,21 @@ const service_data = [
     url: "/development",
 
   },
+  {
+    id: 2,
+    img: ser_img_1,
+    subtitle: "Kaltech Consultancy",
+    title: "BRANDING",
+    text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
+    lists: [
+      "Logo Design",
+      "Graphic Identity",
+      "Business Branding",
+      "Brand Ambassdor",
+    ],
+    url: "/branding",
+  },
+  
   {
     id: 3,
     img: ser_img_4,
@@ -76,7 +77,7 @@ export default function ServiceSix() {
     <div className="sv-service-area project-panel-area-2">
       <div className="container-fluid p-0">
         {service_data.map((item) => (
-          <div key={item.id} className="sv-service-item project-panel-2">
+          <div key={item.id} id={item.url.replace('/', '')} className="sv-service-item project-panel-2">
             <div className="row g-0">
               <div className="col-xl-6 col-lg-6">
                 <div className="sv-service-thumb">
@@ -97,7 +98,7 @@ export default function ServiceSix() {
                       </span>
                       <h4 className="sv-service-title" style={{letterSpacing: "1.4px"}}>{item.title}</h4>
                     </div>
-                    <div className="sv-service-space-wrap">
+                    <div className="">
                       <div className="sv-service-text">
                         <p>{item.text}</p>
                       </div>

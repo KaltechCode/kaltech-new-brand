@@ -20,6 +20,8 @@ import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, fadeAnimation } from "@/utils/title-animation";
 import { servicePanel } from "@/utils/panel-animation";
+import FooterFour from "@/layouts/footers/footer-four";
+import ContactOne from "@/components/contact/contact-one";
 
 const ServiceMain = () => {
   useScrollSmooth();
@@ -85,12 +87,13 @@ const ServiceMain = () => {
             {/* line image slider  */}
 
             {/* big text */}
-            <BigText />
+            {/* <BigText /> */}
+            <ContactOne/>
             {/* big text */}
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour/>
           {/* footer area */}
         </div>
       </div>

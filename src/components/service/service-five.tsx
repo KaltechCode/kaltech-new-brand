@@ -8,17 +8,19 @@ import s_3 from "@/assets/img/home-02/service/BusinessIcon.png";
 import s_4 from "@/assets/img/home-02/service/sv-icon-4.png";
 
 const service_data = [
-    {
+  {
     id: 1,
     title: "Development",
     desc: "We build scalable and efficient web and mobile applications tailored to your business needs.",
     icon: s_1,
+    tag: "#development"
   },
   {
     id: 2,
     title: "Marketing",
     desc: "Our marketing services are designed to help businesses reach their target audience effectively.",
     icon: s_3,
+    tag: "#marketing"
   },
   {
     id: 3,
@@ -38,17 +40,17 @@ const service_data = [
 // service items
 export function ServiceItems() {
   return (
-    <div className="row">
+    <div className="row mt-37">
       {/* <div className="col-xxl-3"></div> */}
       {service_data.map((item) => (
-        <div key={item.id} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+        <div key={item.id} className="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
           <div className="tp-service-5-item tp_fade_bottom space-1">
             <div className="tp-service-4-icon" style={{width: "50px", height: "50px", objectFit: "cover"}}>
               <Image src={item.icon} alt="icon"  style={{width: "100%", height: "100%", objectFit: "contain"}}/>
             </div>
             <div className="tp-service-4-content">
               <h4 className="tp-service-4-title-sm tp-text-black">
-                <Link href="/service">{item.title}</Link>
+                <Link href={`/service${item.tag}`}>{item.title}</Link>
               </h4>
               <p>{item.desc}</p>
             </div>
@@ -79,7 +81,7 @@ export default function ServiceFive() {
           </div>
         </div>
         <div className="tp-service-5-wrap">
-          <ServiceItems/>
+          <ServiceItems />
         </div>
       </div>
     </div>

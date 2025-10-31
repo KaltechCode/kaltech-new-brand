@@ -13,6 +13,8 @@ import DevelopmentData from "@/components/service/data/development";
 import LineImgSlider from "@/components/line-text/line-img-slider";
 import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
+import FooterFour from "@/layouts/footers/footer-four";
+
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
 
@@ -44,7 +46,8 @@ const Development = () => {
             <BigText />
           </main>
           {/* big text */}
-          <FooterTwo />
+                <FooterFour/>
+
         </div>
       </div>
     </Wrapper>
