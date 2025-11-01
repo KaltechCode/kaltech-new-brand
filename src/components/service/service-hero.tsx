@@ -20,6 +20,7 @@ export default function ServiceHero() {
                   fontSize: "50px",
                   letterSpacing: "2px",
                   lineHeight: "1.2",
+                  textAlign: "center"
                 }}
               >
                 OUR Services

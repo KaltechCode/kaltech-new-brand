@@ -84,7 +84,7 @@ export default function ServiceSix() {
                   <Image
                     src={item.img}
                     alt="service-img"
-                    style={{ height: "auto" }}
+                    style={{ height: "100%" }}
                   />
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function ServiceSix() {
                           <ShapeTwo />
                         </Link>
                       </div> */}
-                       <div className="tp-projct-5-2-btn-box d-flex justify-content-center">
+                       <div className="tp-projct-5-2-btn-box d-flex justify-content-end">
                 <div className="tp-hover-btn-wrapper">
                   <Link
                     className="tp-btn-circle tp-hover-btn-item tp-hover-btn"

@@ -60,14 +60,7 @@ const ServiceMain = () => {
             <div className="tp-service-5-area sv-service-style">
               <div className="container">
                 <div className="row">
-                  {/* <div className="">
-                    <div className="tp-service-5-title-box ">
-                      <span className="ab-inner-subtitle mb-20">
-                        <Leaf />
-                        Services
-                      </span>
-                    </div>
-                  </div> */}
+                          
                 </div>
                 <div className="tp-service-5-wrap">
                   <ServiceItems />
@@ -80,24 +73,8 @@ const ServiceMain = () => {
             <ServiceSix />
             {/* service area */}
 
-            {/* brand area */}
-            {/* <div className="tp-brand-4-area pt-120 pb-120">
-              <div className="container">
-                <div className="row gx-0">
-                  <BrandItems />
-                </div>
-              </div>
-            </div> */}
-            {/* brand area */}
 
-            {/* line image slider  */}
-            {/* <LineImgSlider /> */}
-            {/* line image slider  */}
-
-            {/* big text */}
-            {/* <BigText /> */}
-            <ContactOne/>
-            {/* big text */}
+           
           </main>
 
           {/* footer area */}
