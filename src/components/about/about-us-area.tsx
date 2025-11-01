@@ -1,25 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import { Hand } from "../svg";
 
 // images
 import shape from "@/assets/img/inner-about/about/shape-1.png";
-import ab_1 from "@/assets/img/inner-about/about/about-1.jpg";
-import ab_2 from "@/assets/img/inner-about/about/about-3.jpg";
-import ab_3 from "@/assets/img/inner-about/about/about-2.jpg";
 
 export default function AboutUsArea() {
   return (
-    <div className="ab-about-area ab-about-mt pb-70 z-index-5 pt-40 pl-60 pr-60">
+    <div className="ab-about-area ab-about-mt z-index-5">
       <div className="container">
         <div id="about-info" className="row">
           <div className="ab-about-content">
-            {/* <span>
-                <Hand />
-                Hi!
-              </span> */}
+          
 
-            <div className="ab-brand-title-box  text-center">
+            <div className="ab-brand-title-box text-center">
               <h4
                 className="ab-brand-title"
                 style={{
@@ -74,9 +67,15 @@ export default function AboutUsArea() {
           />
         </div>
       </div>
+
+
+      {/* category boxes */}
       <div className="col-xl-9 col-lg-8 col-md-7 col-12 pt-7">
-        <div className="row gx-4">
-          <div className="col-lg-4 col-md-6 col-12 mb-30">
+
+
+        <div className="row three-columns" style={{display:"grid", gridTemplateColumns: "1fr 1fr 1fr", rowGap: 50}}>
+          <div className="">
+            {/* first boxes */}
             <div className="ab-about-category-list category-space-1 tp_fade_bottom">
               <ul>
                 <li>Web design and Development</li>
@@ -86,7 +85,9 @@ export default function AboutUsArea() {
               </ul>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-12 mb-30">
+
+          {/* second box */}
+          <div className="">
             <div className="ab-about-category-list category-space-2 tp_fade_bottom">
               <ul>
                 <li>Social Media Marketing</li>
@@ -96,7 +97,9 @@ export default function AboutUsArea() {
               </ul>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-12 mb-30">
+
+          {/* third boxes */}
+          <div className="">
             <div className="ab-about-category-list category-space-3 tp_fade_bottom">
               <ul>
                 <li>Logo Design</li>
@@ -106,7 +109,10 @@ export default function AboutUsArea() {
               </ul>
             </div>
           </div>
+
         </div>
+
+
       </div>
     </div>
   </div>

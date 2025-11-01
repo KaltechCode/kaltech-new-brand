@@ -5,7 +5,7 @@ import Link from "next/link";
 import s_1 from "@/assets/img/home-02/service/WebDevIcon.png";
 import s_2 from "@/assets/img/home-02/service/MarketingIcon.png";
 import s_3 from "@/assets/img/home-02/service/BusinessIcon.png";
-import s_4 from "@/assets/img/home-02/service/sv-icon-4.png";
+import s_4 from "@/assets/img/home-02/service/data-analytics-kaltech.png";
 
 const service_data = [
     {
@@ -38,10 +38,10 @@ const service_data = [
 // service items
 export function ServiceItems() {
   return (
-    <div className="row">
+    <div className="tp-service-5-item-container">
       {/* <div className="col-xxl-3"></div> */}
       {service_data.map((item) => (
-        <div key={item.id} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+        <div key={item.id} className="">
           <div className="tp-service-5-item tp_fade_bottom space-1">
             <div className="tp-service-4-icon" style={{width: "50px", height: "50px", objectFit: "cover"}}>
               <Image src={item.icon} alt="icon"  style={{width: "100%", height: "100%", objectFit: "contain"}}/>
