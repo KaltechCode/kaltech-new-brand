@@ -5,7 +5,7 @@ import Image from "next/image";
 import ser_1 from "@/assets/img/home-02/service/WebDevIcon.png";
 import ser_2 from "@/assets/img/home-02/service/MarketingIcon.png";
 import ser_3 from "@/assets/img/home-02/service/BusinessIcon.png";
-import ser_4 from "@/assets/img/home-02/service/sv-icon-4.png";
+import ser_4 from "@/assets/img/home-02/service/data-analytics-kaltech.png";
 // shape
 import Link from "next/link";
 

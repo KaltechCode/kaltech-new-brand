@@ -21,7 +21,13 @@ import FooterTwo from "@/layouts/footers/footer-two";
 import { charAnimation, fadeAnimation } from "@/utils/title-animation";
 import { servicePanel } from "@/utils/panel-animation";
 import FooterFour from "@/layouts/footers/footer-four";
+import FooterOne from "@/layouts/footers/footer-one";
+import FooterThree from "@/layouts/footers/footer-three";
+import FooterFive from "@/layouts/footers/footer-five";
+import FooterSix from "@/layouts/footers/footer-six";
 import ContactOne from "@/components/contact/contact-one";
+import { ctaAnimation } from "@/utils/cta-anim";
+import { hoverBtn } from "@/utils/hover-btn";
 
 const ServiceMain = () => {
   useScrollSmooth();
@@ -30,6 +36,8 @@ const ServiceMain = () => {
     const timer = setTimeout(() => {
       charAnimation();
       fadeAnimation();
+      ctaAnimation();
+      hoverBtn();
       servicePanel();
     }, 100);
     return () => clearTimeout(timer);
@@ -93,7 +101,8 @@ const ServiceMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterFour/>
+          <ContactOne />
+          <FooterTwo />
           {/* footer area */}
         </div>
       </div>

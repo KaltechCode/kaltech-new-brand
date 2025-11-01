@@ -469,6 +469,20 @@
       margin-left: 0;
     }
   }
+  &-item-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    @media #{$lg, $smL} {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 15px;
+    }
+    @media #{$lgL, $xl, $xxl, $xxxl, $xxxxl} {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 10px;
+    }
+  }
 }
 .tp-service-6 {
   &-left-box {

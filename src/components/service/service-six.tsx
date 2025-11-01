@@ -124,10 +124,10 @@ export default function ServiceSix() {
                           <ShapeTwo />
                         </Link>
                       </div> */}
-                      <div className="d-flex justify-content-end">
+                       <div className="tp-projct-5-2-btn-box d-flex justify-content-center">
                 <div className="tp-hover-btn-wrapper">
                   <Link
-                    className="tp-btn-custom-circle tp-hover-btn-item tp-hover-btn style-2"
+                    className="tp-btn-circle tp-hover-btn-item tp-hover-btn"
                     href="/contact"
                   >
                     <span className="tp-btn-circle-text custom-text ">
