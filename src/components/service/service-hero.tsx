@@ -5,6 +5,7 @@ import Image from "next/image";
 import ser_hero from "@/assets/img/inner-service/hero/hero-1.jpg";
 import ser_hero_shape from "@/assets/img/inner-service/hero/hero-shape-1.jpg";
 import Motion from "./data/data-analytics";
+import ContactOne from "../contact/contact-one";
 
 export default function ServiceHero() {
   return (
@@ -12,11 +13,11 @@ export default function ServiceHero() {
       <div className="container">
         
           <div className="row mb-60">
-            <div className="sv-page-hero-content text-center">
+            <div className="sv-page-hero-content ">
               <h4
                 className="sv-hero-title tp-char-animation pb-30"
                 style={{
-                  fontSize: "40px",
+                  fontSize: "50px",
                   letterSpacing: "2px",
                   lineHeight: "1.2",
                 }}
@@ -47,6 +48,7 @@ export default function ServiceHero() {
                 alt="ser_hero-shape"
                 style={{ height: "auto" }}
               /> */}
+              {/* <ContactOne/> */}
             </div>
           </div>
         </div>

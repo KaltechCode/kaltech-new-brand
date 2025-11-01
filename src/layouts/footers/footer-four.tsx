@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '@/assets/img/logo/logo-white.png';
+import logo from '@/assets/img/custom/kaltech_light_logo.svg';
 import { RightArrow, SvgBgSm } from '@/components/svg';
 import Link from 'next/link';
 
@@ -18,14 +18,14 @@ export default function FooterFour() {
                     <ul>
                       <li><a href="#">Home</a></li>
                       <li><a href="#">About</a></li>
-                      <li><a href="#">Landing</a></li>
+                      <li><a href="#">Service</a></li>
                       <li><a href="#">Blog</a></li>
                       <li><a href="#">Contact</a></li>
                     </ul>
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">
-                  <h4 className="tp-footer-3-title">Newsletter</h4>
+                  <h6 className="tp-footer-3-title">Schedule a Free Call</h6>
                   <div className="tp-footer-3-input-box d-flex align-items-center">
                     <input type="text" placeholder="Enter Address..." />
                     <button className="tp-footer-3-btn p-relative">

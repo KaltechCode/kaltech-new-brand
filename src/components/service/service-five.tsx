@@ -8,17 +8,19 @@ import s_3 from "@/assets/img/home-02/service/BusinessIcon.png";
 import s_4 from "@/assets/img/home-02/service/data-analytics-kaltech.png";
 
 const service_data = [
-    {
+  {
     id: 1,
     title: "Development",
     desc: "We build scalable and efficient web and mobile applications tailored to your business needs.",
     icon: s_1,
+    tag: "#development"
   },
   {
     id: 2,
     title: "Marketing",
     desc: "Our marketing services are designed to help businesses reach their target audience effectively.",
     icon: s_3,
+    tag: "#marketing"
   },
   {
     id: 3,
@@ -48,7 +50,7 @@ export function ServiceItems() {
             </div>
             <div className="tp-service-4-content">
               <h4 className="tp-service-4-title-sm tp-text-black">
-                <Link href="/service">{item.title}</Link>
+                <Link href={`/service${item.tag}`}>{item.title}</Link>
               </h4>
               <p>{item.desc}</p>
             </div>
@@ -79,7 +81,7 @@ export default function ServiceFive() {
           </div>
         </div>
         <div className="tp-service-5-wrap">
-          <ServiceItems/>
+          <ServiceItems />
         </div>
       </div>
     </div>
