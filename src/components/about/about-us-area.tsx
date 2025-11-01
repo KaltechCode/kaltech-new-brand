@@ -73,7 +73,7 @@ export default function AboutUsArea() {
       <div className="col-xl-9 col-lg-8 col-md-7 col-12 pt-7">
 
 
-        <div className="row three-columns" style={{display:"grid", gridTemplateColumns: "1fr 1fr 1fr", rowGap: 50}}>
+        <div className="row three-columns">
           <div className="">
             {/* first boxes */}
             <div className="ab-about-category-list category-space-1 tp_fade_bottom">
