@@ -1,6 +1,6 @@
 "use client";
 import { gsap } from "gsap";
-import React from "react";
+import React, { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
@@ -12,25 +12,21 @@ import HeaderOne from "@/layouts/headers/header-one";
 import { ServiceItems } from "@/components/service/service-five";
 import ServiceHero from "@/components/service/service-hero";
 import ServiceSix from "@/components/service/service-six";
-import { BrandItems } from "@/components/brand/brand-two";
-import LineImgSlider from "@/components/line-text/line-img-slider";
-import BigText from "@/components/big-text";
-import { Leaf } from "@/components/svg";
+
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, fadeAnimation } from "@/utils/title-animation";
 import { servicePanel } from "@/utils/panel-animation";
-import FooterFour from "@/layouts/footers/footer-four";
-import FooterOne from "@/layouts/footers/footer-one";
-import FooterThree from "@/layouts/footers/footer-three";
-import FooterFive from "@/layouts/footers/footer-five";
-import FooterSix from "@/layouts/footers/footer-six";
 import ContactOne from "@/components/contact/contact-one";
 import { ctaAnimation } from "@/utils/cta-anim";
 import { hoverBtn } from "@/utils/hover-btn";
+import { ModalForm } from "@/components/custom/modal/form";
 
 const ServiceMain = () => {
   useScrollSmooth();
+
+  const [openForm, setOpenForm] = useState<boolean>(false);
+  const [formContent, setFormContent] = useState<string>("development");
 
   useGSAP(() => {
     const timer = setTimeout(() => {
@@ -43,6 +39,9 @@ const ServiceMain = () => {
     return () => clearTimeout(timer);
   });
 
+  const handleOpen = () => {
+    setOpenForm(false);
+  };
   return (
     <Wrapper>
       {/* header area start */}
@@ -59,11 +58,14 @@ const ServiceMain = () => {
             {/* service area */}
             <div className="tp-service-5-area sv-service-style">
               <div className="container">
-                <div className="row">
-                          
-                </div>
+                <div className="row"></div>
                 <div className="tp-service-5-wrap">
-                  <ServiceItems />
+                  <ServiceItems
+                    openForm={openForm}
+                    setFormContent={setFormContent}
+                    setOpenForm={setOpenForm}
+                    formContent={formContent}
+                  />
                 </div>
               </div>
             </div>
@@ -72,9 +74,6 @@ const ServiceMain = () => {
             {/* service area */}
             <ServiceSix />
             {/* service area */}
-
-
-           
           </main>
 
           {/* footer area */}
@@ -83,6 +82,8 @@ const ServiceMain = () => {
           {/* footer area */}
         </div>
       </div>
+
+      <ModalForm openForm={openForm} handleOpen={handleOpen} />
     </Wrapper>
   );
 };

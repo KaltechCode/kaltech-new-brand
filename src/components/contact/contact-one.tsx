@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ProjectShape, RightArrow } from "../svg";
 import cta from '@/assets/img/home-03/cta/cta-1.png';
 import Link from "next/link";
+import PrimaryBtn from "../button/button";
 
 export default function ContactOne() {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -45,15 +46,20 @@ export default function ContactOne() {
               <br />
               <span className="about-it">about it</span>
             </h4>
-            <p className="tp_fade_bottom">
+            {/* <p className="tp_fade_bottom">
               We will collaborate to find the right answer and bring progress
               <br />
               to your business and to the world.
-            </p>
+            </p> */}
             <div className="tp-cta-icon">
               <Image src={cta} alt="cta-img" />
             </div>
-            <div className="tp-cta-btn-box">
+
+            <div className="tp-cta-btn-box" style={{bottom: "5%"}}>
+              <PrimaryBtn label={"Get in"} label2={"Touch"} url={"/contact"} justifyContent={"start"}/>
+              </div>
+            {/* <PrimaryBtn label={"Get in"} label2={"Touch"} url={"/contact"} /> */}
+            {/* <div className="tp-cta-btn-box">
               <Link className="tp-btn-zikzak p-relative" href="/contact">
                 <span className="zikzak-content">
                   Get <br /> In Touch
@@ -61,7 +67,7 @@ export default function ContactOne() {
                 </span>
                 <ProjectShape />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

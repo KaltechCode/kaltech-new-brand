@@ -312,14 +312,15 @@ function servicePanel() {
   }
   const sv = gsap.matchMedia();
   const tl = gsap.timeline();
-  sv.add("(min-width: 991px)", () => {
-    const isLarge = window.matchMedia("(min-width: 1500px)").matches;
+  sv.add("(min-width: 300px)", () => {
+    // const isLarge = window.matchMedia("(min-width: 1500px)").matches;
     const projectpanelss = document.querySelectorAll(".project-panel-2");
     projectpanelss.forEach((section) => {
       tl.to(section, {
         scrollTrigger: {
           trigger: section,
-          pin: isLarge ? false : section,
+          // pin: isLarge ? false : section,
+          pin: section,
           scrub: 1,
           start: "top top",
           end: "bottom 100%",

@@ -9,6 +9,7 @@ import ser_img_4 from "@/assets/img/inner-service/service/service-4.jpg";
 
 import { RightArrow, ShapeTwo, UpArrow } from "../svg";
 import Link from "next/link";
+import PrimaryBtn from "../button/button";
 
 const service_data = [
   {
@@ -24,10 +25,22 @@ const service_data = [
       "Desktop Application Development",
     ],
     url: "/development",
-
   },
   {
     id: 2,
+    img: ser_img_4,
+    subtitle: "Kaltech Consultancy",
+    title: "MARKETING",
+    text: "Our marketing services are designed to help businesses reach their target audience effectively.",
+    lists: [
+      "Social Media Marketing",
+      "Search Engine Optimazation",
+      "Email Marketing",
+    ],
+    url: "/marketing",
+  },
+  {
+    id: 3,
     img: ser_img_1,
     subtitle: "Kaltech Consultancy",
     title: "BRANDING",
@@ -40,21 +53,7 @@ const service_data = [
     ],
     url: "/branding",
   },
-  
-  {
-    id: 3,
-    img: ser_img_4,
-    subtitle: "Kaltech Consultancy",
-    title: "MARKETING",
-    text: "Our marketing services are designed to help businesses reach their target audience effectively.",
-    lists: [
-      "Social Media Marketing",
-      "Search Engine Optimazation",
-      "Email Marketing",
-    ],
-    url: "/marketing",
 
-  },
   {
     id: 4,
     img: ser_img_3,
@@ -68,7 +67,6 @@ const service_data = [
       "Big Data Solutions",
     ],
     url: "/data-analytics",
-
   },
 ];
 
@@ -77,9 +75,13 @@ export default function ServiceSix() {
     <div className="sv-service-area project-panel-area-2">
       <div className="container-fluid p-0">
         {service_data.map((item) => (
-          <div key={item.id} id={item.url.replace('/', '')} className="sv-service-item project-panel-2">
+          <div
+            key={item.id}
+            id={item.url.replace("/", "")}
+            className="sv-service-item project-panel-2"
+          >
             <div className="row g-0">
-              <div className="col-xl-6 col-lg-6">
+              <div className="col-xl-6 col-lg-6 sv-service-image-container">
                 <div className="sv-service-thumb">
                   <Image
                     src={item.img}
@@ -88,28 +90,84 @@ export default function ServiceSix() {
                   />
                 </div>
               </div>
+
               <div className="col-xl-6 col-lg-6">
                 <div className="sv-service-content-wrap d-flex align-items-center">
-                  <div className="sv-service-content">
-                    <div className="sv-service-title-box">
+                  <div
+                    className="sv-service-content"
+                    style={
+                      {
+                        // display: "flex",
+                        // gap: "30px",
+                      }
+                    }
+                  >
+                    <div
+                      className="sv-service-title-box"
+                      // style={{ width: "40%" }}
+                    >
                       <span className="sv-service-subtitle">
                         <i>{item.id < 9 ? "0" + item.id : item.id}</i>
                         {item.subtitle}
                       </span>
-                      <h4 className="sv-service-title" style={{letterSpacing: "1.4px"}}>{item.title}</h4>
+                      <h4
+                        className="sv-service-title"
+                        style={{ letterSpacing: "1.4px" }}
+                      >
+                        {item.title}
+                      </h4>
                     </div>
-                    <div className="">
+
+                    <div
+                      className="sv-service-description-box"
+                      // style={{ width: "60%" }}
+                    >
                       <div className="sv-service-text">
                         <p>{item.text}</p>
                       </div>
-                      <div className="sv-service-list">
+                      <div
+                        className="sv-service-list"
+                        style={
+                          {
+                            // display: "flex",
+                            // justifyContent: "space-between",
+                            // alignItems: "center",
+                          }
+                        }
+                      >
                         <ul>
                           {item.lists.map((list, i) => (
                             <li key={i}>{list}</li>
                           ))}
                         </ul>
-                      </div>
 
+                        <div className="tp-projct-5-2-btn-box d-none justify-content-end sv-six-btn-sm">
+                          <div className="tp-hover-btn-wrapper">
+                            <Link
+                              className="custom-circle tp-hover-btn-item tp-hover-btn"
+                              href={item.url}
+                            >
+                              {/* <span className="tp-btn-circle-text">
+                        About <br /> Us
+                      </span> */}
+                              <i className="custom-circle-icon">
+                                <UpArrow />
+                              </i>
+                              <i className="tp-btn-circle-dot"></i>
+                            </Link>
+                            {/* </div> */}
+                          </div>
+                        </div>
+
+                        <div className="sv-six-btn-lg" style={{}}>
+                          <PrimaryBtn
+                            label={"Get in"}
+                            label2={"Touch"}
+                            url={item.url}
+                            justifyContent={"end"}
+                          />
+                        </div>
+                      </div>
 
                       {/* service btn  */}
                       {/* <div className="sv-service-btn">
@@ -124,24 +182,8 @@ export default function ServiceSix() {
                           <ShapeTwo />
                         </Link>
                       </div> */}
-                       <div className="tp-projct-5-2-btn-box d-flex justify-content-end">
-                <div className="tp-hover-btn-wrapper">
-                  <Link
-                    className="tp-btn-circle tp-hover-btn-item tp-hover-btn"
-                    href="/contact"
-                  >
-                    <span className="tp-btn-circle-text custom-text ">
-                      Get In <br /> Touch
-                    </span>
-                    <span className="tp-btn-circle-icon custom-arrow">
-                      <UpArrow />
-                    </span>
-                    <i className="tp-btn-circle-dot custom-dot"></i>
-                  </Link>
-                </div>
-              </div>
 
-
+                      {/* small btn */}
                     </div>
                   </div>
                 </div>

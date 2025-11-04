@@ -1,3 +1,5 @@
 {
-  "CodeGPT.apiKey": "CodeGPT Plus Beta"
+  "CodeGPT.apiKey": "CodeGPT Plus Beta",
+  "cursor.composer.textSizeScale": 0.85,
+  "typescript.workspaceSymbols.scope": "currentProject"
 }

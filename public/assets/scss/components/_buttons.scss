@@ -658,8 +658,6 @@
         height: 420px;
       }
 
-
-
       & span {
         color: var(--tp-common-black);
       }
@@ -708,6 +706,17 @@
       }
     }
   }
+
+  &-secondary-btn {
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--tp-common-black);
+    color: var(--tp-common-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: clamp(14px, calc(2em + 0.3rem), 18px);
+  }
+
   &-orange {
     height: 50px;
     line-height: 50px;
@@ -745,7 +754,6 @@
     justify-content: center;
     border: 1px solid var(--tp-common-white);
     &.style-2 {
-      
       background-color: var(--tp-common-black);
     }
     // &.custom-text {
@@ -771,12 +779,12 @@
     &:hover {
       border: 1px solid transparent;
       color: var(--tp-common-black);
+      background-color: var(--tp-common-white);
       & .tp-btn-circle-dot {
         width: 420px;
         height: 420px;
         bottom: -40px;
         left: -50px;
-
       }
       & .custom-circle-icon {
         transform: rotate(45deg);
@@ -871,6 +879,7 @@
   }
   &:hover {
     border: 1px solid transparent;
+    background-color: var(--tp-common-white);
     & .tp-btn-circle-dot {
       width: 420px;
       height: 420px;

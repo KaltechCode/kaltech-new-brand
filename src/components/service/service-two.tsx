@@ -18,7 +18,7 @@ const service_accordion = [
       "Web design and Development",
       "Content Management System",
       "Mobile Application Development",
-      "Motion Graphics"
+      "Motion Graphics",
     ],
     link: "development",
   },
@@ -44,11 +44,7 @@ const service_accordion = [
     id: 4,
     icon: ser_4,
     title: "Data analytics",
-    desc: [
-      "Trends Metric",
-      "Sale Metric",
-      "Data Visualization",
-    ],
+    desc: ["Trends Metric", "Sale Metric", "Data Visualization"],
     link: "data-analytics",
   },
 ];
@@ -74,7 +70,6 @@ export default function ServiceTwo() {
           </div>
 
           <div className="align-items-start two-column-layout">
-           
             <div className="tp-service-2-title-box">
               <span className="tp-section-subtitle-3">
                 <span>
@@ -100,9 +95,11 @@ export default function ServiceTwo() {
               </div>
             </div>
 
-
             <div className="col-xl-12">
-              <div className="tp-service-2-accordion-box" style={{marginTop: 25}}>
+              <div
+                className="tp-service-2-accordion-box"
+                style={{ marginTop: 25 }}
+              >
                 <div className="accordion" id="accordionExample">
                   {service_accordion.map((s) => (
                     <div key={s.id} className="accordion-items">
@@ -116,7 +113,7 @@ export default function ServiceTwo() {
                           data-bs-target={`#collapse-${s.id}`}
                           aria-expanded="false"
                           aria-controls={`collapse-${s.id}`}
-                          style={{ fontSize: ""}}
+                          style={{ fontSize: "" }}
                         >
                           <span>
                             <Image
