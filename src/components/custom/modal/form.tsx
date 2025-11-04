@@ -51,7 +51,7 @@ export const ModalForm = ({
         >
           <h3 style={{ textAlign: "center" }}> contact Our Team</h3>
           <p style={{ marginTop: "25px" }}>
-            We're available 24 hours 7 day a we
+            We&apos;re available 24 hours 7 day a we
           </p>
 
           <div
