@@ -16,7 +16,7 @@ export default function FooterTwo({
   topCls = "footer-top",
 }: IProps) {
   return (
-    <footer className={``} >
+    <footer className={``}>
       <div
         className={`tp-footer-2-area pt-100 pb-20 pl-60 pr-60 ${
           whiteFooter ? "tp-footer-white" : "black-bg"
@@ -108,7 +108,7 @@ export default function FooterTwo({
               <div className="tp-footer-2-widget footer-col-2-4">
                 <div className="tp-footer-2-widget-newslatter">
                   <h4 className="tp-footer-2-widget-title">
-                    Schedule a meeting <br /> Book Now
+                    Schedule a free <br /> Consultation
                   </h4>
                   <form action="#">
                     <div className="tp-footer-2-input p-relative">

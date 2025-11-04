@@ -36,9 +36,14 @@
 }
 .home-link-menu:hover::after {
   width: 100%;
+  color: #b08500;
 }
 .home-link-menu.is-active::after {
   width: 100%;
+  color: #b08500;
+}
+.home-link-menu.is-active {
+  color: #b08500;
 }
 
 // @media (max-width: 1200px) {
