@@ -50,9 +50,7 @@ export const ModalForm = ({
           }
         >
           <h3 style={{ textAlign: "center" }}> contact Our Team</h3>
-          <p style={{ marginTop: "25px" }}>
-            We&apos;re available 24 hours 7 day a we
-          </p>
+          <p style={{ marginTop: "25px" }}></p>
 
           <div
             className="tp-offcanvas-close"
