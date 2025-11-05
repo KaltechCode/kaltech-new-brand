@@ -711,10 +711,16 @@
     padding: 5px 10px;
     text-align: center;
     border-radius: 5px;
+    cursor: pointer;
     background-color: var(--tp-common-black);
     color: var(--tp-common-white);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: clamp(14px, calc(2em + 0.3rem), 18px);
+    &:hover {
+      background-color: transparent;
+      border: 1px solid var(--tp-common-black);
+      color: var(--tp-common-black);
+      transition: all 0.9s;
+    }
   }
 
   &-orange {

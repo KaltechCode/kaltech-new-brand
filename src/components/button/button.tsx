@@ -51,7 +51,7 @@ export const SecondaryBtn = ({
       className="tp-btn-secondary-btn tp-hover-btn-item tp-hover-btn"
       onClick={handler}
     >
-      <span className="tp-btn-circle-text">
+      <span className="">
         {label} <br />
       </span>
       <i className="tp-btn-circle-dot"></i>

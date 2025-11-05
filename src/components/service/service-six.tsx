@@ -7,7 +7,7 @@ import ser_img_2 from "@/assets/img/inner-service/service/service-2.jpg";
 import ser_img_3 from "@/assets/img/inner-service/service/service-3.jpg";
 import ser_img_4 from "@/assets/img/inner-service/service/service-4.jpg";
 
-import { RightArrow, ShapeTwo, UpArrow } from "../svg";
+import { UpArrow } from "../svg";
 import Link from "next/link";
 import PrimaryBtn from "../button/button";
 
@@ -79,6 +79,7 @@ export default function ServiceSix() {
             key={item.id}
             id={item.url.replace("/", "")}
             className="sv-service-item project-panel-2"
+            style={{ scrollMarginTop: "719px" }}
           >
             <div className="row g-0">
               <div className="col-xl-6 col-lg-6 sv-service-image-container">

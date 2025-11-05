@@ -3,13 +3,10 @@ import Image from "next/image";
 
 // image
 import ser_hero from "@/assets/img/inner-service/hero/hero-1.jpg";
-import ser_hero_shape from "@/assets/img/inner-service/hero/hero-shape-1.jpg";
-import Motion from "./data/data-analytics";
-import ContactOne from "../contact/contact-one";
 
 export default function ServiceHero() {
   return (
-    <div className="sv-hero-area" style={{ paddingTop: "3.8em" }}>
+    <div className="sv-hero-area">
       <div className="container">
         <div className="rowmb-60">
           <div className="sv-page-hero-content ">

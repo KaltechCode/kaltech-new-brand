@@ -330,6 +330,11 @@ function servicePanel() {
       });
     });
   });
+
+  window.addEventListener("load", () => {
+    console.log("Window loaded, refreshing ScrollTriggers.");
+    ScrollTrigger.refresh();
+  });
 }
 
 export { panelOneAnimation, panelTwoAnimation, studioPanel, servicePanel };

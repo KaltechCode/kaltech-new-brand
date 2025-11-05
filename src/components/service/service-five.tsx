@@ -61,24 +61,14 @@ export function ServiceItems({
     <>
       <div
         className="tp-service-5-item-container"
-        style={
-          {
-            // gridTemplateColumns: "1fr 1fr 1fr",
-            // rowGap: "50px",
-            // columnGap: "30px",
-          }
-        }
+        style={{ columnGap: "40px", rowGap: "40px" }}
       >
         {/* <div className="col-xxl-3"></div> */}
         {service_data.map((item) => (
           <div key={item.id} className="tp-service-5-item-wrapper" style={{}}>
             <div
               className="tp-service-5-item tp_fade_bottom"
-              style={{
-                height: "450px",
-                gap: 50,
-                // padding: "30px 50px",
-              }}
+              // style={{ padding: "30px 10%" }}
             >
               <div className="tp-service-5-icon">
                 <Image
@@ -95,12 +85,17 @@ export function ServiceItems({
               {/* description */}
               <div
                 className="tp-service-5-content"
-                style={{ textAlign: "center" }}
+                // style={{ textAlign: "center", height: "40%" }}
               >
-                <h4 className="tp-service-5-title-sm tp-text-black">
+                <h3 className="tp-service-5-title-sm tp-text-black">
                   <Link href={`/service${item.tag}`}>{item.title}</Link>
-                </h4>
-                <p style={{ fontSize: "clamp(16px, calc(2em + .8rem), 20px)" }}>
+                </h3>
+                <p
+                // style={{
+                //   fontSize: "clamp(16px, calc(2em + .8rem), 20px)",
+                //   textAlign: "left",
+                // }}
+                >
                   {item.desc}
                 </p>
               </div>
@@ -110,21 +105,12 @@ export function ServiceItems({
                 className="tp-service-5-buttons"
                 style={{
                   display: "flex",
-                  justifyContent: "flex-end",
+                  justifyContent: "flex-start",
                   gap: "20px",
+                  width: "100%",
                 }}
               >
-                <Link
-                  href={item.tag || ""}
-                  style={{
-                    backgroundColor: "var(--tp-common-black)",
-                    color: "var(--tp-common-white)",
-                    padding: "5px 10px",
-                    borderRadius: "5px",
-                    border: "none",
-                    cursor: "pointer",
-                  }}
-                >
+                <Link href={item.tag || ""} className="tp-btn-secondary-btn">
                   More Info
                 </Link>
                 {/* <button
