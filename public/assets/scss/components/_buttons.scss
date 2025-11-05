@@ -721,6 +721,9 @@
       color: var(--tp-common-black);
       transition: all 0.9s;
     }
+    &:focus {
+      color: var(--tp-common-white);
+    }
   }
 
   &-orange {

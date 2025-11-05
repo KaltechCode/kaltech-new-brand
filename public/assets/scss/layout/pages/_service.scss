@@ -939,7 +939,7 @@
   }
   &-image-container {
     display: none;
-    @media #{$lgL, $xl, $xxl, $xxxl, $xxxxl} {
+    @media #{$lgL, $lg, $xl, $xxl, $xxxl, $xxxxl} {
       display: block;
     }
     @media #{$smL} {
