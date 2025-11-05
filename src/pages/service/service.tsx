@@ -2,7 +2,7 @@
 import { gsap } from "gsap";
 import React, { useState } from "react";
 import { useGSAP } from "@gsap/react";
-import useScrollSmooth from "@/hooks/use-scroll-smooth";
+import useScrollSmooth, { handleAnchorClicks } from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
@@ -35,6 +35,7 @@ const ServiceMain = () => {
       ctaAnimation();
       hoverBtn();
       servicePanel();
+      handleAnchorClicks();
     }, 100);
     return () => clearTimeout(timer);
   });
@@ -58,7 +59,6 @@ const ServiceMain = () => {
             {/* service area */}
             <div className="tp-service-5-area sv-service-style">
               <div className="container">
-                <div className="row"></div>
                 <div className="tp-service-5-wrap">
                   <ServiceItems
                     openForm={openForm}
