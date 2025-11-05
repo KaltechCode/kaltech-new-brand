@@ -79,10 +79,13 @@ export default function ServiceSix() {
             key={item.id}
             id={item.url.replace("/", "")}
             className="sv-service-item project-panel-2"
-            style={{ scrollMarginTop: "719px" }}
+            // style={{ scrollMarginTop: "719px" }}
           >
             <div className="row g-0">
-              <div className="col-xl-6 col-lg-6 sv-service-image-container">
+              <div
+                className="col-xl-6 col-lg-6 sv-service-image-container"
+                // style={{ display: "block" }}
+              >
                 <div className="sv-service-thumb">
                   <Image
                     src={item.img}
@@ -159,14 +162,21 @@ export default function ServiceSix() {
                             {/* </div> */}
                           </div>
                         </div>
-
-                        <div className="sv-six-btn-lg" style={{}}>
-                          <PrimaryBtn
-                            label={"Get in"}
-                            label2={"Touch"}
-                            url={item.url}
-                            justifyContent={"end"}
-                          />
+                        <div
+                          className="sv-six-btn-lg"
+                          style={{ position: "relative", top: 0, left: 0 }}
+                        >
+                          <div
+                            className="tp-cta-btn-box"
+                            style={{ position: "relative", top: 0, left: 0 }}
+                          >
+                            <PrimaryBtn
+                              label={"Get in"}
+                              label2={"Touch"}
+                              url={item.url}
+                              justifyContent={"end"}
+                            />
+                          </div>
                         </div>
                       </div>
 

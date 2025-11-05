@@ -18,8 +18,9 @@ const PrimaryBtn = ({
   return (
     <div
       className={`tp-projct-5-2-btn-box d-flex justify-content-${justifyContent}`}
+      // style={{ background: "red" }}
     >
-      <div className="tp-hover-btn-wrapper">
+      <div className="tp-hover-btn-wrapper p-relative">
         <Link
           className={`tp-btn-circle tp-hover-btn-item tp-hover-btn ${
             style ? "style-2 custom-text" : ""

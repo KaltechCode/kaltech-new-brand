@@ -27,7 +27,6 @@ import { awardAnimOne } from "@/utils/award-anim";
 import AwardTwo from "@/components/award/award-two";
 import FooterTwo from "@/layouts/footers/footer-two";
 import InstagramArea from "@/components/instagram/instagram-area";
-import ScrollAnimatedSection from "@/components/ui/scroll-example";
 
 const HomeMain = () => {
   useScrollSmooth();

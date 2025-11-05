@@ -105,7 +105,7 @@ export function ServiceItems({
                 className="tp-service-5-buttons"
                 style={{
                   display: "flex",
-                  justifyContent: "flex-start",
+                  justifyContent: "space-between",
                   gap: "20px",
                   width: "100%",
                 }}
