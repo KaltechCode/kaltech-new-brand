@@ -18,7 +18,10 @@ export default function AboutUsHero() {
           <div className="pt-90">
             <div data-lag="0.2" data-stagger="0.08">
               {/* Responsive font size with proper spacing */}
-              <h4 className="ab-inner-hero-title tp-char-animation pt-15 page-title">
+              <h4
+                className="ab-inner-hero-title tp-char-animation pt-15 page-title"
+                style={{ textAlign: "center" }}
+              >
                 We are a team of <br /> passionate digital creatives
               </h4>
               <br />
