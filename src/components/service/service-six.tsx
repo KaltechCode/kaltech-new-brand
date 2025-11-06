@@ -9,7 +9,7 @@ import ser_img_4 from "@/assets/img/inner-service/service/service-4.jpg";
 
 import { UpArrow } from "../svg";
 import Link from "next/link";
-import PrimaryBtn from "../button/button";
+import PrimaryBtn, { SecondaryCircleBtn } from "../button/button";
 
 const service_data = [
   {
@@ -131,13 +131,11 @@ export default function ServiceSix() {
                       </div>
                       <div
                         className="sv-service-list"
-                        style={
-                          {
-                            // display: "flex",
-                            // justifyContent: "space-between",
-                            // alignItems: "center",
-                          }
-                        }
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                        }}
                       >
                         <ul>
                           {item.lists.map((list, i) => (
@@ -162,21 +160,14 @@ export default function ServiceSix() {
                             {/* </div> */}
                           </div>
                         </div>
-                        <div
-                          className="sv-six-btn-lg"
-                          style={{ position: "relative", top: 0, left: 0 }}
-                        >
-                          <div
-                            className="tp-cta-btn-box"
-                            style={{ position: "relative", top: 0, left: 0 }}
-                          >
-                            <PrimaryBtn
-                              label={"Get in"}
-                              label2={"Touch"}
-                              url={item.url}
-                              justifyContent={"end"}
-                            />
-                          </div>
+                        <div className="sv-six-btn-lg">
+                          <SecondaryCircleBtn
+                            label="Get In"
+                            label2="Touch"
+                            url={item.url}
+                            style={false}
+                            justifyContent={"flex-end"}
+                          />
                         </div>
                       </div>
 

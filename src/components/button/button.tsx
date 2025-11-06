@@ -60,4 +60,40 @@ export const SecondaryBtn = ({
   );
 };
 
+export const SecondaryCircleBtn = ({
+  label,
+  label2,
+  url,
+  style,
+  justifyContent,
+}: {
+  label: String;
+  label2: String;
+  url: String;
+  justifyContent: String;
+  style?: boolean;
+}) => {
+  return (
+    <div className="" style={{ width: "100%" }}>
+      <div
+        className={`tp-btn-secondary-container justify-content-${justifyContent}`}
+      >
+        <Link
+          className={`tp-btn-secondary-circle 
+ tp-hover-btn-item tp-hover-btn ${style ? "style-2 custom-text" : ""}`}
+          href={`${url}`}
+        >
+          <span className="tp-btn-circle-text">
+            {label} <br /> {label2}
+          </span>
+          <span className="tp-btn-circle-icon">
+            <UpArrow />
+          </span>
+          <i className="tp-btn-circle-dot"></i>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
 export default PrimaryBtn;

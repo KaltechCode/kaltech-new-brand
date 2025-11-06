@@ -18,17 +18,9 @@ export default function AboutUsHero() {
           <div className="pt-90">
             <div data-lag="0.2" data-stagger="0.08">
               {/* Responsive font size with proper spacing */}
-              <h5
-                className="ab-inner-hero-title tp-char-animation pt-20 about-hero-title"
-                style={{
-                  fontSize: "clamp(28px, 5vw, 50px)",
-                  letterSpacing: "2px",
-                  lineHeight: "1.2",
-                  textAlign: "center"
-                }}
-              >
+              <h4 className="ab-inner-hero-title tp-char-animation pt-15 page-title">
                 We are a team of <br /> passionate digital creatives
-              </h5>
+              </h4>
               <br />
               <br />
               {/* Use SCSS class instead of inline styles */}
