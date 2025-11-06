@@ -13,23 +13,20 @@ export default function FooterFour() {
             <div className="col-xl-4 col-lg-6 col-md-6 mb-60">
               <div className="tp-footer-3-widget-wrapper footer-col-3-1">
                 <div className="tp-footer-3-widget mb-40">
-                  <h4 className="tp-footer-3-title">Website map</h4>
+                  <h4 className="tp-footer-3-title">Quick Links</h4>
                   <div className="tp-footer-3-menu">
                     <ul>
                       <li>
-                        <a href="/">Home</a>
+                        <a href="/development">Development</a>
                       </li>
                       <li>
-                        <a href="/about-us">About</a>
+                        <a href="/Marketing">Marketing</a>
                       </li>
                       <li>
-                        <a href="/services">Service</a>
+                        <a href="/branding">Branding</a>
                       </li>
                       <li>
-                        <a href="/blog-mordern">Porfolio</a>
-                      </li>
-                      <li>
-                        <a href="/contact">Contact</a>
+                        <a href="/data-analytics">Porfolio</a>
                       </li>
                     </ul>
                   </div>
@@ -58,15 +55,15 @@ export default function FooterFour() {
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
                   <p className="mb-100">
-                    Drop us a line sed id semper <br />
-                    risus in hend rerit.
+                    Get in touch with us for all your <br />
+                    business needs.
                   </p>
                   <Link className="tp-footer-3-logo p-relative" href="/">
                     <Image src={logo} alt="logo" />
                   </Link>
                   <p className="tp-footer-3-copyright">
-                    {new Date().getFullYear()} Themepure <br /> © All rights
-                    reserved
+                    © {new Date().getFullYear()} | All rights reserved <br />
+                    Design by Kaltech
                   </p>
                 </div>
               </div>
@@ -81,16 +78,16 @@ export default function FooterFour() {
                         href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
                         target="_blank"
                       >
-                        740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK
+                        Brookestone Dr, Elizabethtown, KY 42701, Kentucky, USA
                       </a>
                     </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
                     <span>
-                      P: <a href="tel:+725214456">+ 725 214 456</a>
+                      <a href="tel:+1(931)-266-6101">+1(931)-266-6101</a>
                     </span>
                     <span>
-                      E:{" "}
+                      {" "}
                       <a href=" hello@kaltechconsultancy.tech">
                         {" "}
                         hello@kaltechconsultancy.tech
