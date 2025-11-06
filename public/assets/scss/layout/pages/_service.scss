@@ -792,7 +792,7 @@
 
   &-area {
     @media #{$xs} {
-      padding-top: 6.5em;
+      padding-top: 7em;
       // padding-bottom: 5em;
     }
     @media #{$md, $ipadMini} {
@@ -804,10 +804,10 @@
       padding: 6em;
     }
     @media #{$lg,$xl, $xxl,} {
-      padding: 6.5em;
+      padding: 7em;
     }
     @media #{ $xxxl, $xxxxl} {
-      padding: 5.5em 60px 0;
+      padding: 6em 60px 0;
     }
     & .container {
       max-width: 100%;
@@ -821,7 +821,7 @@
       margin-bottom: 30px;
       @media #{$md, $ipadMini, $lg, $xxl, $xl, $xxxl, $xxxxl} {
         width: 90%;
-        margin: 50px auto;
+        margin: 0 auto 50px;
       }
     }
   }

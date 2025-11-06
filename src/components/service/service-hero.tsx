@@ -9,31 +9,14 @@ export default function ServiceHero() {
     <div className="sv-hero-area">
       <div className="container">
         <div className="rowmb-60">
-          <div className="sv-page-hero-content ">
+          <div className="sv-page-hero-content">
             <h4
-              className="tp-char-animation pb-10 tp-hero-3-title"
-              style={{
-                // fontSize: "clamp(50px, calc(2.5em + 1rem), 140px)",
-                letterSpacing: "1px",
-                lineHeight: "1.2",
-                textAlign: "center",
-                // marginBottom: "50px",
-              }}
+              className="tp-char-animation pb-10 page-title"
+              style={{ textAlign: "center" }}
             >
               OUR Services
             </h4>
-            <p
-              className="tp_fade_bottom ptb-p"
-              style={
-                {
-                  // fontSize: "clamp(12px, calc(.5em + .75rem), 20px)",
-                  // lineHeight: "30px",
-                  // marginBottom: "50px",
-                  // width: "90%",
-                  // margin: "50px auto",
-                }
-              }
-            >
+            <p className="tp_fade_bottom ptb-p" style={{}}>
               At Kaltech Consultancy, we know that in today’s digital age, a
               strong online presence is crucial for any business.We are your one
               stop hub for all your digital needs, with our services ranging

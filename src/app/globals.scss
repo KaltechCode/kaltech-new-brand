@@ -46,6 +46,15 @@
   color: #b08500;
 }
 
+.page-title {
+  font-size: clamp(24px, 4vw + 1rem, 40px) !important;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  color: var(--tp-common-dark);
+  margin-bottom: 30px;
+  font-weight: 700 !important;
+}
+
 // @media (max-width: 1200px) {
 // }
 

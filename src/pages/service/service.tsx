@@ -21,6 +21,9 @@ import ContactOne from "@/components/contact/contact-one";
 import { ctaAnimation } from "@/utils/cta-anim";
 import { hoverBtn } from "@/utils/hover-btn";
 import { ModalForm } from "@/components/custom/modal/form";
+import FooterOne from "@/layouts/footers/footer-one";
+import FooterThree from "@/layouts/footers/footer-three";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const ServiceMain = () => {
   useScrollSmooth();
@@ -78,7 +81,7 @@ const ServiceMain = () => {
 
           {/* footer area */}
           <ContactOne />
-          <FooterTwo />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>
