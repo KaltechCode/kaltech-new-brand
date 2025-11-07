@@ -14,7 +14,7 @@
 }
 
 /* about hero theme-aware title */
-.about-hero-title{
+.about-hero-title {
   color: var(--tp-common-black);
 }
 // updates
@@ -22,47 +22,50 @@
 @media (max-width: 1000px) {
   .ab-about-area {
     .what-we-do-section {
-
       /* Make title section full width and centered */
-      .col-xl-3, .col-lg-4, .col-md-5 {
+      .col-xl-3,
+      .col-lg-4,
+      .col-md-5 {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 40px;
       }
-      
+
       /* Make content section full width */
-      .col-xl-9, .col-lg-8, .col-md-7 {
+      .col-xl-9,
+      .col-lg-8,
+      .col-md-7 {
         flex: 0 0 100%;
         max-width: 100%;
         padding-top: 0 !important;
       }
-      
+
       /* Stack service columns vertically */
       .col-md-4 {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 30px;
-        
+
         &:last-child {
           margin-bottom: 0;
         }
       }
-      
+
       /* Center the title */
       .ab-about-category-title-box {
         text-align: center;
         padding-left: 0 !important;
-        
+
         .ab-about-category-title {
           display: inline-block;
         }
       }
-      
+
       /* Hide the decorative shape */
       .ab-about-shape-1 {
         display: none !important;
       }
-      
+
       /* Remove category spacing for mobile */
       .ab-about-category-list {
         &.category-space-1,
@@ -70,7 +73,7 @@
         &.category-space-3 {
           padding-left: 0 !important;
         }
-        
+
         ul {
           li {
             font-size: 16px;
@@ -83,11 +86,11 @@
   }
 }
 
-// 
+//
 
 /* Ensure ab-brand-title defaults to black in light mode */
 .ab-brand {
-  &-area{
+  &-area {
     & .container {
       max-width: 100%;
       @media #{$xxxl, $xxxxl} {
@@ -96,21 +99,20 @@
     }
   }
 
-  &-title{
-  color: var(--tp-common-black);
-  letter-spacing: 2px; /* preserve previous spacing */
+  &-title {
+    color: var(--tp-common-black);
+    letter-spacing: 2px; /* preserve previous spacing */
+  }
 }
-}
-
 
 /* Stronger, context-scoped rule to ensure about page brand title is black in light mode */
-.ab-about-content .ab-brand-title{
+.ab-about-content .ab-brand-title {
   color: var(--tp-common-black);
   letter-spacing: 2px;
 }
 
 /* Responsive hero title and video for about page */
-.about-hero-title{
+.about-hero-title {
   text-transform: uppercase;
   font-size: 70px; /* default for large screens */
   letter-spacing: 0px;
@@ -119,7 +121,7 @@
   color: var(--tp-common-black);
 }
 
-.about-hero-video{
+.about-hero-video {
   width: 100%;
   display: block;
   margin: 30px 0 0 0;
@@ -128,37 +130,37 @@
 
 /* Smaller screens */
 @media #{$xl} {
-  .about-hero-title{
+  .about-hero-title {
     font-size: 60px;
   }
 }
 @media #{$lg} {
-  .about-hero-title{
+  .about-hero-title {
     font-size: 48px;
   }
 }
 @media #{$md} {
-  .about-hero-title{
+  .about-hero-title {
     font-size: 36px;
     margin-bottom: 20px;
   }
-  .about-hero-video{
+  .about-hero-video {
     max-height: 400px;
   }
 }
 @media #{$sm}, #{$xs} {
-  .about-hero-title{
+  .about-hero-title {
     font-size: 28px;
     line-height: 1.1;
     margin-bottom: 16px;
   }
-  .about-hero-video{
+  .about-hero-video {
     max-height: 260px;
   }
 }
 
 /* stronger selector to override other .ab-inner-hero-title rules */
-.ab-inner-hero-title.about-hero-title{
+.ab-inner-hero-title.about-hero-title {
   color: var(--tp-common-black);
 }
 
@@ -252,16 +254,16 @@
     align-items: center;
   }
 
-  @media #{$md, $lg}{
+  @media #{$md, $lg} {
     padding: 5em 0;
 
     // padding-bottom: 5em;
   }
- 
+
   @media #{$xl, $xxl, $xxxl, $xxxxl} {
     padding: 5em 60px;
   }
-  
+
   & .container {
     max-width: 100%;
     @media #{$xxxl, $xxxxl} {
@@ -269,15 +271,20 @@
     }
   }
 
-  .three-columns{
+  .three-columns {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     row-gap: 40px;
-    @media #{$lg, $lgL, $xl, $xxl, $xxxl, $xxxxl} {
+
+    // @media #{$sm, $xs,} {
+    //   width: 80%;
+    //   margin: 0 auto;
+    // }
+
+    @media #{$smL,$md,$lg, $lgL, $xl, $xxl, $xxxl, $xxxxl} {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
-
 }
 
 /* Category list styles */
@@ -307,6 +314,12 @@
   .ab-about-category-title {
     margin: 0;
     letter-spacing: 1px;
+  }
+  &.what-we-do-section-container {
+    @media #{$sm, $xs} {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
@@ -440,7 +453,7 @@
       padding-top: 60px;
       padding-bottom: 100px;
     }
-    @media #{$md, $lg}{
+    @media #{$md, $lg} {
       padding-top: 5em;
       padding-bottom: 5em;
     }
@@ -541,7 +554,6 @@
         background-size: 0% 1px, 100% 1px;
       }
     }
-    
   }
   &-content-wrap {
     margin-right: -90px;
@@ -1137,7 +1149,7 @@
       & ul {
         & li {
           color: #5d5d63;
-          font-size: clamp(16px, calc(2em + .3rem), 18px);
+          font-size: clamp(16px, calc(2em + 0.3rem), 18px);
           font-weight: 500;
           line-height: 1.5;
           position: relative;
@@ -1215,6 +1227,10 @@
     line-height: 1;
     letter-spacing: -1.08px;
     color: var(--tp-common-black-2);
+    text-align: center;
+    @media #{$lg, $lgL, $xl, $xxl, $xxxl, $xxxxl} {
+      text-align: left;
+    }
   }
 }
 .ab-funfact {

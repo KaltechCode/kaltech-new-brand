@@ -112,7 +112,6 @@ export default function ServiceSix() {
                     >
                       <span className="sv-service-subtitle">
                         <i>{item.id < 9 ? "0" + item.id : item.id}</i>
-                        {item.subtitle}
                       </span>
                       <h4
                         className="sv-service-title"
