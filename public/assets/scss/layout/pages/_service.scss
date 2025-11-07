@@ -793,21 +793,23 @@
   &-area {
     @media #{$xs} {
       padding-top: 7em;
-      // padding-bottom: 5em;
+      padding-bottom: 6em;
     }
     @media #{$md, $ipadMini} {
       padding-top: 7em;
       // padding-bottom: 4em;
-      // padding-bottom: 5em;
+      padding-bottom: 6em;
     }
     @media #{$lgL} {
-      padding: 6em;
+      padding-top: 6em;
+      padding-bottom: 6em;
     }
     @media #{$lg,$xl, $xxl,} {
-      padding: 7em;
+      padding-top: 7em;
+      padding-bottom: 6em;
     }
     @media #{ $xxxl, $xxxxl} {
-      padding: 6em 60px 0;
+      padding: 6em 60px 6em;
     }
     & .container {
       max-width: 100%;

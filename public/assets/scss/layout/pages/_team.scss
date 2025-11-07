@@ -108,9 +108,23 @@
   }
 
   &-slider-active {
-    margin: 0px -260px;
+    // margin: 0px -260px;
     @media #{$xl,$md,$xs} {
       margin: 0;
+    }
+  }
+  &-area {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    @media #{ $xxxl, $xxxxl} {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
     }
   }
 }

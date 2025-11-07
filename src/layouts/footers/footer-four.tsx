@@ -54,9 +54,36 @@ export default function FooterFour() {
             <div className="col-xl-4 col-lg-6 col-md-6 mb-60">
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
-                  <p className="mb-100">
-                    Get in touch with us for all your <br />
-                    business needs.
+                  <p
+                    className="mb-100"
+                    style={{
+                      color: "var(--tp-common-white)",
+                      fontFamily: "Marcellus",
+                      textAlign: "left",
+                      fontWeight: 700,
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "var(--tp-common-white)",
+                        fontSize: "clamp(16px, 1.5vw + .5rem, 22px)",
+                        textTransform: "inherit",
+                      }}
+                    >
+                      {" "}
+                      Do have a new project &#63;
+                    </span>
+                    <br />
+                    <span
+                      style={{
+                        color: "#fff",
+                        fontWeight: 300,
+                        fontSize: "clamp(16px, 1.5vw + .5rem, 16px)",
+                        textAlign: "left",
+                      }}
+                    >
+                      Reach out to our team, we are here to help.
+                    </span>
                   </p>
                   <Link className="tp-footer-3-logo p-relative" href="/">
                     <Image src={logo} alt="logo" />

@@ -10,8 +10,6 @@ export default function AboutUsArea() {
       <div className="container">
         <div id="about-info" className="row">
           <div className="ab-about-content">
-          
-
             <div className="ab-brand-title-box text-center">
               <h4
                 className="ab-brand-title"
@@ -51,72 +49,69 @@ export default function AboutUsArea() {
            
           </div> */}
         </div>
-<div className="row what-we-do-section">
-  <div className="col-12">
-    <div className="row">
-      <div className="col-xl-3 col-lg-4 col-md-5 col-12 mb-40">
-        <div className="ab-about-category-title-box p-relative">
-          <h4 className="ab-about-category-title">
-            What we do
-            <span></span>
-          </h4>
-          <Image
-            className="ab-about-shape-1 d-none d-md-block"
-            src={shape}
-            alt="shape"
-          />
+        <div className="row what-we-do-section">
+          <div className="col-12">
+            <div className="row">
+              <div className="col-xl-3 col-lg-4 col-md-5 col-12 mb-40">
+                <div
+                  className="ab-about-category-title-box p-relative what-we-do-section-container"
+                  // style={{ textAlign: "center", width: "100%" }}
+                >
+                  <h4 className="ab-about-category-title">
+                    What we do
+                    <span></span>
+                  </h4>
+                  <Image
+                    className="ab-about-shape-1 d-none d-md-block"
+                    src={shape}
+                    alt="shape"
+                  />
+                </div>
+              </div>
+
+              {/* category boxes */}
+              <div className="col-xl-9 col-lg-8 col-md-7 col-12 pt-7">
+                <div className="row three-columns">
+                  <div className="">
+                    {/* first boxes */}
+                    <div className="ab-about-category-list category-space-1 tp_fade_bottom">
+                      <ul>
+                        <li>Web design and Development</li>
+                        <li>Content Management System</li>
+                        <li>Mobile Application Development</li>
+                        <li>Desktop Application Development</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* second box */}
+                  <div className="">
+                    <div className="ab-about-category-list category-space-2 tp_fade_bottom">
+                      <ul>
+                        <li>Social Media Marketing</li>
+                        <li>Search Engine Optimization</li>
+                        <li>Email Marketing</li>
+                        <li>Explainer videos</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* third boxes */}
+                  <div className="">
+                    <div className="ab-about-category-list category-space-3 tp_fade_bottom">
+                      <ul>
+                        <li>Logo Design</li>
+                        <li>Business Branding</li>
+                        <li>Brand Ambasadors</li>
+                        <li>Logo and Title Animations</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-
-      {/* category boxes */}
-      <div className="col-xl-9 col-lg-8 col-md-7 col-12 pt-7">
-
-
-        <div className="row three-columns">
-          <div className="">
-            {/* first boxes */}
-            <div className="ab-about-category-list category-space-1 tp_fade_bottom">
-              <ul>
-                <li>Web design and Development</li>
-                <li>Content Management System</li>
-                <li>Mobile Application Development</li>
-                <li>Desktop Application Development</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* second box */}
-          <div className="">
-            <div className="ab-about-category-list category-space-2 tp_fade_bottom">
-              <ul>
-                <li>Social Media Marketing</li>
-                <li>Search Engine Optimization</li>
-                <li>Email Marketing</li>
-                <li>Explainer videos</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* third boxes */}
-          <div className="">
-            <div className="ab-about-category-list category-space-3 tp_fade_bottom">
-              <ul>
-                <li>Logo Design</li>
-                <li>Business Branding</li>
-                <li>Brand Ambasadors</li>
-                <li>Logo and Title Animations</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-</div>
       </div>
     </div>
   );

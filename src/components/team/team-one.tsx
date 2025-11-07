@@ -9,22 +9,25 @@ import { ITeamDT } from "@/types/team-d-t";
 import TeamModal from "../modal/team-modal";
 
 const slider_setting: SwiperOptions = {
-  slidesPerView: 6,
+  slidesPerView: 4,
   loop: true,
-  autoplay: false,
+  autoplay: {
+    delay: 3000, // Time in ms between slides (e.g., 3 seconds)
+    disableOnInteraction: true,
+  },
   spaceBetween: 30,
   breakpoints: {
     "1400": {
-      slidesPerView: 6,
+      slidesPerView: 4,
     },
     "1200": {
       slidesPerView: 4,
     },
     "992": {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
     "768": {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     "576": {
       slidesPerView: 2,
@@ -48,9 +51,9 @@ const TeamOne = ({ spacing = "pt-20" }: IProps) => {
   }
   return (
     <>
-      <div className={`tp-team-area ${spacing} pb-120 fix`} >
-        <div className="container-fluid">
-          <div className="row">
+      <div className={`tp-team-area fix`}>
+        <div className="row">
+          <div className="container container-1480">
             <div className="col-xl-12">
               <div className="tp-team-slider-wrapper">
                 <Swiper

@@ -60,7 +60,7 @@ const ServiceMain = () => {
             {/* service hero */}
 
             {/* service area */}
-            <div className="tp-service-5-area sv-service-style">
+            {/* <div className="tp-service-5-area sv-service-style">
               <div className="container">
                 <div className="tp-service-5-wrap">
                   <ServiceItems
@@ -71,7 +71,7 @@ const ServiceMain = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* service area */}
 
             {/* service area */}
