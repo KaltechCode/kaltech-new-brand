@@ -26,7 +26,7 @@ export default function FooterFour() {
                         <a href="/branding">Branding</a>
                       </li>
                       <li>
-                        <a href="/data-analytics">Porfolio</a>
+                        <a href="/data-analytics">Data Analytics</a>
                       </li>
                     </ul>
                   </div>
@@ -71,7 +71,7 @@ export default function FooterFour() {
                       }}
                     >
                       {" "}
-                      Do have a new project &#63;
+                      Do you have a new project &#63;
                     </span>
                     <br />
                     <span
