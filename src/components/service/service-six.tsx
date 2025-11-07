@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 // images
-import ser_img_1 from "@/assets/img/inner-service/service/service-1.jpg";
-import ser_img_2 from "@/assets/img/inner-service/service/service-2.jpg";
-import ser_img_3 from "@/assets/img/inner-service/service/service-3.jpg";
+import ser_img_1 from "@/assets/img/custom/services/Development.webp";
+import ser_img_2 from "@/assets/img/custom/services/Marketing.webp";
+import ser_img_3 from "@/assets/img/custom/services/Branding.webp";
 import ser_img_4 from "@/assets/img/inner-service/service/service-4.jpg";
 
 import { UpArrow } from "../svg";
@@ -14,7 +14,7 @@ import PrimaryBtn, { SecondaryCircleBtn } from "../button/button";
 const service_data = [
   {
     id: 1,
-    img: ser_img_2,
+    img: ser_img_1,
     subtitle: "Kaltech Consultancy",
     title: "DEVELOPMENT",
     text: "We build scalable and efficient web and mobile applications tailored to your business needs.",
@@ -28,7 +28,7 @@ const service_data = [
   },
   {
     id: 2,
-    img: ser_img_4,
+    img: ser_img_2,
     subtitle: "Kaltech Consultancy",
     title: "MARKETING",
     text: "Our marketing services are designed to help businesses reach their target audience effectively.",
@@ -41,7 +41,7 @@ const service_data = [
   },
   {
     id: 3,
-    img: ser_img_1,
+    img: ser_img_3,
     subtitle: "Kaltech Consultancy",
     title: "BRANDING",
     text: "We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.",
