@@ -46,7 +46,6 @@ const slider_data = [
   {
     id: 5,
     bg: "/assets/img/custom/services/Kaltech-Branding-.webp",
-    bg: "/assets/img/home-11/port-5.jpg",
     subtitle: "Digital Design",
     year: "2021",
     title: "Zon <br> Robinson",
