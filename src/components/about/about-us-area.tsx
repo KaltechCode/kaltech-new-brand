@@ -53,10 +53,7 @@ export default function AboutUsArea() {
           <div className="col-12">
             <div className="row">
               <div className="col-xl-3 col-lg-4 col-md-5 col-12 mb-40">
-                <div
-                  className="ab-about-category-title-box p-relative what-we-do-section-container"
-                  // style={{ textAlign: "center", width: "100%" }}
-                >
+                <div className="ab-about-category-title-box p-relative what-we-do-section-container">
                   <h4 className="ab-about-category-title">
                     What we do
                     <span></span>

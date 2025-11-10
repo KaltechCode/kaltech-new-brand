@@ -17,6 +17,7 @@ import AboutUsArea from "@/components/about/about-us-area";
 import TeamOne from "@/components/team/team-one";
 import FunFactOne from "@/components/fun-fact/fun-fact-one";
 import BrandFive from "@/components/brand/brand-five";
+
 // animation
 import {
   charAnimation,
@@ -24,8 +25,8 @@ import {
   titleAnimation,
 } from "@/utils/title-animation";
 import { hoverBtn } from "@/utils/hover-btn";
-import { teamMarqueAnim } from "@/utils/scroll-marque";
-import AwardOne from "@/components/award/award-one";
+import PortfolioSliderHomeEleven from "@/components/portfolio/slider/portfolio-slider-home-eleven";
+import PortfolioSliderHomeTen from "@/components/portfolio/slider/portfolio-slider-home-ten";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -72,6 +73,12 @@ const AboutUsMain = () => {
             {/* brand area */}
 
             {/* <AwardOne/> */}
+
+            {/* portfolio slider start */}
+            <div className="p-relative">
+              <PortfolioSliderHomeTen />
+            </div>
+            {/* portfolio slider end */}
           </main>
 
           {/* footer area */}

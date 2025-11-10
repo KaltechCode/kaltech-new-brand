@@ -2,10 +2,9 @@ import React from "react";
 import Image from "next/image";
 
 // images
-import ser_img_1 from "@/assets/img/custom/services/Development.webp";
+import ser_img_1 from "@/assets/img/custom/services/Kaltech-Development.webp";
 import ser_img_2 from "@/assets/img/custom/services/Marketing.webp";
-import ser_img_3 from "@/assets/img/custom/services/Branding.webp";
-import ser_img_4 from "@/assets/img/inner-service/service/service-4.jpg";
+import ser_img_3 from "@/assets/img/custom/services/Kaltech-Branding-.webp";
 
 import { UpArrow } from "../svg";
 import Link from "next/link";
