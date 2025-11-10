@@ -12,7 +12,7 @@ export default function HeroBannerFive() {
         <div className="col-xl-12">
           <div className="tp-hero-5-content-box">
             <h4 className="tp-hero-5-title tp-char-animation">
-              Experience + <span>Creativity</span>
+              Creative + <span>Agency</span>
             </h4>
             <p className="">
               {"We're"} an innovative global ui/ux design agency building
@@ -22,7 +22,7 @@ export default function HeroBannerFive() {
             <Link className="tp-btn-black-square" href="/portfolio-grid-col-2">
               View Our Works
               <span>
-                <UpArrow/>
+                <UpArrow />
               </span>
             </Link>
           </div>
@@ -33,7 +33,11 @@ export default function HeroBannerFive() {
             <div className="tp-project-5-thumb-wrap d-flex align-items-center">
               <div className="tp-project-5-thumb">
                 <Link href="/portfolio-details-1">
-                  <Image src={p_img_1} alt="project-img" style={{height: "auto"}} />
+                  <Image
+                    src={p_img_1}
+                    alt="project-img"
+                    style={{ height: "auto" }}
+                  />
                 </Link>
               </div>
               <div className="tp-project-5-thumb">
@@ -54,7 +58,11 @@ export default function HeroBannerFive() {
               </div>
               <div className="tp-project-5-thumb">
                 <Link href="/portfolio-details-1">
-                  <Image src={p_img_2} alt="project-img" style={{height: "auto"}} />
+                  <Image
+                    src={p_img_2}
+                    alt="project-img"
+                    style={{ height: "auto" }}
+                  />
                 </Link>
               </div>
             </div>

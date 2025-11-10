@@ -6,45 +6,46 @@ import "slick-carousel/slick/slick.css";
 import { DownArrow } from "../../svg";
 
 // images
-import port_sm_1 from "@/assets/img/home-11/port-sm-1.jpg";
-import port_sm_2 from "@/assets/img/home-11/port-sm-2.jpg";
-import port_sm_3 from "@/assets/img/home-11/port-sm-3.jpg";
-import port_sm_4 from "@/assets/img/home-11/port-sm-4.jpg";
-import port_sm_5 from "@/assets/img/home-11/port-sm-5.jpg";
+import port_sm_1 from "@/assets/img/custom/services/Kaltech-Development.webp";
+import port_sm_2 from "@/assets/img/custom/services/Marketing.webp";
+import port_sm_3 from "@/assets/img/custom/services/Kaltech-Branding-.webp";
+import port_sm_4 from "@/assets/img/custom/services/Kaltech-Development.webp";
+import port_sm_5 from "@/assets/img/custom/services/Marketing.webp";
 import { SlickNextArrow, SlickPrevArrow } from "../../slick-arrow";
 
 // slider data
 const slider_data = [
   {
     id: 1,
-    bg: "/assets/img/home-11/port-1.jpg",
+    bg: "/assets/img/custom/services/Kaltech-Development.webp",
     subtitle: "Digital Design",
     year: "2024",
     title: "Fashion <br> Sentence",
   },
   {
     id: 2,
-    bg: "/assets/img/home-11/port-2.jpg",
+    bg: "/assets/img/custom/services/Marketing.webp",
     subtitle: "Digital Design",
     year: "2022",
     title: "Chania <br> Tourism",
   },
   {
     id: 3,
-    bg: "/assets/img/home-11/port-3.jpg",
+    bg: "/assets/img/custom/services/Kaltech-Branding-.webp",
     subtitle: "Digital Design",
     year: "2021",
     title: "Kiteboard <br> action",
   },
   {
     id: 4,
-    bg: "/assets/img/home-11/port-4.jpg",
+    bg: "/assets/img/custom/services/Kaltech-Branding-.webp",
     subtitle: "Digital Design",
     year: "2021",
     title: "Headphones <br> Cheap",
   },
   {
     id: 5,
+    bg: "/assets/img/custom/services/Kaltech-Branding-.webp",
     bg: "/assets/img/home-11/port-5.jpg",
     subtitle: "Digital Design",
     year: "2021",
@@ -104,7 +105,7 @@ const slider_setting_two = {
   slidesToShow: 4,
   slidesToScroll: 1,
   dots: false,
-  arrow:false,
+  arrow: false,
   focusOnSelect: true,
   centerPadding: "0",
   speed: 600,
@@ -160,7 +161,6 @@ const slider_setting_two = {
   ],
 };
 
-
 export default function PortfolioSliderHomeTen() {
   const [slider1, setSlider1] = useState<Slider | null>(null);
   const [slider2, setSlider2] = useState<Slider | null>(null);
@@ -214,7 +214,9 @@ export default function PortfolioSliderHomeTen() {
             style={{ display: "inline-block" }}
           >
             <div className="slider-line"></div>
-            <span className="active">{sliderIndex < 9 ? `0${sliderIndex}` : sliderIndex}</span>
+            <span className="active">
+              {sliderIndex < 9 ? `0${sliderIndex}` : sliderIndex}
+            </span>
           </div>
           <Slider
             {...slider_setting_two}
@@ -245,7 +247,9 @@ export default function PortfolioSliderHomeTen() {
                         {item.subtitle}
                       </span>
                       <h4 className="tp-portfolio-11-slider-nav-tittle">
-                        <Link href="/portfolio-details-video">{item.title}</Link>
+                        <Link href="/portfolio-details-video">
+                          {item.title}
+                        </Link>
                       </h4>
                     </div>
                   </div>

@@ -9,11 +9,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 // internal imports
 import Wrapper from "@/layouts/wrapper";
 import HeaderOne from "@/layouts/headers/header-one";
-import { ServiceItems } from "@/components/service/service-five";
-import ServiceHero from "@/components/service/service-hero";
 import ServiceSix from "@/components/service/service-six";
-
-import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, fadeAnimation } from "@/utils/title-animation";
 import { servicePanel } from "@/utils/panel-animation";
@@ -21,9 +17,10 @@ import ContactOne from "@/components/contact/contact-one";
 import { ctaAnimation } from "@/utils/cta-anim";
 import { hoverBtn } from "@/utils/hover-btn";
 import { ModalForm } from "@/components/custom/modal/form";
-import FooterOne from "@/layouts/footers/footer-one";
-import FooterThree from "@/layouts/footers/footer-three";
 import FooterFour from "@/layouts/footers/footer-four";
+import GalleryOne from "@/components/gallery/gallery-one";
+import ServiceHero from "@/components/hero-banner/hero-banner-services";
+import AboutThree from "@/components/about/about-three";
 
 const ServiceMain = () => {
   useScrollSmooth();
@@ -55,8 +52,10 @@ const ServiceMain = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* service hero */}
             <ServiceHero />
+            <GalleryOne />
+            <AboutThree />
+
             {/* service hero */}
 
             {/* service area */}
