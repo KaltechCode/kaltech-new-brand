@@ -4,6 +4,8 @@ import Image from "next/image";
 // images
 import shape from "@/assets/img/inner-about/about/shape-1.png";
 import { s_1, s_2, s_3, s_4 } from "@/data/services-icons";
+import Link from "next/link";
+import { UpArrow } from "../svg";
 
 const servicessData = [
   {
@@ -138,29 +140,44 @@ export default function AboutUsArea() {
                   <div className="row g-4">
                     {servicessData.map((item) => (
                       <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
-                        <div
-                          className="ab-funfact-item"
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "20px",
-                            justifyContent: "center",
-                            background: "#f3f3f3",
-                            borderBottom: "none",
-                          }}
-                        >
+                        <div className="ab-what-we-item ab-funfact-item">
                           <div className="tp-service-5-icon">
                             <Image
                               src={item.icon}
                               alt="icon"
                               style={{
                                 width: "40px",
-                                height: "50px",
+                                height: "40px",
                                 objectFit: "contain",
                               }}
                             />
                           </div>
-                          <h2 className="counter-title">{item.label}</h2>
+                          <h3
+                            className="counter-title"
+                            style={{
+                              fontWeight: 500,
+                              fontSize: "clamp(24px, 3vw + 0.75rem, 36px)",
+                            }}
+                          >
+                            {item.label}
+                          </h3>
+                          <div className="tp-projct-5-2-btn-box justify-content-end">
+                            <div className="tp-hover-btn-wrapper">
+                              <Link
+                                className="custom-circle tp-hover-btn-item tp-hover-btn style-2"
+                                href={item.url}
+                              >
+                                {/* <span className="tp-btn-circle-text">
+                        About <br /> Us
+                      </span> */}
+                                <i className="custom-circle-icon">
+                                  <UpArrow />
+                                </i>
+                                <i className="tp-btn-circle-dot"></i>
+                              </Link>
+                              {/* </div> */}
+                            </div>
+                          </div>
                         </div>
                       </div>
                     ))}
