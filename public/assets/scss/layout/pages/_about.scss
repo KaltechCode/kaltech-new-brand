@@ -94,7 +94,7 @@
     & .container {
       max-width: 100%;
       @media #{$xxxl, $xxxxl} {
-        max-width: 1480px;
+        max-width: 1480px 60px;
       }
     }
   }
@@ -476,6 +476,25 @@
   }
 }
 .tp-about-3 {
+  &-area {
+    @media #{$xs} {
+      padding-top: 60px;
+      padding-bottom: 100px;
+    }
+    @media #{$md, $lg} {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+    @media #{ $xl, $xxl, $xxxl, $xxxxl} {
+      padding: 5em 60px;
+    }
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
+  }
   &-content {
     padding-right: 230px;
     @media #{$lg,$md,$xs} {
@@ -1263,6 +1282,15 @@
       margin-bottom: 40px;
     }
   }
+  &-area {
+    padding: 3em 60px;
+    .container {
+      width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
+  }
 }
 .ab-brand {
   &-title {
@@ -1543,4 +1571,43 @@
   & .ab-brand-slide-wrap {
     overflow: visible;
   }
+}
+
+.tp-portfolio-11-area {
+  max-height: 992px;
+  @media #{$xs} {
+    padding-top: 7em;
+    padding-bottom: 6em;
+  }
+  @media #{$md, $ipadMini} {
+    padding-top: 7em;
+    // padding-bottom: 4em;
+    padding-bottom: 6em;
+  }
+  @media #{$lgL} {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  @media #{$lg,$xl, $xxl,} {
+    padding-top: 7em;
+    padding-bottom: 6em;
+  }
+  @media #{ $xxxl, $xxxxl} {
+    padding: 6em 60px 6em;
+  }
+  & .container {
+    max-width: 100%;
+    @media #{$xxxl, $xxxxl} {
+      max-width: 1480px;
+    }
+  }
+}
+
+.slick-slide {
+  padding: 0 7px !important;
+}
+
+.button.slick-next,
+.button.slick-prev {
+  border: 1px solid var(--tp-common-black) !important;
 }
