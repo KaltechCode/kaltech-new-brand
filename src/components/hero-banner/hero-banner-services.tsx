@@ -14,8 +14,8 @@ export default function ServiceHero() {
                 <span></span>
               </div> */}
               <h4 className="tp-hero-3-title tp_reveal_anim">
-                <span className="tp-reveal-line">Your </span>
-                <span className="tp-reveal-line">Creative Agency</span>
+                <span className="tp-reveal-line">Our </span>
+                <span className="tp-reveal-line">Creative Services</span>
               </h4>
 
               {/* <div className="tp-projct-5-2-btn-box d-flex justify-content-center">

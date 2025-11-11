@@ -3,11 +3,39 @@ import Image from "next/image";
 
 // images
 import shape from "@/assets/img/inner-about/about/shape-1.png";
+import { s_1, s_2, s_3, s_4 } from "@/data/services-icons";
+
+const servicessData = [
+  {
+    id: 1,
+    label: "Development",
+    url: "/development",
+    icon: s_1,
+  },
+  {
+    id: 2,
+    label: "Marketing",
+    url: "/marketing",
+    icon: s_2,
+  },
+  {
+    id: 3,
+    label: "Branding",
+    url: "/branding",
+    icon: s_3,
+  },
+  {
+    id: 4,
+    label: "Data Analytics",
+    url: "/data-analytics",
+    icon: s_4,
+  },
+];
 
 export default function AboutUsArea() {
   return (
     <div className="ab-about-area ab-about-mt z-index-5">
-      <div className="container">
+      <div className="container container-1480">
         <div id="about-info" className="row">
           <div className="ab-about-content">
             <div className="ab-brand-title-box text-center">
@@ -52,14 +80,14 @@ export default function AboutUsArea() {
         <div className="row what-we-do-section">
           <div className="col-12">
             <div className="row">
-              <div className="col-xl-3 col-lg-4 col-md-5 col-12 mb-40">
+              <div className="col-xl-4 col-12 mb-40">
                 <div className="ab-about-category-title-box p-relative what-we-do-section-container">
                   <h4 className="ab-about-category-title">
                     What we do
                     <span></span>
                   </h4>
                   <Image
-                    className="ab-about-shape-1 d-none d-md-block"
+                    className="ab-about-shape-1 d-none d-xl-block"
                     src={shape}
                     alt="shape"
                   />
@@ -67,10 +95,10 @@ export default function AboutUsArea() {
               </div>
 
               {/* category boxes */}
-              <div className="col-xl-9 col-lg-8 col-md-7 col-12 pt-7">
+              {/* <div className="col-xl-9 col-lg-8 col-md-7 col-12 pt-7">
                 <div className="row three-columns">
+
                   <div className="">
-                    {/* first boxes */}
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
                       <ul>
                         <li>Web design and Development</li>
@@ -81,7 +109,6 @@ export default function AboutUsArea() {
                     </div>
                   </div>
 
-                  {/* second box */}
                   <div className="">
                     <div className="ab-about-category-list category-space-2 tp_fade_bottom">
                       <ul>
@@ -93,7 +120,6 @@ export default function AboutUsArea() {
                     </div>
                   </div>
 
-                  {/* third boxes */}
                   <div className="">
                     <div className="ab-about-category-list category-space-3 tp_fade_bottom">
                       <ul>
@@ -103,6 +129,41 @@ export default function AboutUsArea() {
                         <li>Logo and Title Animations</li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div> */}
+
+              <div className="col-xl-8">
+                <div className="ab-funfact-wrap">
+                  <div className="row g-4">
+                    {servicessData.map((item) => (
+                      <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
+                        <div
+                          className="ab-funfact-item"
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "20px",
+                            justifyContent: "center",
+                            background: "#f3f3f3",
+                            borderBottom: "none",
+                          }}
+                        >
+                          <div className="tp-service-5-icon">
+                            <Image
+                              src={item.icon}
+                              alt="icon"
+                              style={{
+                                width: "40px",
+                                height: "50px",
+                                objectFit: "contain",
+                              }}
+                            />
+                          </div>
+                          <h2 className="counter-title">{item.label}</h2>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
