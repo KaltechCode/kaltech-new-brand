@@ -126,7 +126,14 @@ export default function ServiceTwo() {
                                 width={30}
                               />
                             </span>
-                            {s.title}
+                            <h3
+                              style={{
+                                height: 30,
+                              }}
+                              className="emphasis-title "
+                            >
+                              {s.title}
+                            </h3>
                           </div>
                           <span className="accordion-icon"></span>
                         </button>

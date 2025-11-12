@@ -13,16 +13,19 @@ export default function AboutUsHero() {
 
   return (
     <div className="ab-inner-hero-area p-relative">
-      <div className="container container-1480 mb-100">
+      <div className="container container-1480">
         <div className="row justify-content-center">
-          <div className="pt-90">
+          <div className="">
             <div data-lag="0.2" data-stagger="0.08">
               {/* Responsive font size with proper spacing */}
               <h4
-                className=" tp-char-animation pt-15 section-title "
+                className="tp-hero-3-title tp_reveal_anim"
                 style={{ textAlign: "center" }}
               >
-                We are a team of <br /> passionate digital creatives
+                <span className="tp-reveal-line">
+                  A Team of <br />
+                </span>
+                <span className="tp-reveal-line">Digital Creatives</span>
               </h4>
               <br />
               <br />

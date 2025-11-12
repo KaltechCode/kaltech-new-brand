@@ -78,12 +78,13 @@
 
 .ab-funfact-item {
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px 20px;
   background: transparent;
-  transition: all 0.3s ease;
-  .tp-projct-5-2-btn-box {
-    display: none;
+  transition: all 1s ease;
+  .btn-container-func {
     transition: all 1s ease;
+    display: none;
+    margin-top: 7px;
   }
 
   &:hover {
@@ -93,8 +94,10 @@
     [data-theme="dark"] & {
       box-shadow: 0 10px 30px rgba(255, 255, 255, 0.03);
     }
-    .tp-projct-5-2-btn-box {
+    .btn-container-func {
       display: flex;
+      justify-content: flex-end;
+      padding-right: 40;
     }
   }
 
@@ -129,12 +132,14 @@
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
   }
   &.ab-what-we-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #f3f3f3;
-    padding: 70px 10px;
-    gap: 30;
+    padding: 50px 10px;
+    .icon-label-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30;
+    }
 
     [data-theme="dark"] & {
       color: var(--tp-common-white);

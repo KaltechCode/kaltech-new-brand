@@ -3,7 +3,7 @@ import Image from "next/image";
 
 // images
 import ser_img_1 from "@/assets/img/custom/services/Kaltech-Development.webp";
-import ser_img_2 from "@/assets/img/custom/services/Marketing.webp";
+import ser_img_2 from "@/assets/img/custom/services/kaltech-marketing-cover.png";
 import ser_img_3 from "@/assets/img/custom/services/Kaltech-Branding-.webp";
 import ser_img_4 from "@/assets/img/custom/services/Data-Analytics.png";
 
