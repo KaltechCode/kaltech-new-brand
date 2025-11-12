@@ -1576,32 +1576,32 @@
 
 .tp-portfolio-11-area {
   max-height: 992px;
-  @media #{$xs} {
-    padding-top: 7em;
-    padding-bottom: 6em;
-  }
-  @media #{$md, $ipadMini} {
-    padding-top: 7em;
-    // padding-bottom: 4em;
-    padding-bottom: 6em;
-  }
-  @media #{$lgL} {
-    padding-top: 6em;
-    padding-bottom: 6em;
-  }
-  @media #{$lg,$xl, $xxl,} {
-    padding-top: 7em;
-    padding-bottom: 6em;
-  }
-  @media #{ $xxxl, $xxxxl} {
-    padding: 6em 60px 6em;
-  }
-  & .container {
-    max-width: 100%;
-    @media #{$xxxl, $xxxxl} {
-      max-width: 1480px;
-    }
-  }
+  // @media #{$xs} {
+  //   padding-top: 7em;
+  //   padding-bottom: 6em;
+  // }
+  // @media #{$md, $ipadMini} {
+  //   padding-top: 7em;
+  //   // padding-bottom: 4em;
+  //   padding-bottom: 6em;
+  // }
+  // @media #{$lgL} {
+  //   padding-top: 6em;
+  //   padding-bottom: 6em;
+  // }
+  // @media #{$lg,$xl, $xxl,} {
+  //   padding-top: 7em;
+  //   padding-bottom: 6em;
+  // }
+  // @media #{ $xxxl, $xxxxl} {
+  //   padding: 6em 60px 6em;
+  // }
+  // & .container {
+  //   max-width: 100%;
+  //   @media #{$xxxl, $xxxxl} {
+  //     max-width: 1480px;
+  //   }
+  // }
 }
 
 .slick-slide {

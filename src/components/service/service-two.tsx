@@ -105,7 +105,7 @@ export default function ServiceTwo() {
                     <div key={s.id} className="accordion-items">
                       <h2 className="accordion-header">
                         <button
-                          className={`accordion-buttons ${
+                          className={`accordion-buttons emphasis-title ${
                             s.id !== 0 ? "collapsed" : ""
                           }`}
                           type="button"
@@ -113,7 +113,6 @@ export default function ServiceTwo() {
                           data-bs-target={`#collapse-${s.id}`}
                           aria-expanded="false"
                           aria-controls={`collapse-${s.id}`}
-                          style={{ fontSize: "" }}
                         >
                           <span>
                             <Image
