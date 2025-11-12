@@ -135,11 +135,7 @@
     background-color: #f3f3f3;
     padding: 70px 10px;
     gap: 30;
-    h3.counter-title {
-      font-size: clamp(24px, 4vw + 0.75rem, 36px);
-      margin-top: 3px;
-      font-family: oxanium;
-    }
+
     [data-theme="dark"] & {
       color: var(--tp-common-white);
       background-color: transparent;
