@@ -5,6 +5,7 @@ import Image from "next/image";
 import ser_img_1 from "@/assets/img/custom/services/Kaltech-Development.webp";
 import ser_img_2 from "@/assets/img/custom/services/Marketing.webp";
 import ser_img_3 from "@/assets/img/custom/services/Kaltech-Branding-.webp";
+import ser_img_4 from "@/assets/img/custom/services/Data-Analytics.png";
 
 import { UpArrow } from "../svg";
 import Link from "next/link";
@@ -55,7 +56,7 @@ const service_data = [
 
   {
     id: 4,
-    img: ser_img_3,
+    img: ser_img_4,
     subtitle: "Kaltech Consultancy",
     title: "DATA ANALYTICS",
     text: "Unlock the power of your data with our comprehensive data analytics services. We help businesses transform raw data into actionable insights, enabling informed decision-making and strategic growth.",
