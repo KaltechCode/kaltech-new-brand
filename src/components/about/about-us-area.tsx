@@ -82,9 +82,15 @@ export default function AboutUsArea() {
         <div className="row what-we-do-section">
           <div className="col-12">
             <div className="row">
-              <div className="col-xl-4 col-12 mb-40">
-                <div className="ab-about-category-title-box p-relative what-we-do-section-container">
-                  <h4 className="ab-about-category-title">
+              <div className="col-xl-4 col-12 mb-40 mb-xl-0">
+                <div
+                  className="ab-about-category-title-box p-relative what-we-do-section-container d-flex align-items-center"
+                  style={{
+                    textAlign: "left",
+                    paddingRight: 120,
+                  }}
+                >
+                  <h4 className="ab-inner-funfact-title">
                     What we do
                     <span></span>
                   </h4>
@@ -141,26 +147,30 @@ export default function AboutUsArea() {
                     {servicessData.map((item) => (
                       <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
                         <div className="ab-what-we-item ab-funfact-item">
-                          <div className="tp-service-5-icon">
-                            <Image
-                              src={item.icon}
-                              alt="icon"
+                          <div className="icon-label-container">
+                            <div className="tp-service-5-icon">
+                              <Image
+                                src={item.icon}
+                                alt="icon"
+                                style={{
+                                  width: "40px",
+                                  height: "40px",
+                                  objectFit: "contain",
+                                }}
+                              />
+                            </div>
+                            <h3
+                              className="emphasis-title"
                               style={{
-                                width: "40px",
-                                height: "40px",
-                                objectFit: "contain",
+                                height: 40,
                               }}
-                            />
+                            >
+                              {item.label}
+                            </h3>
                           </div>
-                          <h3
-                            className="emphasis-title"
-                            style={{
-                              height: 40,
-                            }}
-                          >
-                            {item.label}
-                          </h3>
-                          <div className="tp-projct-5-2-btn-box justify-content-end">
+
+                          <div className="btn-container-func">
+                            {/* <div className="tp-projct-5-2-btn-box justify-content-end pr-40"> */}
                             <div className="tp-hover-btn-wrapper">
                               <Link
                                 className="custom-circle tp-hover-btn-item tp-hover-btn style-2"
@@ -176,6 +186,7 @@ export default function AboutUsArea() {
                               </Link>
                               {/* </div> */}
                             </div>
+                            {/* </div> */}
                           </div>
                         </div>
                       </div>

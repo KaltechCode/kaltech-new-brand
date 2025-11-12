@@ -212,20 +212,19 @@
 
 .emphasis-title {
   font-weight: 600;
-  font-size: clamp(24px, 3vw + 0.75rem, 36px) !important;
+  font-size: clamp(25px, 3vw + 0.75rem, 32px) !important;
   line-height: 0.4;
-
   font-family: syne_heading;
   color: var(--tp-common-black);
   margin: 0;
   @media #{$md} {
-    font-size: clamp(18px, 3vw + 0.5rem, 26px);
+    font-size: clamp(18px, 3vw + 0.5rem, 26px) !important;
   }
   @media #{$sm} {
-    font-size: clamp(16px, 3vw + 0.75rem, 26px);
+    font-size: clamp(16px, 3vw + 0.75rem, 24px) !important;
   }
 
   @media #{$ipadMini} {
-    font-size: clamp(16px, 3vw + 0.75rem, 28px);
+    font-size: clamp(16px, 3vw + 0.75rem, 28px) !important;
   }
 }

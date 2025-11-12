@@ -15,7 +15,7 @@ const AboutOne = () => {
       <div className="container container-1480">
         <div className="justify-content-center align-items-center">
           <div className="two-column-layout">
-            <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-30 text-start">
+            <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-10 text-start">
               <h2 className="tp-about-2-section-title">About Us</h2>
             </div>
           </div>
