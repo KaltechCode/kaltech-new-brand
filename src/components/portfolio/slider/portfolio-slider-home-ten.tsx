@@ -117,7 +117,7 @@ const slider_setting_one = {
 };
 // slider setting two
 const slider_setting_two = {
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   dots: false,
   arrow: false,
@@ -153,7 +153,7 @@ const slider_setting_two = {
       breakpoint: 992,
       settings: {
         arrows: false,
-        slidesToShow: 4,
+        slidesToShow: 2,
         spaceBetween: 15,
       },
     },
@@ -161,14 +161,14 @@ const slider_setting_two = {
       breakpoint: 768,
       settings: {
         arrows: false,
-        slidesToShow: 4,
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 768,
       settings: {
         arrows: false,
-        slidesToShow: 4,
+        slidesToShow: 2,
       },
     },
     {
@@ -188,27 +188,26 @@ export default function PortfolioSliderHomeTen() {
   const sliderRef = useRef<Slider | null>(null);
 
   return (
-    <div
-      className="tp-portfolio-11-area fix"
-      style={{ paddingTop: "20px", maxHeight: "992px" }}
-    >
-      <div className="tp-portfolio-11-slider-wrap p-relative">
-        <Slider
-          {...slider_setting_one}
-          asNavFor={slider2 as Slider}
-          ref={(slider) => {
-            setSlider1(slider);
-            sliderRef.current = slider;
-          }}
-          className="tp-portfolio-11-slider-active"
-        >
-          {slider_data.map((item) => (
-            <div key={item.id}>
-              <div
-                className="tp-portfolio-11-slider-bg pt-170 pb-150 d-flex align-items-end"
-                style={{ backgroundImage: `url(${item.bg})` }}
-              >
-                {/* <div
+    <div className="tp-portfolio-11-area fix">
+      <div className="container container-1480">
+        <h3 className="section-title">Our Portfolio</h3>
+        <div className="tp-portfolio-11-slider-wrap p-relative">
+          <Slider
+            {...slider_setting_one}
+            asNavFor={slider2 as Slider}
+            ref={(slider) => {
+              setSlider1(slider);
+              sliderRef.current = slider;
+            }}
+            className="tp-portfolio-11-slider-active"
+          >
+            {slider_data.map((item) => (
+              <div key={item.id}>
+                <div
+                  className="tp-portfolio-11-slider-bg pt-170 pb-150 d-flex align-items-end"
+                  style={{ backgroundImage: `url(${item.bg})` }}
+                >
+                  {/* <div
                   className="tp-portfolio-11-slider-content"
                   style={{
                     background: "rgba(0,0,0,.7)",
@@ -240,75 +239,76 @@ export default function PortfolioSliderHomeTen() {
                     ></Link>
                   </h3>
                 </div> */}
-              </div>
-            </div>
-          ))}
-        </Slider>
-
-        <div className="dddd"></div>
-
-        <div className="tp-portfolio-11-slider-nav-wrap z-index-5">
-          <div
-            className="slides-numbers d-none d-lg-flex d-flex align-items-center"
-            style={{ display: "inline-block" }}
-          >
-            <div className="slider-line"></div>
-            <span className="active">
-              {sliderIndex < 9 ? `0${sliderIndex}` : sliderIndex}
-            </span>
-          </div>
-          <Slider
-            {...slider_setting_two}
-            asNavFor={slider1 as Slider}
-            ref={(slider) => setSlider2(slider)}
-            afterChange={(index) => setSliderIndex(index + 1)}
-            className="tp-portfolio-11-slider-nav-active"
-          >
-            {slider_thumbs.map((item) => (
-              <div
-                key={item.id}
-                className="tp-portfolio-11-slider-nav-item d-none d-lg-block p-relative"
-              >
-                <div className="tp-portfolio-11-slider-nav-thumb p-relative">
-                  <Image
-                    src={item.img}
-                    alt="thumb-img"
-                    style={{ height: "auto", width: "100%" }}
-                  />
-                  <div
-                    className=""
-                    style={{
-                      position: "absolute",
-                      left: 0,
-                      top: 0,
-                      width: "100%",
-                      height: "100%",
-                      background: "rgba(0,0,0,0.55)",
-                      borderRadius: 10,
-                    }}
-                  ></div>
-                </div>
-
-                <div className="tp-portfolio-11-slider-nav-content-wrap">
-                  <div className="tp-portfolio-11-slider-nav-content d-flex flex-column justify-content-between">
-                    <div className="tp-portfolio-11-slider-nav-year">
-                      <span>{item.year}</span>
-                    </div>
-                    <div className="tp-portfolio-11-slider-nav-tittle-box">
-                      <span className="tp-portfolio-11-slider-nav-subtittle">
-                        <Link href="/">{item.subtitle}</Link>
-                      </span>
-                      {/* <h4 className="tp-portfolio-11-slider-nav-tittle">
-                        <Link href="/portfolio-details-video">
-                          {item.title}
-                        </Link>
-                      </h4> */}
-                    </div>
-                  </div>
                 </div>
               </div>
             ))}
           </Slider>
+
+          <div className="dddd"></div>
+
+          <div className="tp-portfolio-11-slider-nav-wrap z-index-5">
+            <div
+              className="slides-numbers d-none d-lg-flex d-flex align-items-center"
+              style={{ display: "inline-block" }}
+            >
+              <div className="slider-line"></div>
+              <span className="active">
+                {sliderIndex < 9 ? `0${sliderIndex}` : sliderIndex}
+              </span>
+            </div>
+            <Slider
+              {...slider_setting_two}
+              asNavFor={slider1 as Slider}
+              ref={(slider) => setSlider2(slider)}
+              afterChange={(index) => setSliderIndex(index + 1)}
+              className="tp-portfolio-11-slider-nav-active"
+            >
+              {slider_thumbs.map((item) => (
+                <div
+                  key={item.id}
+                  className="tp-portfolio-11-slider-nav-item d-none d-md-block p-relative"
+                >
+                  <div className="tp-portfolio-11-slider-nav-thumb p-relative">
+                    <Image
+                      src={item.img}
+                      alt="thumb-img"
+                      style={{ height: "auto", width: "100%" }}
+                    />
+                    <div
+                      className=""
+                      style={{
+                        position: "absolute",
+                        left: 0,
+                        top: 0,
+                        width: "100%",
+                        height: "100%",
+                        background: "rgba(0,0,0,0.55)",
+                        borderRadius: 10,
+                      }}
+                    ></div>
+                  </div>
+
+                  <div className="tp-portfolio-11-slider-nav-content-wrap">
+                    <div className="tp-portfolio-11-slider-nav-content d-flex flex-column justify-content-between">
+                      <div className="tp-portfolio-11-slider-nav-year">
+                        <span>{item.year}</span>
+                      </div>
+                      <div className="tp-portfolio-11-slider-nav-tittle-box">
+                        <span className="tp-portfolio-11-slider-nav-subtittle">
+                          <Link href="/">{item.subtitle}</Link>
+                        </span>
+                        {/* <h4 className="tp-portfolio-11-slider-nav-tittle">
+                        <Link href="/portfolio-details-video">
+                          {item.title}
+                        </Link>
+                      </h4> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>

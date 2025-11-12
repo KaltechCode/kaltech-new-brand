@@ -152,15 +152,7 @@ export default function AboutUsArea() {
                               }}
                             />
                           </div>
-                          <h3
-                            className="counter-title"
-                            style={{
-                              fontWeight: 500,
-                              fontSize: "clamp(24px, 3vw + 0.75rem, 36px)",
-                            }}
-                          >
-                            {item.label}
-                          </h3>
+                          <h3 className="emphasis-title">{item.label}</h3>
                           <div className="tp-projct-5-2-btn-box justify-content-end">
                             <div className="tp-hover-btn-wrapper">
                               <Link

@@ -1360,12 +1360,41 @@
   }
 }
 .tp-portfolio-11 {
+  &-area {
+    @media #{$xs} {
+      padding-top: 7em;
+      padding-bottom: 6em;
+    }
+    @media #{$md, $ipadMini} {
+      padding-top: 7em;
+      // padding-bottom: 4em;
+      padding-bottom: 6em;
+    }
+    @media #{$lgL} {
+      padding-top: 6em;
+      padding-bottom: 6em;
+    }
+    @media #{$lg,$xl, $xxl,} {
+      padding-top: 7em;
+      padding-bottom: 6em;
+    }
+    @media #{ $xxxl, $xxxxl} {
+      padding: 6em 6em;
+    }
+    // & .container {
+    //   max-width: 100%;
+    //   @media #{$xxxl, $xxxxl} {
+    //     max-width: 1480px;
+    //   }
+    // }
+  }
   &-slider {
     &-bg {
-      height: 100vh;
+      height: 80vh;
       width: 100%;
       background-size: cover;
       background-position: center;
+      max-height: 676px;
     }
     &-active {
       & .slick-active {
@@ -1495,24 +1524,22 @@
       }
 
       &-wrap {
-        width: 1260px;
+        width: 60%;
         position: absolute;
         bottom: 110px;
-        right: -65px;
+        right: 10px;
         z-index: 99;
 
         @media #{$xxxl} {
-          right: -280px;
+          right: 10px;
         }
 
         @media #{$xxl} {
-          right: -80px;
-          width: 900px;
+          right: 10px;
         }
 
         @media #{$xl,$lg} {
-          right: -80px;
-          width: 600px;
+          right: 10px;
         }
 
         & .slides-numbers {
@@ -1582,6 +1609,10 @@
           color: var(--tp-common-white);
           border: 2px solid rgba(255, 255, 255, 0.2);
           transition: 0.3s;
+          background: rgba(0, 0, 0, 0.4);
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           &.slick-next {
             margin-left: 70px;

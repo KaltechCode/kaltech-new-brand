@@ -75,12 +75,9 @@ const AboutUsMain = () => {
             {/* <AwardOne/> */}
 
             {/* portfolio slider start */}
-            <div className="">
-              <h4 className="ab-brand-title section-title">Our Portfolio</h4>
-              <div className="py">
-                <PortfolioSliderHomeTen />
-              </div>
-            </div>
+
+            <PortfolioSliderHomeTen />
+
             {/* portfolio slider end */}
           </main>
 
