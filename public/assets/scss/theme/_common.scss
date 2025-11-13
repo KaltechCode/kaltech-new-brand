@@ -202,12 +202,13 @@
 }
 
 .section-title {
-  font-size: clamp(28px, 5vw, 50px);
+  font-size: clamp(28px, 3vw + 1rem, 60px);
   letter-spacing: 2px;
   line-height: 1.5;
   color: #111;
   text-align: center;
   padding: 15px 0;
+  font-family: kanit;
 }
 
 .emphasis-title {
@@ -226,5 +227,8 @@
 
   @media #{$ipadMini} {
     font-size: clamp(16px, 3vw + 0.75rem, 28px) !important;
+  }
+  [data-theme="dark"] & {
+    color: var(--tp-common-white);
   }
 }

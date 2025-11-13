@@ -1362,24 +1362,21 @@
 .tp-portfolio-11 {
   &-area {
     @media #{$xs} {
-      padding-top: 7em;
-      padding-bottom: 6em;
+      padding-top: 60px;
+      padding-bottom: 100px;
     }
-    @media #{$md, $ipadMini} {
-      padding-top: 7em;
-      // padding-bottom: 4em;
-      padding-bottom: 6em;
+    @media #{$md, $lg} {
+      padding-top: 5em;
+      padding-bottom: 5em;
     }
-    @media #{$lgL} {
-      padding-top: 6em;
-      padding-bottom: 6em;
+    @media #{ $xl, $xxl, $xxxl, $xxxxl} {
+      padding: 5em 60px;
     }
-    @media #{$lg,$xl, $xxl,} {
-      padding-top: 7em;
-      padding-bottom: 6em;
-    }
-    @media #{ $xxxl, $xxxxl} {
-      padding: 6em 6em;
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
     }
     // & .container {
     //   max-width: 100%;

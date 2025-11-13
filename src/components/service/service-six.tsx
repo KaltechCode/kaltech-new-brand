@@ -5,7 +5,7 @@ import Image from "next/image";
 import ser_img_1 from "@/assets/img/custom/services/Kaltech-Development.webp";
 import ser_img_2 from "@/assets/img/custom/services/kaltech-marketing-cover.png";
 import ser_img_3 from "@/assets/img/custom/services/Kaltech-Branding-.webp";
-import ser_img_4 from "@/assets/img/custom/services/Data-Analytics.png";
+import ser_img_4 from "@/assets/img/custom/services/Kaltech-Data-Analytics.png";
 
 import { UpArrow } from "../svg";
 import Link from "next/link";

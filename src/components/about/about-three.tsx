@@ -7,7 +7,7 @@ import { ArrowBg, RightArrowTwo, FirstBracket, FirstBracketTwo } from "../svg";
 
 export default function AboutThree() {
   return (
-    <div className="tp-about-3-area pt-120 pb-110">
+    <div className="tp-about-3-area">
       <div className="container container-1480">
         <div className="row">
           <div className="col-xl-11">
@@ -23,12 +23,12 @@ export default function AboutThree() {
                   <FirstBracketTwo />
                 </span>
               </span>
-              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                We tell visual stories through smooth motions{" "}
-                <span>
-                  {" "}
-                  <br />& fluid Website
-                </span>
+              <h4
+                className="section-title tp_text_invert tp_fade_bottom"
+                style={{ lineHeight: 1 }}
+              >
+                We tell visual stories through Mordern Designs{" "}
+                <span>& fluid macro interactions</span>
               </h4>
             </div>
           </div>
@@ -42,15 +42,17 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom">
-                We are a creative design studio based in London. We specialize
-                in Branding, and Web experiences for beauty.
+                We sepecilaize in crafting visually stunning and
+                user-centricsolutions that captivate audiences acrross various
+                business sectors.
               </p>
               <p className="mb-45 tp_fade_bottom">
-                we’re all about digital experiences. The most creative idea and
-                the most perfect execution mean nothing.
+                We combine our technical proficiencies with a deep understanding
+                of the latest industry trends and best practices, ensuring every
+                project's objectives are achieved.
               </p>
               <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us">
-                About Us
+                Get in Touch
                 <span className="p-relative">
                   <RightArrowTwo />
                   <ArrowBg />

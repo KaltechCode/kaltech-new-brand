@@ -56,22 +56,6 @@
         text-align: center;
         padding-left: 0;
         height: 100%;
-        @media #{$xl,} {
-          padding-right: 150px;
-          height: 100%;
-        }
-        @media #{$xxl,} {
-          padding-right: 150px;
-          height: 100%;
-        }
-        @media #{ $xxxl} {
-          padding-right: 150px;
-          height: 100%;
-        }
-        @media #{$xxxxl} {
-          padding-right: 150px;
-          height: 100%;
-        }
 
         .ab-about-category-title {
           display: inline-block;
@@ -513,9 +497,20 @@
         max-width: 1480px;
       }
     }
+    .section-title {
+      font-size: clamp(40px, 5vw + 2rem, 90px);
+      text-align: left;
+      line-height: 1;
+      span {
+        color: var(--tp-common-gold);
+        font-size: clamp(24px, 2vw + 1rem, 36px);
+        display: inline-block;
+        transform: translateY(-20px);
+      }
+    }
   }
   &-content {
-    padding-right: 230px;
+    // padding-right: 230px;
     @media #{$lg,$md,$xs} {
       padding-right: 0;
     }

@@ -87,18 +87,17 @@ export default function AboutUsArea() {
                   className="ab-about-category-title-box p-relative what-we-do-section-container d-flex align-items-center"
                   style={{
                     textAlign: "left",
-                    paddingRight: 120,
                   }}
                 >
                   <h4 className="ab-inner-funfact-title">
                     What we do
                     <span></span>
                   </h4>
-                  <Image
+                  {/* <Image
                     className="ab-about-shape-1 d-none d-xl-block"
                     src={shape}
                     alt="shape"
-                  />
+                  /> */}
                 </div>
               </div>
 
@@ -146,17 +145,22 @@ export default function AboutUsArea() {
                   <div className="row g-4">
                     {servicessData.map((item) => (
                       <div key={item.id} className="col-xl-6 col-lg-6 col-md-6">
-                        <div className="ab-what-we-item ab-funfact-item">
+                        <div
+                          className="ab-what-we-item ab-funfact-item"
+                          style={{
+                            height: "130px",
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                          }}
+                        >
                           <div className="icon-label-container">
                             <div className="tp-service-5-icon">
                               <Image
                                 src={item.icon}
                                 alt="icon"
-                                style={{
-                                  width: "40px",
-                                  height: "40px",
-                                  objectFit: "contain",
-                                }}
+                                height={40}
+                                width={40}
                               />
                             </div>
                             <h3

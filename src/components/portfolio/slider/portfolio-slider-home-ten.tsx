@@ -188,7 +188,7 @@ export default function PortfolioSliderHomeTen() {
   const sliderRef = useRef<Slider | null>(null);
 
   return (
-    <div className="tp-portfolio-11-area fix">
+    <div className="tp-portfolio-11-area">
       <div className="container container-1480">
         <h3 className="section-title">Our Portfolio</h3>
         <div className="tp-portfolio-11-slider-wrap p-relative">
