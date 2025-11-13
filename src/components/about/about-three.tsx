@@ -49,7 +49,7 @@ export default function AboutThree() {
               <p className="mb-45 tp_fade_bottom">
                 We combine our technical proficiencies with a deep understanding
                 of the latest industry trends and best practices, ensuring every
-                project's objectives are achieved.
+                project&apos;s objectives are achieved.
               </p>
               <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us">
                 Get in Touch
