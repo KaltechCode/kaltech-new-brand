@@ -10,6 +10,7 @@
 
   .container {
     // background-color: aqua;
+    width: 100%;
     @media #{$md, $xl, $xxl, $xxxl, $xxxxl} {
       max-width: 1480px;
       // width: 100%;
@@ -78,13 +79,15 @@
 
 .ab-funfact-item {
   text-align: center;
-  padding: 20px 20px;
+  padding: 0 5px;
   background: transparent;
   transition: all 1s ease;
   .btn-container-func {
-    transition: all 1s ease;
+    transition: all 5s ease;
     display: none;
-    margin-top: 7px;
+    margin-top: 3px;
+    justify-content: flex-end;
+    padding-right: 40;
   }
 
   &:hover {
@@ -96,8 +99,6 @@
     }
     .btn-container-func {
       display: flex;
-      justify-content: flex-end;
-      padding-right: 40;
     }
   }
 
@@ -133,12 +134,13 @@
   }
   &.ab-what-we-item {
     background-color: #f3f3f3;
-    padding: 50px 10px;
+    padding: 0px 10px;
+    height: 170px;
     .icon-label-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 30;
+      gap: 30px;
     }
 
     [data-theme="dark"] & {
@@ -149,7 +151,8 @@
     [data-theme="dark"] &:hover {
       background-color: var(--tp-common-white);
       box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
-      .counter-title {
+      .counter-title,
+      .emphasis-title {
         color: var(--tp-common-black);
       }
     }
