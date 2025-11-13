@@ -78,13 +78,13 @@ export default function ServiceTwo() {
                 <h3 className="tp-about-2-section-title">Our Services</h3>
               </span>
               <p className="">
-                We believe in pushing the boundaries of what is possible. We are
-                a team of experts committed in delivering outstanding results by
-                providing the following services:
+                We believe in pushing the boundaries of what is possible. Our
+                team is committed to delivering outstanding results by providing
+                the following services:
               </p>
               <div className="tp-projct-5-2-btn-box flex-1 d-flex justify-content-start align-item-end mt-30">
                 <div className="tp-hover-btn-wrapper">
-                  <Link className="tp-btn-black-sm" href="/">
+                  <Link className="tp-btn-black-sm" href="/service">
                     <span className="">More Info</span>
                     <span className="tp-btn-circle-icon custom-arrow">
                       <UpArrow />

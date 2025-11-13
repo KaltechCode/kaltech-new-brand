@@ -63,9 +63,9 @@ const AboutOne = () => {
                 consultants, engineers, and strategists.
               </p>
               <p className="mb-0">
-                Our edgy approach to branding sets us apart, and our team of
-                talented creatives are dedicated to bringing your vision to
-                life.
+                Our edgy approach to branding and development sets us apart, and
+                the members of our talented creative team are dedicated to
+                successfully complete your project.
               </p>
 
               {/* Custom Button */}
