@@ -42,9 +42,9 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom">
-                We sepecilaize in crafting visually stunning and
-                user-centricsolutions that captivate audiences acrross various
-                business sectors.
+                We sepecialize in crafting visually stunning and user-centric
+                solutions that captivate audiences across various business
+                sectors.
               </p>
               <p className="mb-45 tp_fade_bottom">
                 We combine our technical proficiencies with a deep understanding

@@ -64,7 +64,7 @@ export default function FooterTwo({
                       <a href="/about-us">About Us</a>
                     </li>
                     <li>
-                      <a href="/services">Services</a>
+                      <a href="/service">Services</a>
                     </li>
                     <li>
                       {" "}
