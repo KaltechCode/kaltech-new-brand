@@ -503,11 +503,42 @@
   }
 }
 .tp-hero-5 {
+  &-area {
+    @media #{$md,$xs} {
+      padding-bottom: 30px;
+    }
+    @media #{$xs} {
+      padding-top: 7em;
+      padding-bottom: 6em;
+    }
+    @media #{$md, $ipadMini} {
+      padding-top: 7em;
+      // padding-bottom: 4em;
+      padding-bottom: 6em;
+    }
+    @media #{$lgL} {
+      padding-top: 6em;
+      padding-bottom: 6em;
+    }
+    @media #{$lg,$xl, $xxl,} {
+      padding-top: 7em;
+      padding-bottom: 6em;
+    }
+    @media #{ $xxxl, $xxxxl} {
+      padding: 6em 60px 6em;
+    }
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
+  }
   &-title {
     font-size: 190px;
     font-weight: 600;
     line-height: 1;
-    letter-spacing: -11.4px;
+    letter-spacing: 1px;
     color: var(--tp-common-black);
     font-family: var(--tp-ff-body);
     white-space: nowrap;
@@ -531,15 +562,11 @@
       letter-spacing: 1px;
     }
     & span {
-      color: #acacac;
+      color: var(--tp-common-gold);
     }
   }
   &-content-box {
-    padding-left: 170px;
     margin-bottom: 95px;
-    @media #{$xl} {
-      padding-left: 40px;
-    }
     @media #{$lg,$md} {
       padding-left: 0px;
     }

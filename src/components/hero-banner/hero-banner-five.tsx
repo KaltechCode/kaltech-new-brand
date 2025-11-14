@@ -8,25 +8,28 @@ import p_img_2 from "@/assets/img/home-05/project/project-3.jpg";
 export default function HeroBannerFive() {
   return (
     <div className="tp-hero-5-area tp-hero-5-space fix">
-      <div className="container-fluid">
+      <div className="container container-1480">
         <div className="col-xl-12">
           <div className="tp-hero-5-content-box">
-            <h4 className="tp-hero-5-title tp-char-animation">
-              Creative + <span>Agency</span>
+            <h4
+              className="tp-hero-5-title tp-char-animation"
+              style={{ letterSpacing: "1px" }}
+            >
+              Creative + <span style={{ color: "#b08500" }}>Agency</span>
             </h4>
-            <p className="">
+            <p className="" style={{ textAlign: "center" }}>
               {"We're"} an innovative global ui/ux design agency building
               high-end products <br />
               and experiences that grow your business exponentially.
             </p>
-            <Link className="tp-btn-black-square" href="/portfolio-grid-col-2">
+            {/* <Link className="tp-btn-black-square" href="/portfolio-grid-col-2">
               View Our Works
               <span>
                 <UpArrow />
               </span>
-            </Link>
+            </Link> */}
           </div>
-          <div className="tp-project-5-wrap d-flex align-items-end justify-content-center justify-content-md-end">
+          <div className="tp-project-5-wrap d-flex align-items-start justify-content-center justify-content-md-end">
             <div className="tp-project-5-text">
               <span>RECENT PROJECT</span>
             </div>
@@ -41,7 +44,7 @@ export default function HeroBannerFive() {
                 </Link>
               </div>
               <div className="tp-project-5-thumb">
-                <div className="tp-project-5-video">
+                {/* <div className="tp-project-5-video">
                   <video
                     className="play-video"
                     loop={true}
@@ -54,7 +57,14 @@ export default function HeroBannerFive() {
                       type="video/mp4"
                     />
                   </video>
-                </div>
+                </div> */}
+                <Link href="/portfolio-details-1">
+                  <Image
+                    src={p_img_1}
+                    alt="project-img"
+                    style={{ height: "auto" }}
+                  />
+                </Link>
               </div>
               <div className="tp-project-5-thumb">
                 <Link href="/portfolio-details-1">

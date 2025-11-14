@@ -97,7 +97,7 @@ const HomeFiveMain = () => {
             {/* counter area end */}
 
             {/* mission area start */}
-            <MissionOne />
+            {/* <MissionOne /> */}
             {/* mission area end */}
 
             {/* service area start */}
@@ -105,7 +105,7 @@ const HomeFiveMain = () => {
             {/* service area end */}
 
             {/* blog area start */}
-            <BlogOne />
+            {/* <BlogOne /> */}
             {/* blog area end */}
           </main>
 

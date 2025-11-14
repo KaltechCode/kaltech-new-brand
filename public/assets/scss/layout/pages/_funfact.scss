@@ -82,12 +82,16 @@
   padding: 0 5px;
   background: transparent;
   transition: all 1s ease;
+  height: 250px;
   .btn-container-func {
-    transition: all 5s ease;
-    display: none;
+    transition: all 1s ease;
+    display: flex;
     margin-top: 3px;
     justify-content: flex-end;
     padding-right: 40;
+    opacity: 0;
+    height: 0;
+    transition-behavior: allow-discrete;
   }
 
   &:hover {
@@ -98,7 +102,7 @@
       box-shadow: 0 10px 30px rgba(255, 255, 255, 0.03);
     }
     .btn-container-func {
-      display: flex;
+      opacity: 1;
     }
   }
 

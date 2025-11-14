@@ -3,25 +3,21 @@ import { BallRound } from "../svg";
 
 export default function AboutFour() {
   return (
-    <div className="tp-about-5-area black-bg pt-150 pb-120">
+    <div
+      className="tp-about-5-area pt-150 pb-120"
+      // style={{ background: "#f3f3f3" }}
+    >
       <div className="container container-1560">
         <div className="row">
           <div className="col-xl-12">
             <div className="tp-about-5-title-box pb-90">
-              <h4 className="tp-about-5-title p-relative tp_fade_bottom">
+              <h4 className="section-title p-relative tp_fade_bottom">
                 <span className="tp-about-5-subtitle tp_fade_left">
                   140+ projects closed
                 </span>
                 <span className="text-space"></span>
-                As a digital designer, I <br /> focus on
-                <span>
-                  <BallRound />
-                </span>
-                producing top notch and impactful digital
-                <span>
-                  <BallRound />
-                </span>
-                experiences.
+                As a digital designer, I <br /> focus on producing top notch and
+                impactful digital experiences.
               </h4>
             </div>
           </div>
@@ -31,13 +27,15 @@ export default function AboutFour() {
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-6">
             <div className="tp-about-5-category">
-              <span className="tp_fade_bottom">Website Development</span>
-              <span className="tp_fade_bottom">Ul / UX Design</span>
-              <span className="tp_fade_bottom">Mobile Apps Development</span>
-              <span className="tp_fade_bottom">
-                Custom Software Development
+              <span
+                className="tp_fade_bottom"
+                style={{ padding: "10px 20px", background: "rgba(0,0,0,0.1)" }}
+              >
+                Development
               </span>
-              <span className="tp_fade_bottom">Brand Ideation</span>
+              <span className="tp_fade_bottom"> Marketing</span>
+              <span className="tp_fade_bottom">Branding</span>
+              <span className="tp_fade_bottom">Data Analytics</span>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6">

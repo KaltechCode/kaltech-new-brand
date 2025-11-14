@@ -148,7 +148,7 @@ export default function AboutUsArea() {
                         <div
                           className="ab-what-we-item ab-funfact-item"
                           style={{
-                            height: "130px",
+                            height: "150px",
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "center",

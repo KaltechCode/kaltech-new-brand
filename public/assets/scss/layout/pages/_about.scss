@@ -624,15 +624,44 @@
     @media #{$md,$xs} {
       padding-bottom: 30px;
     }
+    @media #{$xs} {
+      padding-top: 7em;
+      padding-bottom: 6em;
+    }
+    @media #{$md, $ipadMini} {
+      padding-top: 7em;
+      // padding-bottom: 4em;
+      padding-bottom: 6em;
+    }
+    @media #{$lgL} {
+      padding-top: 6em;
+      padding-bottom: 6em;
+    }
+    @media #{$lg,$xl, $xxl,} {
+      padding-top: 7em;
+      padding-bottom: 6em;
+    }
+    @media #{ $xxxl, $xxxxl} {
+      padding: 6em 60px 6em;
+    }
+    & .container {
+      max-width: 100%;
+      @media #{$xxxl, $xxxxl} {
+        max-width: 1480px;
+      }
+    }
   }
   &-title {
-    color: #f5f7f5;
+    color: var(--tp-common-black);
     font-size: 70px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -2.8px;
     text-transform: uppercase;
     display: inline-block;
+    & span {
+      color: var(--tp-common-gold);
+    }
     @media #{$lg} {
       font-size: 55px;
     }
@@ -672,7 +701,7 @@
     font-size: 22px;
     font-weight: 400;
     line-height: 1;
-    color: var(--tp-common-white);
+    color: var(--tp-common-black);
     text-transform: lowercase;
     font-family: var(--tp-ff-body);
     letter-spacing: normal;
@@ -698,7 +727,7 @@
       padding: 8px 17px;
       border-radius: 20px;
       display: table;
-      color: var(--tp-common-white);
+      color: var(--tp-common-black);
       border: 1px solid rgba(245, 247, 245, 0.2);
       margin-bottom: 10px;
       @media #{$xs} {
@@ -731,7 +760,7 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 26px;
-      color: rgba(245, 247, 245, 0.7);
+      // color: rgba(245, 247, 245, 0.7);
     }
   }
 }
@@ -1627,32 +1656,6 @@
 
 .tp-portfolio-11-area {
   max-height: 992px;
-  // @media #{$xs} {
-  //   padding-top: 7em;
-  //   padding-bottom: 6em;
-  // }
-  // @media #{$md, $ipadMini} {
-  //   padding-top: 7em;
-  //   // padding-bottom: 4em;
-  //   padding-bottom: 6em;
-  // }
-  // @media #{$lgL} {
-  //   padding-top: 6em;
-  //   padding-bottom: 6em;
-  // }
-  // @media #{$lg,$xl, $xxl,} {
-  //   padding-top: 7em;
-  //   padding-bottom: 6em;
-  // }
-  // @media #{ $xxxl, $xxxxl} {
-  //   padding: 6em 60px 6em;
-  // }
-  // & .container {
-  //   max-width: 100%;
-  //   @media #{$xxxl, $xxxxl} {
-  //     max-width: 1480px;
-  //   }
-  // }
 }
 
 .slick-slide {
