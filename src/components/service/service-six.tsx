@@ -161,8 +161,8 @@ export default function ServiceSix() {
                         </div>
                         <div className="sv-six-btn-lg">
                           <SecondaryCircleBtn
-                            label="Get In"
-                            label2="Touch"
+                            label="More"
+                            label2="Info"
                             url={item.url}
                             style={false}
                             justifyContent={"flex-end"}
