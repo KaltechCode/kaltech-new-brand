@@ -67,13 +67,13 @@ export default function ProjectFive({ style_2 = false }: IProps) {
         style_2 ? "" : "tp-project-5-2-pt black-bg"
       }`}
     >
-      {!style_2 && (
+      {/* {!style_2 && (
         <div className="row">
           <div className="col-xl-12">
             <LineTextFour />
           </div>
         </div>
-      )}
+      )} */}
       <div className="container">
         <div className="row gx-140">
           {project_data.map((item) => (
