@@ -214,8 +214,8 @@
 .emphasis-title {
   font-weight: 600;
   font-size: clamp(25px, 3vw + 0.75rem, 32px) !important;
-  line-height: 0.4;
-  font-family: syne_heading;
+  line-height: 40px;
+  font-family: kanit;
   color: var(--tp-common-black);
   margin: 0;
   @media #{$md} {

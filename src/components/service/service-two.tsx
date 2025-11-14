@@ -113,27 +113,23 @@ export default function ServiceTwo() {
                           data-bs-target={`#collapse-${s.id}`}
                           aria-expanded="false"
                           aria-controls={`collapse-${s.id}`}
-                          style={{
-                            fontFamily: "syne_heading",
-                          }}
                         >
-                          <div className="label-icon">
-                            <span>
+                          <div
+                            className="label-icon"
+                            style={{
+                              height: 40,
+                              gap: 30,
+                            }}
+                          >
+                            <div>
                               <Image
                                 src={s.icon}
                                 alt="icon"
-                                height={30}
-                                width={30}
+                                height={40}
+                                width={40}
                               />
-                            </span>
-                            <h3
-                              style={{
-                                height: 30,
-                              }}
-                              className="emphasis-title "
-                            >
-                              {s.title}
-                            </h3>
+                            </div>
+                            <p className="emphasis-title ">{s.title}</p>
                           </div>
                           <span className="accordion-icon"></span>
                         </button>
