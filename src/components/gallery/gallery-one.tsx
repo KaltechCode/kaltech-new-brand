@@ -6,26 +6,14 @@ import shape_1 from "@/assets/img/home-03/gallery/gal-shape-1.png";
 import shape_d_1 from "@/assets/img/home-03/gallery/gal-shape-dark-1.png";
 import shape_2 from "@/assets/img/home-03/gallery/gal-shape-2.png";
 import shape_d_2 from "@/assets/img/home-03/gallery/gal-shape-dark-2.png";
-import g_1 from "@/assets/img/custom/services/kaltech-gallery-one.webp";
-import g_2 from "@/assets/img/custom/services/kaltech-gallery-2.webp";
-import g_3 from "@/assets/img/custom/services/kaltech-gallery-3.webp";
-import g_4 from "@/assets/img/custom/services/kaltech-gallery-4.webp";
-import g_5 from "@/assets/img/custom/services/kaltech-gallery-5.webp";
+import g_1 from "@/assets/img/custom/services/kaltech-portfolio-new.png";
+import g_2 from "@/assets/img/custom/services/kaltech-gallery-4.webp";
+import g_3 from "@/assets/img/custom/services/kaltech-gallery-5.webp";
+import g_4 from "@/assets/img/custom/services/kaltech-portfolio-new-1.png";
+import g_5 from "@/assets/img/custom/services/kaltech-portfolio-new-2.png";
+import g_6 from "@/assets/img/custom/services/kaltech-portfolio-new-3.png";
 
-const gallery_images = [
-  g_1,
-  g_2,
-  g_3,
-  g_4,
-  g_5,
-  g_3,
-  g_1,
-  g_2,
-  g_3,
-  g_4,
-  g_5,
-  g_3,
-];
+const gallery_images = [g_1, g_2, g_3, g_4, g_5, g_6, g_1, g_2, g_3, g_4, g_6];
 
 const imgStyle: CSSProperties = { height: "auto" };
 
