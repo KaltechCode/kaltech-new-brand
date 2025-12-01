@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import "./folder.css";
 import Image from "next/image";
@@ -29,9 +30,6 @@ const darkenColor = (hex: string, percent: number): string => {
     ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase()
   );
 };
-
-
-
 
 const Folder: React.FC<FolderProps> = ({
   color = "#b08500",
@@ -101,7 +99,7 @@ const Folder: React.FC<FolderProps> = ({
   const folderClassName = `folder ${open ? "open" : ""}`.trim();
   const scaleStyle = { transform: `scale(${size})` };
 
-  console.log(items)
+  console.log(items);
 
   return (
     <div style={scaleStyle} className={className}>

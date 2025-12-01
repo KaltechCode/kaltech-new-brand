@@ -45,7 +45,8 @@ export default function InstagramArea() {
     "(min-width: 576px) and (max-width: 900px) and (orientation: landscape)"
   );
 
-  console.log("table", isTablet, "isMobile", isMobileLandscape);
+  const aspect = window?.devicePixelRatio;
+
   // container: refContainer,
   // target: refContainer,
   // offset: ["start end", "end end"],
@@ -246,7 +247,7 @@ export default function InstagramArea() {
           >
             <ShapeBlur
               variation={1}
-              pixelRatioProp={window.devicePixelRatio || 1}
+              pixelRatioProp={aspect || 1}
               shapeSize={2}
               roundness={1}
               borderSize={0.05}
