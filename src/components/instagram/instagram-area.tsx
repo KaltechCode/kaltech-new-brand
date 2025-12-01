@@ -240,21 +240,20 @@ export default function InstagramArea() {
           <div
             style={{
               position: "relative",
-              height: "500px",
+              height: "100%",
               overflow: "hidden",
             }}
           >
             <ShapeBlur
-              variation={0}
+              variation={1}
               pixelRatioProp={window.devicePixelRatio || 1}
-              shapeSize={0.5}
-              roundness={0.5}
+              shapeSize={2}
+              roundness={1}
               borderSize={0.05}
               circleSize={0.5}
               circleEdge={1}
             />
           </div>
-          {/* <Image src={instagram_images[5].img} alt="inst-img" /> */}
         </motion.div>
 
         <motion.div
