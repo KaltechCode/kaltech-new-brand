@@ -55,9 +55,8 @@
   font-weight: 700 !important;
 }
 
-.split-text{
-  font-size: 40px !important;
-  
+.split-text {
+  font-size: clamp(16px, calc(2vw + 18px), 56px) !important;
 }
 
 // @media (max-width: 1200px) {

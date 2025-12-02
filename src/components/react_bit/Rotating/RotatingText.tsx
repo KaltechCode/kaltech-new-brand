@@ -234,7 +234,7 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
                     background: "#b08500",
                     padding: "10px 12px",
                     // width: "250px",
-                    fontSize: "24px",
+                    fontSize: "clamp(16px, calc(1vw + 16px), 28px)",
                     color: "#111",
                     fontWeight: "700",
                     borderRadius: "8px",
