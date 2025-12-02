@@ -278,7 +278,7 @@ export default function InstagramArea() {
           <SplitText
             text="Are You"
             className=" font-semibold text-center py-4 split-text"
-            delay={100}
+            delay={150}
             duration={0.6}
             ease="power3.out"
             splitType="chars"
