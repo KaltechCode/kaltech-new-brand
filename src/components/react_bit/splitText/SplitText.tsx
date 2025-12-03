@@ -160,7 +160,7 @@ const SplitText: React.FC<SplitTextProps> = ({
       whiteSpace: "normal",
       wordWrap: "break-word",
       willChange: "transform, opacity",
-      fontSize: "clamp(16px, calc(1.5vw + 20px), 30px)",
+      fontSize: "clamp(16px, calc(1.5vw + 28px),60px)",
       fontWeight: "900",
       color: "#111",
     };

@@ -161,10 +161,14 @@ export default function InstagramArea() {
           style={{
             top: posT1,
             scale: scale,
+            height: 120,
+            display: "flex",
+            alignItems: "center",
+            // background: "#111",
           }}
         >
           <Folder
-            size={1}
+            size={1.5}
             color="#b08500"
             className="custom-folder"
             items={[
@@ -181,6 +185,7 @@ export default function InstagramArea() {
             top: posT1,
             scale,
             background: "#111",
+            height: 120,
           }}
         >
           {/* <Image src={instagram_images[1].img} alt="inst-img" /> */}
@@ -212,7 +217,7 @@ export default function InstagramArea() {
           <Image src={instagram_images[2].img} alt="inst-img" />
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className={`tp-instagram-thumb-inner-4`}
           style={{
             right: posL4,
@@ -220,9 +225,9 @@ export default function InstagramArea() {
           }}
         >
           <Image src={instagram_images[3].img} alt="inst-img" />
-        </motion.div>
+        </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           className={`tp-instagram-thumb-inner-5`}
           style={{
             bottom: posR5,
@@ -230,7 +235,7 @@ export default function InstagramArea() {
           }}
         >
           <Image src={instagram_images[4].img} alt="inst-img" />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className={`tp-instagram-thumb-inner-6 `}
@@ -261,6 +266,8 @@ export default function InstagramArea() {
           className={`tp-instagram-thumb-inner-7`}
           style={{
             scale: scale,
+            display: "flex",
+            alignItems: "center",
           }}
         >
           {/* <Image
@@ -270,8 +277,8 @@ export default function InstagramArea() {
           /> */}
           <SplitText
             text="Are You"
-            className="!text-[42px] font-semibold text-center py-4 split-text"
-            delay={100}
+            className=" font-semibold text-center py-4 split-text"
+            delay={150}
             duration={0.6}
             ease="power3.out"
             splitType="chars"
@@ -303,6 +310,7 @@ export default function InstagramArea() {
             className=""
             style={{
               display: "flex",
+
               position: "relative",
               justifyContent: "center",
               alignItems: "center",
@@ -310,34 +318,19 @@ export default function InstagramArea() {
               gap: "20px",
             }}
           >
-            <div
-              className=""
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "100px",
-                gap: "20px",
-              }}
-            >
+            <div className="split-text-container" style={{}}>
               <p
                 style={{
                   color: "#fff",
                   letterSpacing: "10",
                   marginBottom: 0,
-                  fontSize: "clamp(16px, calc(1.5vw + 20px), 30px)",
+                  fontSize: "clamp(16px, calc(1vw + 16px), 28px)",
                 }}
               >
                 SEARCHING FOR A
               </p>
               <RotatingText
-                texts={[
-                  "SOLUTION?",
-                  "STRATEGY?",
-                  "TRANSFORMATION?",
-                  "FRAMEWORK?",
-                  "BLUEPRINT?",
-                ]}
+                texts={["SOLUTION?", "STRATEGY?", "FRAMEWORK?", "BLUEPRINT?"]}
                 mainClassName=" bg-[#b08500] text-white overflow-hidden justify-center rounded-lg item-center"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
