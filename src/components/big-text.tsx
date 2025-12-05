@@ -47,7 +47,7 @@ export default function BigText({ cls = "" }: IProps) {
           <h3></h3>
           <div className="">
             {whyChooseUs.map((item, index) => (
-              <div className="">
+              <div className="" key={index}>
                 <h6>{item.title}</h6>
                 <p>{item.content}</p>
               </div>
