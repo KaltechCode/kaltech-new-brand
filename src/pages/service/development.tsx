@@ -30,7 +30,7 @@ const Development = () => {
   });
 
   return (
-  <Wrapper>
+    <Wrapper>
       {/* header area start */}
       <HeaderOne />
       {/* header area end */}
@@ -46,8 +46,7 @@ const Development = () => {
             <BigText />
           </main>
           {/* big text */}
-                <FooterFour/>
-
+          <FooterFour />
         </div>
       </div>
     </Wrapper>

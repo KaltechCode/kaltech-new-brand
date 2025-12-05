@@ -7,7 +7,7 @@ import ser_img_2 from "@/assets/img/custom/services/kaltech-marketing-cover.png"
 import ser_img_3 from "@/assets/img/custom/services/Kaltech-Branding-.webp";
 import ser_img_4 from "@/assets/img/custom/services/Kaltech-Data-Analytics.png";
 
-import { UpArrow } from "../svg";
+import { ArrowBg, RightArrowTwo, UpArrow } from "../svg";
 import Link from "next/link";
 import PrimaryBtn, { SecondaryCircleBtn } from "../button/button";
 
@@ -20,9 +20,10 @@ const service_data = [
     text: "We build scalable and efficient web and mobile applications tailored to your business needs.",
     lists: [
       "Web Design and Development",
-      "Content Management System",
-      "Mobile Application Development",
-      "Desktop Application Development",
+      "Mobile App Development",
+      "Content Management System (CMS) Solutions",
+      "E-Commerce Development",
+      "Api Development and Integration",
     ],
     url: "/development",
   },
@@ -159,6 +160,7 @@ export default function ServiceSix() {
                             {/* </div> */}
                           </div>
                         </div>
+
                         <div className="sv-six-btn-lg">
                           <SecondaryCircleBtn
                             label="More"
@@ -170,21 +172,14 @@ export default function ServiceSix() {
                         </div>
                       </div>
 
-                      {/* service btn  */}
-                      {/* <div className="sv-service-btn">
-                        <Link
-                          className="tp-btn-zikzak zikzak-inner p-relative"
-                          href={item.url}
-                        >
-                          <span className="zikzak-content">
-                            See <br /> Details
-                            <RightArrow clr="currentColor" />
-                          </span>
-                          <ShapeTwo />
-                        </Link>
-                      </div> */}
-
-                      {/* small btn */}
+                      <Link
+                        className="tp-btn-black-2 tp_fade_bottom"
+                        href="/about-us"
+                        style={{ background: "#b08500" }}
+                      >
+                        Get in Touch
+                        <span className="p-relative"></span>
+                      </Link>
                     </div>
                   </div>
                 </div>

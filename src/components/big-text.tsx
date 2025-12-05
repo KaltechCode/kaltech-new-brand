@@ -1,31 +1,58 @@
 import Link from "next/link";
 import React from "react";
-import  UpArrow  from "../../public/assets/img/svg/arrow-head.svg";
+import UpArrow from "../../public/assets/img/svg/arrow-head.svg";
 // import { MdArrowOutward } from "react-icons/md";
-const {MdArrowOutward} = require("react-icons/md");
+const { MdArrowOutward } = require("react-icons/md");
 
-// type 
+// type
 type IProps = {
   cls?: string;
 };
 
-export default function BigText({cls=""}: IProps) {
+export default function BigText({ cls = "" }: IProps) {
+  const whyChooseUs = [
+    {
+      title: " ✔  SEO-Friendly Development",
+      content:
+        "We build websites and applications that rank higher on Google and attract quality traffic.",
+    },
+
+    {
+      title: "✔ Fast, Reliable,and Secure Solutions",
+      content:
+        "Speed, security, and performance are at the core of our development process.",
+    },
+
+    {
+      title: "✔ Custom-Built for Your Business",
+      content:
+        "Every project is tailored to your goals, audience, and industry.",
+    },
+
+    {
+      title: "✔ Transparent Project Management",
+      content: "Clear timelines. Consistent updates. Zero guesswork.",
+    },
+
+    {
+      title: "✔ Constant Support & Maintenance",
+      content:
+        "We constantly keep your business systems updated, optimized, and secure.",
+    },
+  ];
   return (
-    <div className={`sv-big-text-area ${cls}`} >
+    <div className={`sv-big-text-area ${cls}`}>
       <div className="container">
-        <div className="sv-small-text-box d-flex justify-content-between">
-          <span>Want to turn your Digital dreams into reality?
-            <br />
-            <br />
-              <p style={{textTransform: "capitalize"}}>We listen, we care, we deliver. We don&apos;t sell products, <br /> we provide solutions that consistently exceeds your expectation.</p>
-          </span>
-        
-          <span>Kaltech Consultancy</span>
-        </div>
         <div className="sv-big-text-box">
-          <h4 className="sv-big-text tp-char-animation text-center" style={{letterSpacing: "2px"}}>
-            <Link href="/contact" >Get in Touch</Link> 
-          </h4>
+          <h3></h3>
+          <div className="">
+            {whyChooseUs.map((item, index) => (
+              <div className="">
+                <h6>{item.title}</h6>
+                <p>{item.content}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -35,8 +35,8 @@ const gallery = localFont({
 const syne_heading = localFont({
   src: [
     {
-      path: "../../public/assets/fonts/OvercameDemoRegular.ttf",
-      weight: "400",
+      path: "../../public/assets/fonts/Oxanium-SemiBold.ttf",
+      weight: "900",
       style: "normal",
     },
   ],
